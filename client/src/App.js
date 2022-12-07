@@ -1,22 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Main from './components/Main/Main';
+import Navbar from './components/Navbar/Navbar';
+import ProtectedRouter from './components/ProtectedRouter/ProtectedRouter';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Navbar />
+      <Routes>
+      <Route path="/" element={<Main />} />
+
+      <Route element={<ProtectedRouter />}>
+        {/* <Route path="/game" element={<Game user={user} setUser={setUser} />} />
+        <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
+        <Route path="/stats" element={<Stats user={user} setUser={setUser} />} /> */}
+      </Route>
+
+      <Route element={<ProtectedRouter/>}>
+        {/* <Route path="/reg" element={<Reg user={user} setUser={setUser} />} />
+        <Route path="/auth" element={<Auth user={user} setUser={setUser} />} /> */}
+      </Route>
+
+      </Routes>
       </header>
     </div>
   );

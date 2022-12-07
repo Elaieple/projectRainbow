@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+a:hover {
+    color: #fe6637;
+    transition: 0.2s linear
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+}
+
+.authBtn {
+    border-radius: 20px;
+    padding: 6px;
+    background-color: transparent;
+}

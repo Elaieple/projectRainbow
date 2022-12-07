@@ -1,0 +1,298 @@
+* {
+    color: black;
+    font-size: 22px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.img {
+    position: relative;
+    z-index: -1;
+    min-height: 640px;
+    min-width: 1920px;
+    max-height: 640px;
+    max-width: 1920px;
+}
+
+.mainFirstP {
+    padding-top: 10px;
+    padding-left: 120px;
+    word-break: normal;
+    min-height: 420px;
+    min-width: 420px;
+    max-height: 420px;
+    max-width: 420px;
+}
+
+.Performance {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 430px;
+}
+
+/*? Стили для кто мы такие и прочего в дальнейшнем надо подредачить если что */
+.firstBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.size {
+    margin: 30px;
+    display: flex;
+    word-break: normal;
+    min-width: 550px;
+    max-width: 550px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #95cd8b;
+    padding: 20px;
+}
+
+.block1 {
+    margin-left: 275px;
+}
+
+.block2 {
+    margin-right: 275px;
+}
+
+.block3 {
+    margin: 30px;
+    margin-top: 60px;
+    margin-left: 275px;
+    display: flex;
+    word-break: normal;
+    min-width: 550px;
+    max-width: 550px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.block4 {
+    margin: 30px;
+    margin-top: 60px;
+    margin-right: 275px;
+    display: grid;
+    word-break: normal;
+    min-width: 550px;
+    max-width: 550px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: unset;
+    justify-items: start;
+}
+
+.poloska {
+    margin-top: 50px;
+    border-right: 2px solid #95cd8b;
+}
+
+.secondP {
+    padding-top: 15px;
+}
+
+.Zagalovok {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.btn {
+    right: 0%;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: green;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.firstH2 {
+    font-size: 32px;
+}
+
+/*! Отступ для видео */
+.video {
+    margin-top: 5%;
+}
+
+/*? Стили для наши проекты и списка проектов */
+.Projects {
+    margin: 20px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NamingProject {
+    margin-left: 12.5%;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.allProject {
+    margin-right: 12.5%;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.secondMainDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 8.5%;
+    margin-right: 7%;
+}
+
+.id {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    padding: 20px;
+    margin-left: 0%;
+    min-height: 290px;
+    min-width: 240px;
+    max-height: 290px;
+    max-width: 240px;
+    border-radius: 20px;
+    background-color: rgb(207,123,148);
+    justify-items: end;
+}
+
+.id p {
+    color: whitesmoke;
+}
+
+.more {
+    display: flex;
+    align-items: flex-end;
+    color: whitesmoke;
+}
+
+.date {
+    padding: 5px;
+}
+
+
+/*! Стили для как помочь на главной */
+.Title {
+    min-width: 600px;
+    max-width: 600px;
+    margin-right: 12.5%;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.foto {
+    margin-top: 6%;
+    min-height: 380px;
+    min-width: 700px;
+    max-height: 380px;
+    max-width: 700px;
+    border-radius: 30px;
+}
+
+.help {
+    margin-left: 12.5%;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.howToHelp {
+    margin: 20px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BlockTitle {
+    margin-right: 12.5%;
+    font-weight: lighter;
+}
+
+.btnHelp {
+    right: 0%;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 30px;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: rgb(21, 197, 65);
+    border: 0;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+/* Стили для наши друзья */
+.friends {
+    margin: 20px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.namingFriends {
+    margin-left: 12.5%;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.allFriends {
+    margin-right: 12.5%;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.fotoFriends {
+    display: flex;
+    justify-content: center;
+    /*? Либо грид  */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; */
+}
+
+/*! Стили отчётов */
+
+.reports {
+    margin: 20px;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+}
+
+.namingReports {
+    margin-left: 12.5%;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.allReports {
+    margin-right: 12.5%;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.secondReports {
+    margin: 20px;
+    margin-top: 10%;
+    display: flex;
+    border-bottom: 2px solid black;
+    flex-direction: row;
+    justify-content: space-between;
+}
