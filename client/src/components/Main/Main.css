@@ -273,26 +273,37 @@
     margin: 20px;
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 120px 1fr 120px;
 }
 
 .namingReports {
-    margin-left: 12.5%;
     font-size: 32px;
     font-weight: lighter;
 }
 
 .allReports {
-    margin-right: 12.5%;
     font-size: 24px;
     font-weight: 300;
 }
 
 .secondReports {
     margin: 20px;
-    margin-top: 10%;
     display: flex;
     border-bottom: 2px solid black;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
+
+.raports {
+    display: flex;
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.Text {
+    display: flex;
+    max-width: 600px;
+    margin-right: 70px;
+}
+

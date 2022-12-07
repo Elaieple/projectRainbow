@@ -163,6 +163,7 @@ export default function Main() {
         </div>
       </div>
       <div>
+        {/* В даннорм разделе будут последние 3 отчёта из бд по новизне */}
       <div className='reports'> 
 
       <div />
@@ -175,13 +176,59 @@ export default function Main() {
           Все отчёты ➞
         </Link>
       </div>
+      
+      <div />
+      {/* Отчёт 1 */}
+      <div />
+      <div className='secondReports'>
+        <p className='raports'>
+          622 тыс. руб
+        </p>
+        <p className='Text'>
+          За 2021 год удалось собрать нашему центру на благотворительных акциях
+        </p>
+      </div>
+      <div />
+
+       {/* Отчёт 2 */}
+      <div />
+      <div className='secondReports'>
+        <p className='raports'>
+          318 тыс. руб
+        </p>
+        <p className='Text'>
+          За 2021 год составили частные пожертвования гражданаского населения
+        </p>
+      </div>
+      <div />
+
+       {/* Отчёт 3 */}
+      <div />
+      <div className='secondReports'>
+        <p className='raports'>
+          72 ребенка
+        </p>
+        <p className='Text'>
+          С двигательной и ментальной инвалидностью стали постоянными участниками наших проектов
+        </p>
+      </div>
       <div />
 
         </div>
       </div>
-
       <div>
-        132
+        {/* Тут будут раздел со СМИ */}
+        <div className='friends'> 
+        <p className='namingFriends'>
+          СМИ О НАС
+        </p>
+        <Link to='ourFriends' className='allFriends'>
+          Читать все статьи ➞
+        </Link>
+        </div>
+        <div>
+          
+        </div>
       </div>
     </div>
   )
