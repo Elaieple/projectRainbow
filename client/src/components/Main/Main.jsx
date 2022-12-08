@@ -6,38 +6,43 @@ export default function Main() {
   return (
     <div>
       <div>
-        <img className='img' src='https://vogazeta.ru/uploads/full_size_1586160873-8696a7b28ed1bc0a2f4f5f27a5e94c26.jpg' alt='foto' />
+        <img className='img' src='foto1.png' alt='foto' />
       </div>
       <div className='Performance'>
-        <h1>
-          Заголовок
-        </h1>
+        <p className='zagalovok'>
+          ВЫШЕ РАДУГИ
+        </p>
         <p className='mainFirstP'>
-          Какой либо очень длинный текст поста накручу стили чуть позже 
+        АНОО “КОМПЛЕКСНЫЙ ОБЩЕОБРАЗОВАТЕЛЬНЫЙ ЦЕНТР ДЛЯ ДЕТЕЙ С ДЦП
         </p>
       </div>
       <div className='firstBlock BlockAboutUs'>
         <div className='size block1'>
-          <h2 className='firstH2'> 15% </h2>
+          <p className='firstH2'> 15% </p>
           <p className='secondP'>
-          пипец какой длинный текст ыыыыыыыыы либо очень длинный текст поста накручу стили чуть позже 
+          детей с ДЦП в Самарской области могут посещать общеобразовательные учреждения.
+          Это дети с минимальными нарушениями, способные наравне со здоровыми сверстниками осваивать образовательные программы.
           </p>
         </div>
         <p className='poloska' />
         <div className='size block2'>
-          <h2 className='firstH2'> 85% </h2>
+          <p className='firstH2'> 85% </p>
           <p className='secondP'>
-          Ахуеть какой длинный текст еееееееееееееееееееееххххххххххххххх либо очень длинный текст поста накручу стили чуть позже 
+          этой категории в силу тяжести своего состояния требуют особого подхода: большего времени усвоения учебного материала, 
+          иных методов обучения, безбарьерной среды для передвижения. Ни одна школа города не удовлетворяет этим требованиям.
           </p>
         </div>
         <div className='block3'>
-          <h1 className='Zagalovok'>
+          <p className='Zagalovok'>
             КТО МЫ ТАКИЕ?
-          </h1>
+          </p>
         </div>
         <div className='block4'>
-          <p>
-            Тут будет длинной описание от самой организаци чем занимаются и прочее прочее и так далее
+          <p className='postP'>
+          Абсолютное большинство особых детей вынуждены оставаться на домашнем обучении.
+          В нашем городе случилось так, что родители детей-инвалидов сами решили бороться с этой проблемой. 
+          Мы создали Автономную некоммерческую образовательную организацию для детей с ДЦП «Выше радуги», 
+          которая прошла официальную регистрацию и имеет расчетный счет.
           </p>
           <button className='btn'>
             Подробнее
@@ -63,9 +68,11 @@ export default function Main() {
         </Link>
         </div>
         <div className='secondMainDiv'>
-          <div className='id'>
-            <p>
-              Очень длинное Название проекта
+          <div className='sideBlock'>
+            <p className='TitleProject'>
+              Делай с нами, <br />
+              делай как мы, <br />
+              делай лучше нас
             </p>
             <p className='date'>
               2022
@@ -75,9 +82,9 @@ export default function Main() {
             </Link>
           </div>
           
-          <div className='id'>
-            <p>
-              Очень длинное Название проекта
+          <div className='secondBlockProject'>
+            <p className='TitleProject'>
+              Второе дыхание
             </p>
             <p className='date'>
               2022
@@ -86,9 +93,9 @@ export default function Main() {
               Подробнее ➞
             </Link>
           </div>
-          <div className='id'>
-            <p>
-              Очень длинное Название проекта
+          <div className='thirdBlockProject'>
+            <p className='TitleProject'>
+              Живая вода
             </p>
             <p className='date'>
               2022
@@ -97,20 +104,9 @@ export default function Main() {
               Подробнее ➞
             </Link>
           </div>
-          <div className='id'>
-            <p>
-              Очень длинное Название проекта
-            </p>
-            <p className='date'>
-              2022
-            </p>
-            <Link to='projects' className='more'>
-              Подробнее ➞
-            </Link>
-          </div>
-          <div className='id'>
-            <p>
-              Очень длинное Название проекта
+          <div className='sideBlock'>
+            <p className='TitleProject'>
+              Перезагрузка
             </p>
             <p className='date'>
               2022
@@ -130,8 +126,8 @@ export default function Main() {
         <p className='Title'>
           ШКОЛА "ВЫШЕ РАДУГИ" ОТКРОЕТСЯ 1 СЕНТЯБРЯ. А ВОТ В КАКОМ ГОДУ БУДЕТ ЗАВИСЕТЬ ОТ НАС С ВАМИ!
         </p>
-        <img className='foto' src='https://static.mk.ru/upload/entities/2022/10/07/07/articles/facebookPicture/0a/6b/d0/26/85d7266be24419958e5e803781c50d71.jpg' alt='foto' />
-        <p className='Title'>
+        <div className='foto' />
+        <p className='BodyTitle'>
           Проект по созданию школы уже одобрен, но чтобы его реализовать нам нужна ваша помощь. 
           Администрация города передела в безвозмездное пользование центру здание бывшего десткого сада.
           Оно требует восстановления: замены окон, проклдаки новых коммуникаций, перепланировки внутренних помещений, 
@@ -154,20 +150,36 @@ export default function Main() {
         </Link>
         </div>
         <div className='fotoFriends'>
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
-          <img src='https://avatars.mds.yandex.net/get-images-cbir/6452924/PFSr-acM9WL_tAtQ7ZVqiw588/ocr' alt='foto' />
+
+            <div className='circle'>
+              <div className='firstFriend' />
+            </div>
+
+            <div className='circle'>
+              <div className='secondFriend' />
+            </div>
+
+            <div className='circle'>
+              <div className='thirdFriend' />
+            </div>
+
+            <div className='circle'>
+              <div className='fourthFriend' />
+            </div>
+
+            <div className='circle'>
+              <div className='fifthFriend' />
+            </div>
+
+            <div className='circle'>
+              <div className='sixthFriend' />
+            </div>
+
         </div>
       </div>
       <div>
         {/* В даннорм разделе будут последние 3 отчёта из бд по новизне */}
       <div className='reports'> 
-
-      <div />
-
       <div className='secondReports'>
         <p className='namingReports'>
           ОТЧЁТЫ
@@ -177,57 +189,92 @@ export default function Main() {
         </Link>
       </div>
       
-      <div />
-      {/* Отчёт 1 */}
-      <div />
       <div className='secondReports'>
+        <div className='blockP'>
         <p className='raports'>
-          622 тыс. руб
+          622
         </p>
+        <p className='rub'>
+        тыс. руб
+        </p>
+        </div>
         <p className='Text'>
           За 2021 год удалось собрать нашему центру на благотворительных акциях
         </p>
       </div>
-      <div />
 
-       {/* Отчёт 2 */}
-      <div />
       <div className='secondReports'>
+        <div className='blockP'>
         <p className='raports'>
-          318 тыс. руб
+          318
         </p>
+        <p className='rub'>
+        тыс. руб
+        </p>
+        </div>
         <p className='Text'>
           За 2021 год составили частные пожертвования гражданаского населения
         </p>
       </div>
-      <div />
 
-       {/* Отчёт 3 */}
-      <div />
       <div className='secondReports'>
+        <div className='blockP'>
         <p className='raports'>
-          72 ребенка
+          72
         </p>
+        <p className='children'>
+        ребенка
+        </p>
+        </div>
         <p className='Text'>
           С двигательной и ментальной инвалидностью стали постоянными участниками наших проектов
         </p>
       </div>
-      <div />
 
         </div>
       </div>
-      <div>
+      <div className='media'>
         {/* Тут будут раздел со СМИ */}
-        <div className='friends'> 
-        <p className='namingFriends'>
+        <div className='titleMedia'> 
+        <p className='mediaNames'>
           СМИ О НАС
         </p>
-        <Link to='ourFriends' className='allFriends'>
+        <Link to='ourFriends' className='allMedia'>
           Читать все статьи ➞
         </Link>
         </div>
-        <div>
+        <div className='tableMedia'>
           
+          <div className='mediaBlocks'>
+          <img src='fotoMedia/image 12.png' alt='foto' className='firstMedia' />
+            <span className='mediaSpan'>
+              04.08.2020
+            </span>
+            <p className='kartoshkaP'>
+              Рай для шопоголика, тихий палисадник и ангелы: показываем, чем живет Советский район прямо сейчас
+            </p>
+          </div>
+
+          <div className='mediaBlocks'>
+          <img src='fotoMedia/image 11.png' alt='foto' className='firstMedia' />
+            <span className='mediaSpan'>
+              14.01.2021
+            </span>
+            <p className='kartoshkaP'>
+              В Самаре открылась инклюзивная детская мастерская
+            </p>
+          </div>
+
+          <div className='mediaBlocks'>
+          <img src='fotoMedia/image 10.png' alt='foto' className='firstMedia' />
+            <span className='mediaSpan'>
+              30.03.2021
+            </span>
+            <p className='kartoshkaP'>
+              Мастерские «Второе дыхание» — первый проект образовательного центра для детей с ДЦП «Выше радуги»
+            </p>
+          </div>
+
         </div>
       </div>
     </div>

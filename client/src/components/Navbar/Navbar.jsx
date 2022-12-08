@@ -6,7 +6,7 @@ export default function Navbar({ user, setUser }) {
 
   const authNav = () => (
     <>
-    <Link style={{ margin: '10px' }} to="/">Logo</Link>
+    <Link style={{ margin: '10px' }} to="/"><img src='/logotypes/logo_m 1.png' alt='logo' /> </Link>
     <Link style={{ margin: '10px' }} to="/aboutUs">О нас</Link>
     <Link style={{ margin: '10px' }} to="/projects">Проекты</Link>
     <Link style={{ margin: '10px' }} to="/howToHelp">Как помочь</Link>
