@@ -5,24 +5,34 @@
 
 a {
     text-decoration: none;
-    font-size: 18px;
-    color: black;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
 
 a:hover {
-    color: #fe6637;
+    font-weight: bolder;
     transition: 0.2s linear
+}
+
+a:active {
+    color: #46AB4A;
 }
 
 .nav {
     display: grid;
     margin: 1%;
-    /* left: 10%; */
+    left: 10%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     position: absolute;
     align-items: center;
     justify-items: stretch;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 .authBtn {
@@ -30,7 +40,13 @@ a:hover {
     padding: 13px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: rgb(58, 211, 20);
+    background-color: #46AB4A;
     color: whitesmoke;
     border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
 }
