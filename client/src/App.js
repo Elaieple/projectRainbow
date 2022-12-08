@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
 import ProtectedRouter from './components/ProtectedRouter/ProtectedRouter';
+import Teams from './components/Teams/Teams';
+import OurFriends from './components/OurFriends/OurFriends';
 
 function App() {
   return (
@@ -11,10 +13,12 @@ function App() {
       <Navbar />
       <Routes>
       <Route path="/" element={<Main />} />
+      <Route path="/aboutUs" element={<Teams />} />
+      <Route path="/ourFriends" element={<OurFriends />} />
 
       <Route element={<ProtectedRouter />}>
-        {/* <Route path="/game" element={<Game user={user} setUser={setUser} />} />
-        <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
+        {/* <Route path="/aboutUs" element={<Teams />} /> */}
+        {/* <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
         <Route path="/stats" element={<Stats user={user} setUser={setUser} />} /> */}
       </Route>
 

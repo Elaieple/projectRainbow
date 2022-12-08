@@ -41,7 +41,7 @@ a:active {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #46AB4A;
-    color: whitesmoke;
+    color: #FFFFFF;
     border: 0;
     font-family: 'Arial';
     font-style: normal;
@@ -49,4 +49,5 @@ a:active {
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }

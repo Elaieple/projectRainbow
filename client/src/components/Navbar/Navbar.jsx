@@ -13,7 +13,7 @@ export default function Navbar({ user, setUser }) {
     <Link style={{ margin: '10px' }} to="/ourFriends">Наши друзья</Link>
     <Link style={{ margin: '10px' }} to="/reports">Отчёты</Link>
     <Link style={{ margin: '10px' }} to="/media">СМИ</Link>
-    <button className="authBtn" type="button">Пожертвовать</button>
+    <button className="authBtn" type="button">ПОМОЧЬ</button>
     </>
   );
 

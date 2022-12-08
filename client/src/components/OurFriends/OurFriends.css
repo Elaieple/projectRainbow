@@ -1,0 +1,39 @@
+.OurFriends {
+    display: flex;
+    width: 345px;
+    height: 55px;
+    left: 628px;
+    top: 248px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.BlockFriends {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+
+.BlockFriend {
+    width: 180px;
+    height: 180px;
+}
+
+.BlockFrined1 {
+    font-size: 40px;
+    border-right: 3px solid #949494;
+    border-bottom: 3px solid #949494;
+}

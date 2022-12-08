@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import './Main.css';
 
 export default function Main() {
+  const url = window.location.href;
+  if(url === `http://localhost:3000/`) {
+    console.log("123123123233232");
+    // Тут будет смена цвета текста в навбаре взависимости от того на какйо странице нахожусь
+  }
   return (
     <div>
       <div>
@@ -265,14 +270,14 @@ export default function Main() {
             </p>
           </div>
 
-          <div className='mediaBlocks'>
-          <img src='fotoMedia/image 10.png' alt='foto' className='firstMedia' />
-            <span className='mediaSpan'>
+          <div className='secondMediaBlock'>
+            <span className='secondMediaSpan'>
               30.03.2021
             </span>
-            <p className='kartoshkaP'>
+            <p className='secondText'>
               Мастерские «Второе дыхание» — первый проект образовательного центра для детей с ДЦП «Выше радуги»
             </p>
+          <div className='secondMedia' />
           </div>
 
         </div>
