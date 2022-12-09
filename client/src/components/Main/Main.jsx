@@ -3,16 +3,11 @@ import { Link } from 'react-router-dom';
 import './Main.css';
 
 export default function Main() {
-  const url = window.location.href;
-  if(url === `http://localhost:3000/`) {
-    console.log("123123123233232");
-    // Тут будет смена цвета текста в навбаре взависимости от того на какйо странице нахожусь
-  }
   return (
-    <div>
-      <div>
+    <>
+      <>
         <img className='img' src='foto1.png' alt='foto' />
-      </div>
+      </>
       <div className='Performance'>
         <p className='zagalovok'>
           ВЫШЕ РАДУГИ
@@ -22,36 +17,42 @@ export default function Main() {
         </p>
       </div>
       <div className='firstBlock BlockAboutUs'>
-        <div className='size block1'>
-          <p className='firstH2'> 15% </p>
-          <p className='secondP'>
-          детей с ДЦП в Самарской области могут посещать общеобразовательные учреждения.
-          Это дети с минимальными нарушениями, способные наравне со здоровыми сверстниками осваивать образовательные программы.
-          </p>
+        <div className='blockProcent'>
+          <div className='size block1'>
+            <p className='firstH2'> 15% </p>
+            <p className='secondP'>
+              детей с ДЦП в Самарской области могут посещать общеобразовательные учреждения.
+              Это дети с минимальными нарушениями, способные наравне со здоровыми сверстниками осваивать образовательные программы.
+            </p>
+          </div>
+          <p className='poloska' />
+         <div className='size block2'>
+            <p className='firstH2'> 85% </p>
+            <p className='secondP'>
+              этой категории в силу тяжести своего состояния требуют особого подхода: большего времени усвоения учебного материала, 
+              иных методов обучения, безбарьерной среды для передвижения. Ни одна школа города не удовлетворяет этим требованиям.
+            </p>
+          </div>
         </div>
-        <p className='poloska' />
-        <div className='size block2'>
-          <p className='firstH2'> 85% </p>
-          <p className='secondP'>
-          этой категории в силу тяжести своего состояния требуют особого подхода: большего времени усвоения учебного материала, 
-          иных методов обучения, безбарьерной среды для передвижения. Ни одна школа города не удовлетворяет этим требованиям.
-          </p>
-        </div>
-        <div className='block3'>
-          <p className='Zagalovok'>
-            КТО МЫ ТАКИЕ?
-          </p>
-        </div>
-        <div className='block4'>
-          <p className='postP'>
-          Абсолютное большинство особых детей вынуждены оставаться на домашнем обучении.
-          В нашем городе случилось так, что родители детей-инвалидов сами решили бороться с этой проблемой. 
-          Мы создали Автономную некоммерческую образовательную организацию для детей с ДЦП «Выше радуги», 
-          которая прошла официальную регистрацию и имеет расчетный счет.
-          </p>
-          <button className='btn'>
-            Подробнее
-          </button>
+        <div className='blockAboutUs1'>
+          <div className='block3'>
+            <p className='Zagalovok'>
+              КТО МЫ ТАКИЕ?
+            </p>
+          </div>
+          <div className='block4'>
+            <p className='postP'>
+              Абсолютное большинство особых детей вынуждены оставаться на домашнем обучении.
+              В нашем городе случилось так, что родители детей-инвалидов сами решили бороться с этой проблемой. 
+              Мы создали Автономную некоммерческую образовательную организацию для детей с ДЦП «Выше радуги», 
+              которая прошла официальную регистрацию и имеет расчетный счет.
+            </p>
+            <button className='btn'>
+              <Link to='/' className='allMedia'>
+                Подробнее
+              </Link>
+            </button>
+          </div>
         </div>
         <div className='video'>
           {/* Решить как будем оставлять видео пока прикручен плеер от ютуба или ниже закоменчена вёрстка для плеера если видео хранится на файлах сервера */}
@@ -139,12 +140,14 @@ export default function Main() {
           однако поддержать наш проект можно не только финансово.
         </p>
         <button className='btnHelp'>
-          Как помочь
+          <Link to='/' className='allMedia'>
+            Как помочь
+          </Link>
         </button>
         </div>
         </div>
       </div>
-      <div className='BlockFriends'>
+      <div className='BlockFriends1'>
         {/* В наших друзьях буду доставать картинки логотипов друзей из бд*/}
       <div className='friends'> 
         <p className='namingFriends'>
@@ -182,7 +185,7 @@ export default function Main() {
 
         </div>
       </div>
-      <div>
+      <div className='reportsFirstBlock'>
         {/* В даннорм разделе будут последние 3 отчёта из бд по новизне */}
       <div className='reports'> 
       <div className='secondReports'>
@@ -251,37 +254,54 @@ export default function Main() {
         <div className='tableMedia'>
           
           <div className='mediaBlocks'>
-          <img src='fotoMedia/image 12.png' alt='foto' className='firstMedia' />
-            <span className='mediaSpan'>
-              04.08.2020
-            </span>
-            <p className='kartoshkaP'>
-              Рай для шопоголика, тихий палисадник и ангелы: показываем, чем живет Советский район прямо сейчас
-            </p>
+            <div className='FirstPageCardMedia'>
+            <div className='firstMedia' />
+              <span className='mediaSpan'>
+                04.08.2020
+              </span>
+              <p className='textP'>
+                Рай для шопоголика, тихий палисадник и ангелы: показываем, чем живет Советский район прямо сейчас
+              </p>
+            </div>
+            <div className='SecondPageCardMedia'>
+            <Link to='ourFriends' className='allMedia'>
+              Подробнее ➞
+            </Link>
+            </div>
           </div>
 
           <div className='mediaBlocks'>
-          <img src='fotoMedia/image 11.png' alt='foto' className='firstMedia' />
+          <div className='threeMedia' />
             <span className='mediaSpan'>
               14.01.2021
             </span>
-            <p className='kartoshkaP'>
+            <p className='textP'>
               В Самаре открылась инклюзивная детская мастерская
             </p>
+            <div className='SecondPageCardMedia'>
+            <Link to='ourFriends' className='allMedia'>
+              Подробнее ➞
+            </Link>
+            </div>
           </div>
 
           <div className='secondMediaBlock'>
-            <span className='secondMediaSpan'>
+            <div className='secondMedia' />
+            <p className='secondMediaSpan'>
               30.03.2021
-            </span>
+            </p>
             <p className='secondText'>
               Мастерские «Второе дыхание» — первый проект образовательного центра для детей с ДЦП «Выше радуги»
             </p>
-          <div className='secondMedia' />
+            <div className='SecondPageCardMedia'>
+            <Link to='ourFriends' className='allMedia'>
+              Подробнее ➞
+            </Link>
+            </div>
           </div>
 
         </div>
       </div>
-    </div>
+    </>
   )
 }

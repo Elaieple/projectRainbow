@@ -3,51 +3,179 @@
     margin: 0%;
 }
 
-a {
-    text-decoration: none;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    color: #FFFFFF;
+@media (min-width: 1600px) {
+
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        /* color: #FFFFFF; */
+        margin-right: 70px;
+        padding: 10px;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #46AB4A;
+    }
+    
+    .nav {
+        display: flex;
+        margin: 1%;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #46AB4A;
+    }
+    
+    .authBtn {
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
 }
 
-a:hover {
-    font-weight: bolder;
-    transition: 0.2s linear
-}
-
-a:active {
-    color: #46AB4A;
-}
-
-.nav {
-    display: grid;
-    margin: 1%;
-    left: 10%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
-    align-items: center;
-    justify-items: stretch;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-}
-
-.authBtn {
-    border-radius: 30px;
-    padding: 13px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #46AB4A;
-    color: #FFFFFF;
-    border: 0;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    cursor: pointer;
+@media (min-width: 1000px) and (max-width: 1599px) {
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        /* color: #FFFFFF; */
+        margin-right: 30px;
+        padding: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #46AB4A;
+    }
+    
+    .nav {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #46AB4A;
+    }
+    
+    .authBtn {
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
 }

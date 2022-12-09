@@ -1,7 +1,3 @@
-.nav a{
-    color: black;
-}
-
 .null {
     height: 160px;
 }
@@ -79,11 +75,11 @@
     border-radius: 20px;
 } */
 
-.FirstPageCard + .SecondPageCard {
+.mediaBlocks + .SecondPageCard {
     display: none;
 }
 
-.FirstPageCard:hover + .SecondPageCard {
+.mediaBlocks:hover + .SecondPageCard {
     display: block;
 }
 
@@ -92,3 +88,54 @@
     height: 350px;
     background-color: blue;
 }
+
+
+.flip-card {
+    background-color: transparent;
+    width: 285px;
+    height: 350px;
+    border-radius: 20px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    border-radius: 20px;
+    background-color: #46AB4A;
+    color: white;
+    transform: rotateY(180deg);
+  }

@@ -25,15 +25,59 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .BlockFriend {
     width: 180px;
     height: 180px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.BlockFrined1 {
-    font-size: 40px;
-    border-right: 3px solid #949494;
-    border-bottom: 3px solid #949494;
+.BlockFriend1 {
+    border-right: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend2{
+    border-right: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend3{
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend4 {
+    border-right: 2px solid #949494
+}
+
+.ImgFriendPage {
+    width: 180px;
+    height: 180px;
+}
+
+.ImgFriendPage2 {
+    width: 125px;
+    height: 125px;
+}
+
+.ImgFriendPage4 {
+    width: 125px;
+    height: 80px;
+}
+
+.ImgFriendPage3 {
+    width: 180px;
+    height: 180px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ImgFriendPage3:hover {
+    filter: grayscale(0);
+    transition: 1s;
 }

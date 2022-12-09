@@ -24,7 +24,7 @@ export default function Teams() {
           </div>
           <div className='SecondPageCard'>
             <p>
-              privet pidor
+              privet
             </p>
           </div>
         </div>
@@ -44,18 +44,17 @@ export default function Teams() {
           </div>
         </div>
 
-        <div className='card'>
-          <div className='FirstPageCard'>
-            <figure>
-              <p><img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="FotoRuk" className='ImgTeams' /></p>
-              <figcaption className='Name'>ЕКАТЕРИНА АКИНЦЕВА</figcaption>
-              <figcaption className='Post'>руководитель центра</figcaption>
-            </figure>
-          </div>
-          <div className='SecondPageCard'>
-            <p>
-              privet pidor
-            </p>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
+              123
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
           </div>
         </div>
 
