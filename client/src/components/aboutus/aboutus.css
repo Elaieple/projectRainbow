@@ -4,10 +4,7 @@
   font-family: 'Arial';
 }
 
-.main-container {
-  width: 1600px;
-  height: 700px;
-}
+
 
 .header  {
   background: url(../../../public/rainbow.jpg) no-repeat ;

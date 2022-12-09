@@ -1,11 +1,13 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/jsx-filename-extension */
-import Requsites from './components/ requisites/ Requisites';
+// import Requsites from './components/ requisites/ Requisites';
+import AboutUs from './components/aboutus/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <Requsites />
+      <AboutUs />
+      {/* <Requsites /> */}
     </div>
   );
 }
