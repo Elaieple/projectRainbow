@@ -110,7 +110,7 @@ export default function Main() {
               Подробнее ➞
             </Link>
           </div>
-          <div className='sideBlock'>
+          <div className='secondSideBlock'>
             <p className='TitleProject'>
               Перезагрузка
             </p>
@@ -125,25 +125,27 @@ export default function Main() {
       </div>
       <div className='BlockHelping'>
       <div className='howToHelp'> 
+        <div className='BlockTitle'>
         <p className='help'>
           КАК ПОМОЧЬ?
         </p>
-        <div className='BlockTitle'>
         <p className='Title'>
           ШКОЛА "ВЫШЕ РАДУГИ" ОТКРОЕТСЯ 1 СЕНТЯБРЯ. А ВОТ В КАКОМ ГОДУ БУДЕТ ЗАВИСЕТЬ ОТ НАС С ВАМИ!
         </p>
-        <div className='foto' />
-        <p className='BodyTitle'>
+        <div className='quatro'>
+        <div id='move' className='foto' />
+        <p  id='move' className='BodyTitle'>
           Проект по созданию школы уже одобрен, но чтобы его реализовать нам нужна ваша помощь. 
           Администрация города передела в безвозмездное пользование центру здание бывшего десткого сада.
           Оно требует восстановления: замены окон, проклдаки новых коммуникаций, перепланировки внутренних помещений, 
           однако поддержать наш проект можно не только финансово.
         </p>
-        <button className='btnHelp'>
+        <button id='move' className='btnHelp'>
           <Link to='/' className='allMedia'>
             Как помочь
           </Link>
         </button>
+        </div>
         </div>
         </div>
       </div>
