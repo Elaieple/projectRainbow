@@ -7,6 +7,7 @@ export default function Main() {
     <>
       <>
         <img className='img' src='foto1.png' alt='foto' />
+        <div className='img1' />
       </>
       <div className='Performance'>
         <p className='zagalovok'>
@@ -15,10 +16,11 @@ export default function Main() {
         <p className='mainFirstP'>
         АНОО “КОМПЛЕКСНЫЙ ОБЩЕОБРАЗОВАТЕЛЬНЫЙ ЦЕНТР ДЛЯ ДЕТЕЙ С ДЦП
         </p>
+        <button className="mainPageBtn" type="button">ПОМОЧЬ СЕЙЧАС</button>
       </div>
       <div className='firstBlock BlockAboutUs'>
         <div className='blockProcent'>
-          <div className='size block1'>
+          <div className='size block1 mainPageBlock320'>
             <p className='firstH2'> 15% </p>
             <p className='secondP'>
               детей с ДЦП в Самарской области могут посещать общеобразовательные учреждения.
@@ -26,7 +28,7 @@ export default function Main() {
             </p>
           </div>
           <p className='poloska' />
-         <div className='size block2'>
+         <div className='size block2 size320'>
             <p className='firstH2'> 85% </p>
             <p className='secondP'>
               этой категории в силу тяжести своего состояния требуют особого подхода: большего времени усвоения учебного материала, 
@@ -56,7 +58,7 @@ export default function Main() {
         </div>
         <div className='video'>
           {/* Решить как будем оставлять видео пока прикручен плеер от ютуба или ниже закоменчена вёрстка для плеера если видео хранится на файлах сервера */}
-        <iframe width="500" height="400" src="https://www.youtube.com/embed/vnDCpHjEt2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='video' src="https://www.youtube.com/embed/vnDCpHjEt2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           {/* <video width="400" height="300" controls="controls" poster="video/duel.jpg">
             <source src="https://www.youtube.com/watch?v=vnDCpHjEt2g" type='video/ogg; codecs="theora, vorbis"' />
             <source src="https://www.youtube.com/watch?v=vnDCpHjEt2g" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
@@ -70,7 +72,12 @@ export default function Main() {
           НАШИ ПРОЕКТЫ
         </p>
         <Link to='projects' className='allProject'>
-          Все проекты ➞
+          <p className='viewAllProjectVse'>
+            Все ➞
+          </p>
+          <p className='viewAllProjectVseProject'>
+            Все проекты ➞
+          </p>
         </Link>
         </div>
         <div className='secondMainDiv'>
@@ -142,7 +149,7 @@ export default function Main() {
         </p>
         <button id='move' className='btnHelp'>
           <Link to='/' className='allMedia'>
-            Как помочь
+            КАК ПОМОЧЬ
           </Link>
         </button>
         </div>
@@ -177,15 +184,18 @@ export default function Main() {
               <div className='fourthFriend' />
             </div>
 
-            <div className='circle'>
-              <div className='fifthFriend' />
+            <div className='circle size640px'>
+              <div className='fifthFriend 640px' />
             </div>
 
-            <div className='circle'>
-              <div className='sixthFriend' />
+            <div className='circle size640px'>
+              <div className='sixthFriend size640px' />
             </div>
 
         </div>
+        <Link to='ourFriends'>
+          <button className='allFriendsBtn'> ВСЕ ДРУЗЬЯ </button>
+        </Link>
       </div>
       <div className='reportsFirstBlock'>
         {/* В даннорм разделе будут последние 3 отчёта из бд по новизне */}
@@ -195,11 +205,16 @@ export default function Main() {
           ОТЧЁТЫ
         </p>
         <Link to='ourFriends' className='allReports'>
-          Все отчёты ➞
+        <p className='viewAllReportVse'>
+            Все ➞
+          </p>
+          <p className='viewAllReportVseReports'>
+            Все отчёты ➞
+          </p>
         </Link>
       </div>
       
-      <div className='secondReports'>
+      <div className='secondReports firstBlockReport'>
         <div className='blockP'>
         <p className='raports'>
           622
@@ -208,12 +223,12 @@ export default function Main() {
         тыс. руб
         </p>
         </div>
-        <p className='Text'>
+        <p className='TextRep'>
           За 2021 год удалось собрать нашему центру на благотворительных акциях
         </p>
       </div>
 
-      <div className='secondReports'>
+      <div className='secondReports firstBlockReport' >
         <div className='blockP'>
         <p className='raports'>
           318
@@ -222,12 +237,12 @@ export default function Main() {
         тыс. руб
         </p>
         </div>
-        <p className='Text'>
+        <p className='TextRep'>
           За 2021 год составили частные пожертвования гражданаского населения
         </p>
       </div>
 
-      <div className='secondReports'>
+      <div className='secondReports lastBlockReport'>
         <div className='blockP'>
         <p className='raports'>
           72
@@ -239,6 +254,9 @@ export default function Main() {
         <p className='Text'>
           С двигательной и ментальной инвалидностью стали постоянными участниками наших проектов
         </p>
+        <p className='TextChildren'>
+          с ДЦП стали постоянными участниками наших проектов
+        </p>
       </div>
 
         </div>
@@ -249,8 +267,13 @@ export default function Main() {
         <p className='mediaNames'>
           СМИ О НАС
         </p>
-        <Link to='ourFriends' className='allMedia'>
-          Читать все статьи ➞
+        <Link to='ourFriends'>
+          <p className='allMedia'> 
+            Читать все статьи ➞
+          </p>
+          <p className='AllMediaText'>
+            Все ➞
+          </p>
         </Link>
         </div>
         <div className='tableMedia'>

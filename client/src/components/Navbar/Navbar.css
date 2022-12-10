@@ -228,6 +228,7 @@
     }
     
     .authBtn {
+        display: none;
         border-radius: 30px;
         padding: 13px;
         padding-left: 30px;
@@ -317,6 +318,7 @@
     }
     
     .authBtn {
+        display: none;
         border-radius: 30px;
         padding: 13px;
         padding-left: 30px;

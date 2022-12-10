@@ -9,7 +9,12 @@
         color: #000000;
     }
     
+    .mainPageBtn {
+        display: none;
+    }
+
     .img {
+        /* background: url(../../../public/foto1.png) 100% no-repeat; */
         position: relative;
         z-index: -1;
         height: 100%;
@@ -261,7 +266,10 @@
     
     /*! Отступ для видео */
     .video {
+        width: 1200px;
+        height: 675px;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
     
     /*? Стили для наши проекты и списка проектов */
@@ -279,6 +287,20 @@
         margin-top: 10%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .viewAllProjectVseProject{
+        margin-right: 12.5%;
+        width: 200px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .viewAllProjectVse {
+        display: none;
     }
     
     .NamingProject {
@@ -400,9 +422,8 @@
     
     /*! Стили для как помочь на главной */
     .Title {
-        margin-right: 12.5%;
         width: 601px;
-        height: 90px;
+        height: 110px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
@@ -412,7 +433,6 @@
     }
     
     .BodyTitle {
-        margin-right: 12.5%;
         width: 600px;
         height: 90px;
         font-family: 'Arial';
@@ -433,6 +453,8 @@
     }
     
     .help {
+        display: flex;
+        margin-right: 28%;
         margin-left: 12.5%;
         width: 248px;
         height: 40px;
@@ -441,8 +463,15 @@
         font-weight: 400;
         font-size: 35px;
         line-height: 40px;
-        font-weight: lighter;
         color: #000000;
+    }
+
+    .BlockTitle {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
     }
     
     .howToHelp {
@@ -450,11 +479,6 @@
         margin-top: 10%;
         display: flex;
         justify-content: space-between;
-    }
-    
-    .BlockTitle {
-        margin-right: 12.5%;
-        font-weight: lighter;
     }
     
     .btnHelp {
@@ -517,6 +541,10 @@
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .allFriendsBtn {
+        display: none;
     }
     
     .fotoFriends {
@@ -624,6 +652,24 @@
         line-height: 23px;
         color: #474747;
     }
+
+    .viewAllReportVse {
+        display: none;
+    }
+
+    .TextChildren {
+        display: none;
+    }
+
+    .TextRep {
+        width: 601px;
+        height: 46px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
     
     .secondReports {
         margin: 20px;
@@ -678,13 +724,14 @@
     
     .Text {
         display: flex;
-        width: 601px;
+        width: 560px;
         height: 46px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
+        margin-right: 40px;
     }
     
     .titleMedia {
@@ -714,6 +761,10 @@
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .AllMediaText {
+        display: none;
     }
     
     .tableMedia {
@@ -831,6 +882,10 @@
     a {
         text-decoration: none;
         color: #000000;
+    }
+
+    .mainPageBtn {
+        display: none;
     }
     
     .img {
@@ -1018,60 +1073,6 @@
         color: #FFFFFF;
     }
     
-    /* .btn {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 16px 47px;
-        gap: 10px;
-        position: absolute;
-        width: 200px;
-        height: 50px;
-        margin-top: 150px;
-        background: #46AB4A;
-        border-radius: 1000px;
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 1;
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        border: 0;
-        color: #FFFFFF;
-        cursor: pointer;
-        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
-      }
-    .btn:hover {
-        color: #46AB4A !important;
-        background-color: transparent;
-        text-shadow: nthree;
-    }
-    .btn:hover:before {
-        left: 0%;
-        right: auto;
-        width: 100%;
-        border: 2px solid #46AB4A;
-    }
-    .btn:before {
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        height: 100%;
-        width: 0px;
-        z-index: -1;
-        content: '';
-        color: #46AB4A !important;
-        background: #FFFFFF;
-        border-radius: 30px;
-        transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
-    } */
-    
     .firstH2 {
         font-family: 'Arial';
         font-style: normal;
@@ -1082,6 +1083,8 @@
     
     /*! Отступ для видео */
     .video {
+        width: 960px;
+        height: 540px;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -1103,6 +1106,19 @@
         display: flex;
         justify-content: space-between;
     }
+
+    .viewAllProjectVseProject{
+        width: 160px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .viewAllProjectVse {
+        display: none;
+    }
     
     .NamingProject {
         font-family: 'Arial';
@@ -1119,6 +1135,10 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
+    }
+
+    .allFriendsBtn {
+        display: none;
     }
     
     .secondMainDiv {
@@ -1222,13 +1242,14 @@
     /*! Стили для как помочь на главной */
     .Title {
         width: 479px;
-        height: 69px;   
+        height: 69px;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+        margin-right: 115px;
     }
     
     .BodyTitle {
@@ -1442,6 +1463,24 @@
         line-height: 23px;
         color: #474747;
     }
+
+    .viewAllReportVse {
+        display: none;
+    }
+
+    .TextChildren {
+        display: none;
+    }
+
+    .TextRep {
+        width: 480px;
+        height: 36px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
     
     .secondReports {
         margin: 20px;
@@ -1505,6 +1544,12 @@
         line-height: 18px;
     }
 
+    .TextRep {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
      /*!  Тут начинается медиа */
     .titleMedia {
         display: flex;
@@ -1533,6 +1578,10 @@
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .AllMediaText {
+        display: none;
     }
     
     .tableMedia {
@@ -1649,22 +1698,52 @@
     }
     
     .img {
+        display: none;
+        background: url(../../../public/adaptiv/mainPage640/unsplash_IXiGMtCrQPg.png) 100% no-repeat;
         position: relative;
         z-index: -1;
-        height: 100%;
-        width: 100%;
+        width: 640px;
+        height: 1024px;
+    }
+
+    .img1 {
+        background: url(../../../public/adaptiv/mainPage640/unsplash_IXiGMtCrQPg.png) 100% no-repeat;
+        position: relative;
+        z-index: -1;
+        width: 640px;
+        height: 1024px;
     }
     
     .Performance {
         display: flex;
         position: absolute;
-        top: 183px;
+        top: 380px;
         margin-left: 35px;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
+    }
+    
+    .mainPageBtn {
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        width: 299px;
+        height: 50px;
+        margin-top: 120px;
     }
     
     .zagalovok {
@@ -1843,6 +1922,8 @@
     
     /*! Отступ для видео */
     .video {
+        width: 600px;
+        height: 400px;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -1853,6 +1934,19 @@
         margin-top: 10%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .viewAllProjectVseProject{
+        display: none;
+    }
+
+    .viewAllProjectVse {
+        width: 160px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
     }
     
     .NamingProject {
@@ -1871,11 +1965,15 @@
         font-size: 16px;
         line-height: 18px;
     }
+
+    .allFriendsBtn {
+        display: none;
+    }
     
     .secondMainDiv {
         display: flex;
         flex-direction: row;
-        margin-left: 0.5%;
+        margin-left: 1%;
     }
     
     .secondBlockProject {
@@ -1883,8 +1981,8 @@
         margin: 10px;
         padding: 20px;
         margin-left: 0%;
-        width: 164px;
-        height: 190px;
+        width: 225px;
+        height: 270px;
         border-radius: 20px;
         background-color: #46AB4A;
         justify-items: start;
@@ -1898,8 +1996,8 @@
         margin: 10px;
         padding: 20px;
         margin-left: 0%;
-        width: 164px;
-        height: 190px;
+        width: 225px;
+        height: 270px;
         border-radius: 20px;
         background-color: #7CAAC1;
         justify-items: start;
@@ -1913,8 +2011,8 @@
         margin: 10px;
         padding: 20px;
         margin-left: 0%;
-        width: 164px;
-        height: 190px;    
+        width: 225px;
+        height: 270px; 
         border-radius: 20px;
         background-color: #CF7B94;
         justify-items: start;
@@ -1924,12 +2022,12 @@
     }
     
     .secondSideBlock {
-        display: none;
+        display: flex;
         margin: 10px;
         padding: 20px;
         margin-left: 0%;
-        width: 164px;
-        height: 190px;    
+        width: 225px;
+        height: 270px;  
         border-radius: 20px;
         background-color: #CF7B94;
         justify-items: start;
@@ -1951,7 +2049,7 @@
     
     .more {
         display: flex;
-        width: 140px;
+        width: 160px;
         align-items: flex-end;
         font-family: 'Arial';
         font-style: normal;
@@ -2029,7 +2127,6 @@
     
     .btnHelp {
         right: 0%;
-        padding: 20px;
         padding-left: 60px;
         padding-right: 60px;
         border-radius: 30px;
@@ -2039,8 +2136,9 @@
         background-color: #46AB4A;
         border: 0;
         font-weight: 600;
-        bottom: 1501px;
         cursor: pointer;
+        width: 300px;
+        height: 50px;
     }
     
     .btnHelp a {
@@ -2048,6 +2146,10 @@
     }
     
     /* Стили для наши друзья */
+
+    .size640px {
+        display: none;
+    }
     
     .BlockFriends1 {
         display: flex;
@@ -2071,8 +2173,8 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 23px;
         color: #000000;    
     }
     
@@ -2110,27 +2212,27 @@
         width: 160px;
         height: 160px;
         opacity: 1;  
-        background: url(../../../public/adaptiv/mainPage\ 1000/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+        background: url(../../../public/adaptiv/mainPage640/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
     }
     .secondFriend {
         margin: -1px;
-        margin-left: -26.7px;
+        margin-left: -31.7px;
         z-index: 1;
         width: 160px;
         height: 160px;
         opacity: 1;    
-        background: url(../../../public/adaptiv/mainPage\ 1000/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
+        background: url(../../../public/adaptiv/mainPage640/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
     }
     .thirdFriend {
-        margin-left: -20px;
+        margin-left: -25px;
         z-index: 1;
         width: 160px;
         height: 160px;
         opacity: 1;    
-        background: url(../../../public/adaptiv/mainPage\ 1000/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
+        background: url(../../../public/adaptiv/mainPage640/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
     }
     .fourthFriend{
-        margin-left: -27.5px;
+        margin-left: -29.5px;
         z-index: 1;
         width: 160px;
         height: 160px;
@@ -2172,8 +2274,8 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 23px;
         color: #000000;
     }
     
@@ -2183,11 +2285,18 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 18px;
         color: #474747;
     }
+
+    .viewAllReportVse {
+        display: none;
+    }
     
+    .TextChildren {
+        display: none;
+    }
     .secondReports {
         margin: 20px;
         display: flex;
@@ -2248,13 +2357,24 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
+        margin-left: 95px;
+    }
+
+    .TextRep {
+        width: 385px;
+        height: 36px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
     }
 
      /*!  Тут начинается медиа */
     .titleMedia {
         display: flex;
         justify-content: space-between;
-        margin: 1%;
+        margin: 2%;
         margin-bottom: 0%;
     }
     
@@ -2264,8 +2384,8 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 23px;
         color: #000000;
     }
     
@@ -2275,16 +2395,19 @@
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 18px;
         color: #474747;
+    }
+
+    .AllMediaText {
+        display: none;
     }
     
     .tableMedia {
         display: flex;
+        align-items: flex-start;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;  
     }
     
     .firstMedia {
@@ -2311,8 +2434,8 @@
     
     .secondMedia {
         display: flex;
-        width: 470px;
-        height: 398px;
+        width: 224px;
+        height: 224px;
         border-radius: 10px;
         margin-bottom: 25px;
         background: url(../../../public/adaptiv/mainPage\ 1000/image_10.png) 100% no-repeat;
@@ -2351,18 +2474,15 @@
     }
     
     .secondText {
-        position: absolute;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
         margin: 10px;
-        width: 441px;
-        height: 36px;
-        color: #FFFFFF;
+        width: 225px;
+        height: 72px;
         z-index: 3;
-        margin-top: 340px;
     }
     
     .mediaBlocks {
@@ -2387,7 +2507,840 @@
 }
 
 @media (min-width: 320px) and (max-width: 639px) {
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .img {
+        display: none;
+        background: url(../../../public/adaptiv/mainPage640/unsplash_IXiGMtCrQPg.png) 100% no-repeat;
+        position: relative;
+        z-index: -1;
+        width: 640px;
+        height: 1024px;
+    }
 
+    .img1 {
+        background: url(../../../public/adaptiv/mainPage320/firspage.png) 100% no-repeat;
+        position: relative;
+        z-index: -1;
+        width: 320px;
+        height: 568px;
+    }
+    
+    .Performance {
+        display: flex;
+        position: absolute;
+        top: 183px;
+        margin-left: 35px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .mainPageBtn {
+        border-radius: 30px;
+        padding: 13px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+        width: 299px;
+        height: 50px;
+        margin-top: 240px;
+        margin-left: -25px;
+    }
+    
+    .zagalovok {
+        width: 256px;
+        height: 40px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        color: #D9D9D9;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .mainFirstP {
+        word-break: normal;
+        position: absolute;
+        width: 300px;
+        height: 54px;
+        top: 80px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    
+    /*? Стили для кто мы такие и прочего в дальнейшнем надо подредачить если что */
+    .firstBlock {
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .size {
+        margin: 30px;
+        display: flex;
+        word-break: normal;
+        width: 250px;
+        height: 126px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid #949494;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .size320 {
+        border-bottom: 2px solid #949494;
+    }
+    
+    .blockProcent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .blockAboutUs1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .block1 {
+        margin-top: 5%;
+    }
+    
+    .mainPageBlock320 {
+        padding-bottom: unset;
+    }
+    
+    .block2 {
+        margin-top: 0%;
+    }
+    
+    .block3 {
+        margin-top: 30px;
+        display: flex;
+        word-break: normal;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .block4 {
+        margin-top: 10px;
+        display: flex;
+        word-break: normal;
+        min-width: 300px;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+    
+    .poloska {
+        display: none;
+        margin-top: 7%;
+        border-right: 2px solid #949494;
+    }
+    
+    .secondP {
+        padding-top: 15px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        width: 300px;
+        height: 108px;
+    }
+    
+    .postP {
+        width: 300px;
+        height: 180px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: start;
+    }
+    
+    .Zagalovok {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        width: 200px;
+        height: 23px;
+        padding-right: 30px;
+    }
+    
+    .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 47px;
+        gap: 10px;
+        position: absolute;
+        width: 300px;
+        height: 50px;
+        margin-top: 220px;
+        background: #46AB4A;
+        border-radius: 1000px;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 1;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    .btn a {
+        color: #FFFFFF;
+    }
+    
+    .firstH2 {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    
+    /*! Отступ для видео */
+    .video {
+        width: 300px;
+        height: 200px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    /*? Стили для наши проекты и списка проектов */
+    .Projects {
+        margin: 20px;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+    .viewAllProjectVseProject {
+        display: none;
+    }
+    
+    .NamingProject {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: black;
+    }
+    
+    .allProject {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .secondMainDiv {
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+    }
+    
+    .secondBlockProject {
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        margin-left: 0%;
+        width: 225px;
+        height: 270px;
+        border-radius: 20px;
+        background-color: #46AB4A;
+        justify-items: start;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    
+    .thirdBlockProject {
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        margin-left: 0%;
+        width: 225px;
+        height: 270px;
+        border-radius: 20px;
+        background-color: #7CAAC1;
+        justify-items: start;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    
+    .sideBlock {
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        margin-left: 0%;
+        width: 225px;
+        height: 270px; 
+        border-radius: 20px;
+        background-color: #CF7B94;
+        justify-items: start;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    
+    .secondSideBlock {
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        margin-left: 0%;
+        width: 225px;
+        height: 270px;  
+        border-radius: 20px;
+        background-color: #CF7B94;
+        justify-items: start;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    
+    .TitleProject {
+        width: 127px;
+        height: 54px;
+        color: #FFFFFF;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .more {
+        display: flex;
+        width: 160px;
+        align-items: flex-end;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin-right: 40px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    
+    .date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+    }
+    
+    
+    /*! Стили для как помочь на главной */
+    .Title {
+        width: 301px;
+        height: 54px;  
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #474747;
+    }
+
+    .BlockTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .BodyTitle {
+        width: 300px;
+        height: 162px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+    }
+    
+    .foto {
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        background: url(../../../public/adaptiv/mainPage320/foto1.png) 100% no-repeat;
+    }
+    
+    .help {
+        width: 142px;
+        height: 23px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: lighter;
+        color: #000000;
+    }
+    
+    .howToHelp {
+        margin: 20px;
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .btnHelp {
+        right: 0%;
+        border-radius: 30px;
+        margin: -10px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        background-color: #46AB4A;
+        border: 0;
+        font-weight: 600;
+        cursor: pointer;
+        width: 300px;
+        height: 50px;
+    }
+    
+    .btnHelp a {
+        color: #FFFFFF;
+    }
+    
+    /* Стили для наши друзья */
+    
+    .BlockFriends1 {
+        display: flex;
+        margin: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+        flex-direction: column;
+    }
+    
+    .friends {
+        margin: 20px;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .namingFriends {
+        width: 252px;
+        height: 40px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;    
+    }
+
+    .allFriendsBtn {
+        width: 300px;
+        height: 50px;
+        right: 0%;
+        border-radius: 30px;
+        margin: 10px;
+        margin-top: 30px;
+        font-size: 18px;
+        background-color: #46AB4A;
+        border: 0;
+        font-weight: 600;
+        bottom: 1501px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+    
+    .allFriends {
+        display: none;
+        width: 140px;
+        height: 23px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #474747;
+    }
+    
+    .fotoFriends {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .circle {
+        margin: 3px;
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        background: transparent;
+        border: 1px solid #949494;
+        border-radius: 5000px;
+        z-index: -1;
+    }
+    
+    .firstFriend {
+        margin: -5px;
+        z-index: 1;
+        margin-left: -20px;
+        width: 160px;
+        height: 160px;
+        opacity: 1;  
+        background: url(../../../public/adaptiv/mainPage320/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+    }
+    .secondFriend {
+        margin: -6px;
+        margin-left: -32.3px;
+        z-index: 1;
+        width: 160px;
+        height: 160px;
+        opacity: 1;    
+        background: url(../../../public/adaptiv/mainPage320/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
+    }
+    .thirdFriend {
+        margin-top: -8px;
+        margin-left: -26px;
+        z-index: 1;
+        width: 160px;
+        height: 160px;
+        opacity: 1;    
+        background: url(../../../public/adaptiv/mainPage320/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
+    }
+    .fourthFriend{
+        margin-left: -31.5px;
+        z-index: 1;
+        width: 160px;
+        height: 160px;
+        opacity: 1;    
+        background: url(../../../public/adaptiv/mainPage320/BF_PDOV_POLINA_1.png) 100% no-repeat;
+        margin-top: -9px;
+    }
+    .fifthFriend{
+        margin-top: -6px;
+        margin-left: -32.5px;
+        z-index: 1;
+        width: 160px;
+        height: 160px;
+        opacity: 1;    
+        background: url(../../../public/adaptiv/mainPage320/BF_EVITA_1\ 1.png) 100% no-repeat;
+    }
+    .sixthFriend{
+        margin-top: 4px;
+        margin-left: -13.5px;
+        z-index: 1;
+        width: 140px;
+        height: 140px;
+        opacity: 1;
+        background: url(../../../public/adaptiv/mainPage320/KERAMIR_1.png) 100% no-repeat;
+    }
+    /*! Стили отчётов */
+    
+    .reports {
+        display: flex;
+        flex-direction: column
+    }
+    
+    .reportsFirstBlock {
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+    
+    .namingReports {
+        width: 110px;
+        height: 30px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .viewAllReportVse {
+        width: 70px;
+        height: 23px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #474747;
+    }
+    .viewAllReportVseReports {
+        display: none;
+    }
+    
+    .secondReports {
+        margin: 15px;
+        display: flex;
+        border-bottom: 2px solid #949494;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    
+    .raports {
+        width: 59px;
+        height: 30px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .lastRaports {
+        width: 59px;
+        height: 40px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    
+    .rub {
+        width: 67px;
+        height: 18px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    
+    .children {
+        width: 67px;
+        height: 18px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+    }
+    
+    .blockP {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .Text {
+        display: none;
+        width: 210px;
+        height: 54px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .TextRep {
+        display: flex;
+        width: 210px;
+        height: 54px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .TextChildren {
+        display: flex;
+        width: 210px;
+        height: 54px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+     /*!  Тут начинается медиа */
+    .titleMedia {
+        display: flex;
+        justify-content: space-between;
+        margin: 3%;
+        margin-bottom: 0%;
+    }
+    
+    .mediaNames {
+        width: 148px;
+        height: 30px;   
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    
+    .allMedia {
+        display: none;
+        width: 210px;
+        height: 23px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #474747;
+    }
+    
+    .tableMedia {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    
+    .firstMedia {
+        display: grid;
+        width: 224px;
+        height: 224px;
+        border-radius: 10px;
+        background: url(../../../public/adaptiv/mainPage\ 1000/image_12.png) 100% no-repeat;
+    }
+
+    .threeMedia {
+        display: grid;
+        width: 224px;
+        height: 224px;
+        border-radius: 10px;
+        background: url(../../../public/adaptiv/mainPage\ 1000/image_11.png) 100% no-repeat;
+    }
+    
+    .secondMediaBlock {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 10px;
+    }
+    
+    .secondMedia {
+        display: flex;
+        width: 224px;
+        height: 224px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        background: url(../../../public/adaptiv/mainPage\ 1000/image_10.png) 100% no-repeat;
+    }
+    
+    
+    .mediaSpan {
+        width: 81px;
+        height: 18px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #949494;
+    }
+    
+    .secondMediaSpan {
+        width: 226px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #949494;
+    }
+    
+    .textP {
+        width: 226px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #474747;
+    }
+    
+    .secondText {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 10px;
+        width: 225px;
+        height: 72px;
+        z-index: 3;
+    }
+    
+    .mediaBlocks {
+        margin: 10px;
+    }
+    
+    .secondMediaBlock {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .SecondPageCardMedia {
+        opacity: 0;
+        margin-top: 5px;
+        width: 220px;
+        height: 30px;
+    }
+    
+    .SecondPageCardMedia:hover {
+        opacity: 1;
+    }
 }
 
 @media (min-width: 1250) and (max-width: 1599) {
