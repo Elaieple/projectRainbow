@@ -14,7 +14,7 @@ export default function Teams() {
       </div>
       <div className='BlockTeams'>
 
-        <div className='card'>
+        {/* <div className='card'>
           <div className='FirstPageCard'>
             <figure>
               <p><img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="FotoRuk" className='ImgTeams' /></p>
@@ -42,13 +42,50 @@ export default function Teams() {
               3123122222222222222222
             </p>
           </div>
+        </div> */}
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
+              <div className='card-post'>
+                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className='Post'>руководитель центра</div>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
         </div>
 
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
-              123
+              <div className='card-post'>
+                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className='Post'>руководитель центра</div>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
+              <div className='card-post'>
+                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className='Post'>руководитель центра</div>
+              </div>
             </div>
             <div class="flip-card-back">
               <h1>John Doe</h1>

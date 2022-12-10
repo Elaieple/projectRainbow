@@ -168,29 +168,41 @@ export default function Main() {
         </div>
         <div className='fotoFriends'>
 
-            <div className='circle'>
-              <div className='firstFriend' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle'>
+                < div className='firstFriend' />
+              </div>
+            </Link>
 
-            <div className='circle'>
-              <div className='secondFriend' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle'>
+                <div className='secondFriend' />
+              </div>
+            </Link>
 
-            <div className='circle'>
-              <div className='thirdFriend' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle'>
+                <div className='thirdFriend' />
+              </div>
+            </Link>
 
-            <div className='circle'>
-              <div className='fourthFriend' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle'>
+                <div className='fourthFriend' />
+              </div>
+            </Link>
 
-            <div className='circle size640px'>
-              <div className='fifthFriend 640px' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle size640px'>
+                <div className='fifthFriend 640px' />
+              </div>
+            </Link>
 
-            <div className='circle size640px'>
-              <div className='sixthFriend size640px' />
-            </div>
+            <Link to='ourFriends'>
+              <div className='circle size640px'>
+                <div className='sixthFriend size640px' />
+              </div>
+            </Link>
 
         </div>
         <Link to='ourFriends'>

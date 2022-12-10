@@ -1,3 +1,4 @@
+
 .null {
     height: 160px;
 }
@@ -42,6 +43,11 @@
     width: 286px;
     height: 411px;
     margin-bottom: 100px;
+}
+.card-post {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
 
 .ImgTeams {
@@ -97,6 +103,7 @@
     border-radius: 20px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-bottom: 100px;
   }
   
   /* This container is needed to position the front and back side */
