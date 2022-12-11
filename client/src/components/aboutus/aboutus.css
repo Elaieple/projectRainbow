@@ -16,7 +16,7 @@
   color: white;
 
   width: 462px;
-  margin-left: 197px;
+  padding-left: 197px;
   padding-top: 466px;
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  margin-left: 197px;
+  padding-left: 197px;
   margin-right: 197px;
 }
 .text-container p {

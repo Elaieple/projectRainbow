@@ -80,7 +80,7 @@ function Requsites() {
             <th className="firstColumn">ОКПО</th>
             <th className="secondColumn">36802229</th>
           </tr>
-          <tr>
+          <tr style={{ border: 'none' }}>
             <th className="firstColumn">ОКВЭД</th>
             <th className="secondColumn">85.12</th>
           </tr>
