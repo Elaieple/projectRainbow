@@ -1,0 +1,465 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+#linkFirstFirst {
+    display: none;
+}
+
+.topnav {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    justify-content: space-between;
+    align-content: space-between;
+    top: 1%;
+    align-items: center;
+    }
+  
+  .topnav a {
+    /* float: left; */
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    font-weight: bolder;
+  }
+  
+  .topnav a.active {
+    color: #FFFFFF;
+    /* background-color: #46AB4A; */
+  }
+  
+  .topnav .icon {
+    display: none;
+    padding: 15px;
+  }
+  
+  .navbar {
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+  @media (min-width: 1000px) {
+    #MainPage {
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 999px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      /* float: right; */
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 999px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .topnav.responsive a {
+        background-color: #46AB4A;
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+@media (min-width: 1600px) {
+
+    .navbar {
+        padding: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        /* color: #FFFFFF; */
+        margin-right: 70px;
+        padding: 10px;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #46AB4A;
+    }
+    
+    .nav {
+        display: flex;
+        margin: 1%;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #46AB4A;
+    }
+    
+    .authBtn {
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1599px) {
+
+    .navbar {
+        padding: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        /* color: #FFFFFF; */
+        margin-right: 30px;
+        padding: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #46AB4A;
+    }
+    
+    .nav {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #46AB4A;
+    }
+    
+    .authBtn {
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 640px ) and (max-width: 999px) {
+
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        /* color: #FFFFFF; */
+        /* margin-right: 30px; */
+        padding: 10px;
+        margin: -1px;
+        width: 100%;
+    }
+
+    #linkFirst {
+        width: unset;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #FFFFFF;
+    }
+    
+    .nav {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #FFFFFF;
+    }
+    
+    .authBtn {
+        display: none;
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 320px ) and (max-width: 639px) {
+
+    .link {
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        width: 100%;
+        padding: 10px;
+        margin: -1px;
+    }
+
+    #MainPage {
+        padding-top: 45%;
+    }
+
+    #LastLink {
+        padding-bottom: 45%;
+    }
+
+    #linkFirst {
+        width: unset;
+    }
+    
+    .link:hover {
+        font-weight: bolder;
+        transition: 0.2s linear
+    }
+    
+    .link:active {
+        color: #FFFFFF;
+    }
+    
+    .nav {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .black a{
+        color: #000000;
+    }
+    
+    .white a{
+        color: #FFFFFF;
+    }
+    
+    .white a:active{
+        color: #FFFFFF;
+    }
+    
+    .authBtn {
+        display: none;
+        border-radius: 30px;
+        padding: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #46AB4A;
+        color: #FFFFFF;
+        border: 0;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+    
+    .circle1 {
+        margin-left: 5px;
+        width: 10px;
+        height: 10px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    
+    .circle1:hover {
+        font-weight: bolder;
+    }
+    
+    .circle1:active {
+        background-color: #46AB4A;
+    }
+    
+    .link-circle {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+}

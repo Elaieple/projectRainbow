@@ -1,0 +1,67 @@
+.contant{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    align-items: flex-start;
+}
+.stat {
+    display: flex;
+}
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+    margin-left: 150px;
+}
+.title {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+margin-bottom: 50px;
+text-align: start;
+}
+.date {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+}
+.title1 {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+text-align: start;
+}
+.text {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+text-align: start;
+margin-bottom: 50px;
+}
+.poho{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 40px;
+}
+.midtex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 632px;
+    margin-bottom: 170px;
+}
+.postat{
+    margin-bottom: 100px;
+}
