@@ -24,7 +24,7 @@
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    /* font-size: 17px; */
   }
   
   .topnav a:hover {
@@ -52,6 +52,9 @@
 }
 
   @media (min-width: 1000px) {
+    #linkFirst {
+        display: none;
+    }
     #MainPage {
         display: none;
     }
@@ -84,7 +87,7 @@
 @media (min-width: 1600px) {
 
     .navbar {
-        padding: 2%;
+        padding: 0%;
         align-items: center;
         justify-content: center;
     }
@@ -179,7 +182,7 @@
 @media (min-width: 1000px) and (max-width: 1599px) {
 
     .navbar {
-        padding: 2%;
+        padding: 1%;
         align-items: center;
         justify-content: center;
     }
@@ -376,14 +379,6 @@
         width: 100%;
         padding: 10px;
         margin: -1px;
-    }
-
-    #MainPage {
-        padding-top: 45%;
-    }
-
-    #LastLink {
-        padding-bottom: 45%;
     }
 
     #linkFirst {
