@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Order from './wiews/onas/Onas';
+import Order from './wiews/Cmi/Cmi';
+
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </a>
       </header>
 <Order/>
+
     </div>
   );
 }

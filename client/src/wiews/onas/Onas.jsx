@@ -1,7 +1,7 @@
 import React from "react";
 import './onas.css'
 
-export default function Order (){
+export default function Onas (){
     
 return(
     <div className="body">

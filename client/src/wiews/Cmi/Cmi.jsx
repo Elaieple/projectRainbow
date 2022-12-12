@@ -1,11 +1,23 @@
-
 import React from "react";
-import './order.css'
+import './cmi.css'
+import Onas from '../onas/Onas'
 
-export default function Order (){
+export default function Cmi (){
     
 return(
-    <div> Сми о нас </div>
-
+    <><div className="container">
+        <div className="title"> СМИ о нас</div>
+<div className="contents">
+    <div className="date">09.04.2022</div>
+    <div className="ostex">
+        <img className="png" src="./ico/18.svg"/>
+        <div className="cont">
+            <div className="title1">В Самаре открылся образовательный центр для детей с ДЦП «Выше радуги»</div>
+            <button>Подробнее --></button>
+        </div>
+    </div>
+</div>
+<button className="bu" type="button">1</button>
+    </div><Onas /></>
 )
 }
