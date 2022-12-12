@@ -6,6 +6,7 @@ import ProtectedRouter from './components/ProtectedRouter/ProtectedRouter';
 import Teams from './components/Teams/Teams';
 import OurFriends from './components/OurFriends/OurFriends';
 
+
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
 
       </Routes>
       </header>
+
     </div>
   );
 }
