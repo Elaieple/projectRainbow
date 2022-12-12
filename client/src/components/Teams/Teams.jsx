@@ -1,18 +1,18 @@
-import React from 'react'
+import React from 'react';
 import './Teams.css';
 
 export default function Teams() {
   return (
     <>
-      <div className='null' />
+      <div className="null" />
 
       <div>
-        <p className='MyTeamsP'>
+        <p className="MyTeamsP">
           НАША КОМАНДА
         </p>
-        <img src="fotoMedia/unsplash_DNkoNXQti3c.png" alt='foto' className='MainFotoTemasPage' />
+        <img src="fotoMedia/unsplash_DNkoNXQti3c.png" alt="foto" className="MainFotoTemasPage" />
       </div>
-      <div className='BlockTeams'>
+      <div className="BlockTeams">
 
         {/* <div className='card'>
           <div className='FirstPageCard'>
@@ -44,16 +44,16 @@ export default function Teams() {
           </div>
         </div> */}
 
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
-              <div className='card-post'>
-                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
-                <div className='Post'>руководитель центра</div>
+              <div className="card-post">
+                <div className="Name">ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className="Post">руководитель центра</div>
               </div>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <h1>John Doe</h1>
               <p>Architect & Engineer</p>
               <p>We love that guy</p>
@@ -61,16 +61,16 @@ export default function Teams() {
           </div>
         </div>
 
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
-              <div className='card-post'>
-                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
-                <div className='Post'>руководитель центра</div>
+              <div className="card-post">
+                <div className="Name">ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className="Post">руководитель центра</div>
               </div>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <h1>John Doe</h1>
               <p>Architect & Engineer</p>
               <p>We love that guy</p>
@@ -78,16 +78,16 @@ export default function Teams() {
           </div>
         </div>
 
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
+        <div className="flip-card">
+          <div className="flip-card-inner">
+            <div className="flip-card-front">
               <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
-              <div className='card-post'>
-                <div className='Name'>ЕКАТЕРИНА АКИНЦЕВА</div>
-                <div className='Post'>руководитель центра</div>
+              <div className="card-post">
+                <div className="Name">ЕКАТЕРИНА АКИНЦЕВА</div>
+                <div className="Post">руководитель центра</div>
               </div>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <h1>John Doe</h1>
               <p>Architect & Engineer</p>
               <p>We love that guy</p>
@@ -97,5 +97,5 @@ export default function Teams() {
 
       </div>
     </>
-  )
+  );
 }

@@ -1,13 +1,14 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://pluuaeztvllcymnnvfjl.supabase.co';
-const supabaseKey = process.env.SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 require('dotenv').config();
 
 const express = require('express');
 const morgan = require('morgan');
+
+const supabaseUrl = 'https://krxtfepwfehsyzgxmeou.supabase.co';
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 // const sessions = require('./middlewares/sessions');
 // const cors = require('./middlewares/cors');

@@ -35,10 +35,10 @@ function Requsites() {
 
   return (
     <>
-      <div className="main-container">
+      <div className="container-requisites ">
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Реквизиты
           </p>
           <table className={state.requsites ? 'table_dark show' : 'table_dark close'}>
@@ -91,7 +91,7 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Банковкие реквизиты
           </p>
           <button type="button" className="buttonPlus">+</button>
@@ -99,7 +99,7 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Учредительные документы
           </p>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'BASEDOCUMENTS' })}>{state.baseDocuments ? '-' : '+'}</button>
@@ -175,13 +175,13 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Документы
           </p>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'DOCUMENTS' })}>{state.documents ? '-' : '+'}</button>
 
         </div>
-        <hr />
+
       </div>
       <Onas />
     </>

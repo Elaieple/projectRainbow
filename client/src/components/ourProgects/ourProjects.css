@@ -1,5 +1,5 @@
 
- .main-container {
+ *{
   font-family: 'Arial';
   font-style: normal;
   }
@@ -24,14 +24,14 @@
 
 
   .header {
-    background: url(../../../public/our-projects.jpg) no-repeat;
-    min-height: 850px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial;
-    flex-wrap: wrap;
+  background: url(../../../public/our-projects.jpg) no-repeat;
+  min-height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  flex-wrap: wrap;
   }
 
 .helpButton {
@@ -41,7 +41,9 @@
 .project-container {
   padding: 200px;
 }
+
 .project-container-title {
+
 text-transform: uppercase;
 font-weight: 400;
 }
@@ -50,6 +52,7 @@ font-weight: 400;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 20px 0 20px 0;
 }
 
 
@@ -80,6 +83,7 @@ font-weight: 400;
 }
 
 .project-description h1 {
+  max-width: 498px;
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
@@ -87,10 +91,14 @@ font-weight: 400;
 
 .project-description p {
   color: #474747;
+  padding-top: 10px;
   width: 286px;
 font-weight: 400;
 font-size: 16px;
 line-height: 18px;
+}
+.project-description a {
+  padding-top: 143px;
 }
 
 
@@ -112,6 +120,7 @@ line-height: 18px;
  }
  
 .project {
+  width: 285px;
   color: #474747;
   display: flex;
   flex-direction: column;
@@ -122,19 +131,32 @@ line-height: 18px;
   border-radius: 20px;
 }
 
-.project p {
-  width: 225px;
+.project a {
+  padding-top: 48px;
+}
+
+.project-year {
+  padding-top: 25px;
 }
 
 
 .project h3 {
+  padding-top: 50px;
  text-transform: uppercase;
 }
 
+.project-card-description {
+  /* width: 225px; */
+  padding-top: 90px;
+}
 
  
+.completed-projects-container {
+  padding-top: 170px;
+}
 
 .completed-projects {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
