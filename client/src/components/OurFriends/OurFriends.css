@@ -58,16 +58,37 @@
 .ImgFriendPage {
     width: 180px;
     height: 180px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ImgFriendPage:hover {
+    filter: grayscale(0);
+    transition: 1s;
 }
 
 .ImgFriendPage2 {
     width: 125px;
     height: 125px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ImgFriendPage2:hover {
+    filter: grayscale(0);
+    transition: 1s;
 }
 
 .ImgFriendPage4 {
     width: 125px;
     height: 80px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ImgFriendPage4:hover {
+    filter: grayscale(0);
+    transition: 1s;
 }
 
 .ImgFriendPage3 {

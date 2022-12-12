@@ -181,7 +181,7 @@ export default function Main() {
 
           <Link to="ourFriends">
             <div className="circle">
-              <div className="firstFriend" />
+              <img src="fotoFriends/1600/foto12.jpg" alt="foto" className="firstFriend" />
             </div>
           </Link>
 

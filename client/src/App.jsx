@@ -27,7 +27,6 @@ function App() {
           <Route path="/projects" element={<OurProjects />} />
           <Route path="/donate" element={<KakPomoch />} />
           <Route path="/requisites" element={<Requisites />} />
-
         </Routes>
       </header>
 

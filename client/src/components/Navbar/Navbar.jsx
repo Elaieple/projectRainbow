@@ -43,6 +43,10 @@ export default function Navbar() {
             <img src="/adaptiv/mainPage640/logo_m 3.png" alt="logo" />
             {' '}
           </Link>
+          <Link id="linkFirstSecond" className="link linkFirst" to="/">
+            <img src="logotypes/logo_m 1.png" alt="logo" />
+            {' '}
+          </Link>
           <Link id="MainPage" className="link" to="/">Главная</Link>
           <Link className="link" to="/aboutUs">О нас</Link>
           <Link className="link" to="/projects">Проекты</Link>

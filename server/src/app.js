@@ -1,6 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 
+
 require('dotenv').config();
+
 const express = require('express');
 const morgan = require('morgan');
 
