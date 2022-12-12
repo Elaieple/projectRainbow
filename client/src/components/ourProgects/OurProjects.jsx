@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ourProjects.css';
+import Onas from '../../wiews/onas/Onas';
 
 const arrayColors = ['#46AB4A', '#7CAAC1', '#CF7B94'];
 
@@ -188,8 +189,8 @@ function OurProjects() {
         </div>
 
       </div>
+      <Onas />
     </div>
-
   );
 }
 
