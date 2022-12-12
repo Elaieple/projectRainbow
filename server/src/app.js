@@ -1,4 +1,11 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://pluuaeztvllcymnnvfjl.supabase.co';
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabase = createClient(supabaseUrl, supabaseKey);
+
 require('dotenv').config();
+
 const express = require('express');
 const morgan = require('morgan');
 

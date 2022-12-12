@@ -15,123 +15,123 @@ export default function OurFriends() {
         <div className="BlockFriends">
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/RKTs_PROGRESS_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto1.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend2">
-            <img className="ImgFriendPage" src="fotoFriends/1600/FOND_PREZIDENTSKIKh_GRANTOV_1 1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto2.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend2">
-            <img className="ImgFriendPage" src="fotoFriends/1600/TPLYuS_SAMARA_1 1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto3.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend2">
-            <img className="ImgFriendPage" src="fotoFriends/1600/BF_EVITA_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto4.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend3">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto5.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage" src="fotoFriends/1600/Gerofarm.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto6.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/vem.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto7.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage3" src="fotoFriends/1600/TEPLIChNYJ_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage3" src="fotoFriends/1600/foto8.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/reRUD1n6218.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto9.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend3">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/UEDoJyqvTVaIteSZQqnZT2vNqyd6QJPqASSbwEQjyF45ATFj1zWKFzGLl7hre3YdQrRdVMjmVJxZX_UcEpGPz4zI.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto10.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/jJ64mW3rUoo.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto11.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto12.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/K3-S55gpLvA.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto13.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2  " src="fotoFriends/1600/KERAMIR_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2  " src="fotoFriends/1600/foto14.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend3">
-            <img className="ImgFriendPage" src="fotoFriends/1600/Fe6EipWe0oI.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto15.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/IMG_9188.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto16.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage" src="fotoFriends/1600/ZAVOD_MYaGKAYa_KROVLYa_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto17.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/Bobrov2.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto18.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/BF_PDOV_POLINA_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto19.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend3">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/ikea.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto20.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/C9JJ6wbCEkU.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto21.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/cw5UyNej-RA.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto22.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/de2482f95921edbcdd2635ed18ba75b5.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto23.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend1">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/Общество-с-ограниченной-ответственностью-ТТК-Альянс-Групп.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto24.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend3">
-            <img className="ImgFriendPage" src="fotoFriends/1600/REKLAMNOE_AGENTSTVO_YaMAJKA_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage" src="fotoFriends/1600/foto25.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend4">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/X6aPnE6qhYI.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto26.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend4">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/VOLONTERSKOE_DVIZhENIE_VTORSYR_E_NA_BLAGOTVORITEL_NOST_1.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto27.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend4">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/mega.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto28.png" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend BlockFriend4">
-            <img className="ImgFriendPage2" src="fotoFriends/1600/Gh9wHRZjmFY.png" alt="fotoFriend" />
+            <img className="ImgFriendPage2" src="fotoFriends/1600/foto29.jpg" alt="fotoFriend" />
           </div>
 
           <div className="BlockFriend">
-            <img className="ImgFriendPage4" src="fotoFriends/1600/A5wBgXKZrtE.png" alt="fotoFriend" />
+            <img className="ImgFriendPage4" src="fotoFriends/1600/foto30.jpg" alt="fotoFriend" />
           </div>
 
         </div>

@@ -534,7 +534,7 @@
         width: 200px;
         height: 200px;
         opacity: 1;
-        background: url(../../../public/logotypes/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+        /* background: url(../../../public/fotoFriends/1600/foto12.jpg) 100% no-repeat; */
     }
 
     .secondFriend {
@@ -1346,9 +1346,9 @@
     }
 
     .circle {
-        margin: 5px;
-        width: 165px;
-        height: 165px;
+        margin: 3px;
+        width: 160px;
+        height: 160px;
         box-sizing: border-box;
         background: transparent;
         border: 1px solid #949494;
@@ -1368,7 +1368,7 @@
 
     .secondFriend {
         margin: -1px;
-        margin-left: -26.7px;
+        margin-left: -25.2px;
         z-index: 1;
         width: 160px;
         height: 160px;
@@ -1405,7 +1405,7 @@
 
     .sixthFriend {
         margin: -1px;
-        margin-left: -27.5px;
+        margin-left: -25.5px;
         z-index: 1;
         width: 160px;
         height: 160px;
@@ -2197,9 +2197,9 @@
     }
 
     .circle {
-        margin: 5px;
-        width: 165px;
-        height: 165px;
+        margin: 3px;
+        width: 150px;
+        height: 150px;
         box-sizing: border-box;
         background: transparent;
         border: 1px solid #949494;
@@ -2208,41 +2208,42 @@
     }
 
     .firstFriend {
-        margin: 5px;
+        margin: 3px;
         z-index: 1;
-        margin-left: -15px;
-        width: 160px;
-        height: 160px;
+        margin-left: -11px;
+        width: 150px;
+        height: 150px;
         opacity: 1;
         background: url(../../../public/adaptiv/mainPage640/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
     }
 
     .secondFriend {
-        margin: -1px;
-        margin-left: -31.7px;
+        margin: -2px;
+        margin-left: -22px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
         opacity: 1;
         background: url(../../../public/adaptiv/mainPage640/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
     }
 
     .thirdFriend {
-        margin-left: -25px;
+        margin-left: -20px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
         opacity: 1;
         background: url(../../../public/adaptiv/mainPage640/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
     }
 
     .fourthFriend {
-        margin-left: -29.5px;
+        margin: -2px;
+        margin-left: -24.5px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 150px;
+        height: 150px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/BF_PDOV_POLINA_1.png) 100% no-repeat;
+        background: url(../../../public/adaptiv/mainPage640/BF_PDOV_POLINA_1.png) 100% no-repeat;
     }
 
     .fifthFriend {

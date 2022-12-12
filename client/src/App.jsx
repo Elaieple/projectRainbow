@@ -25,7 +25,7 @@ function App() {
           <Route path="/howToHelp" element={<KakPomoch />} />
           <Route path="/reports" element={<Order />} />
           <Route path="/projects" element={<OurProjects />} />
-          <Route path="/donate" element={<KakPomoch />} />
+          <Route path="/donate" element={<Teams />} />
         </Routes>
       </header>
 
