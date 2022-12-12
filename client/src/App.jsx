@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
-import ProtectedRouter from './components/ProtectedRouter/ProtectedRouter';
 import Teams from './components/Teams/Teams';
 import OurFriends from './components/OurFriends/OurFriends';
 import AboutUs from './components/aboutus/AboutUs';
