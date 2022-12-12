@@ -6,7 +6,7 @@
 
 
 
-.header  {
+.headerAboutus  {
   background: url(../../../public/rainbow.jpg) no-repeat ;
   width: 1600px;
   height: 700px;
@@ -25,11 +25,14 @@
   align-items: flex-start;
   justify-content: space-around;
   padding-left: 197px;
-  margin-right: 197px;
+  padding-right: 197px;
+  padding-bottom: 30px;
 }
+
 .text-container p {
   color: #474747;
 }
+
  .text-container h1 {
   min-width: 402px;
  }
@@ -42,8 +45,29 @@
 
 .wrapped {
   display: flex;
+  justify-content: space-between;
 }
 
-button {
-  background-color: green;
+
+ .buttonGroup {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+.greenButton {
+  border-radius: 30px;
+  padding: 13px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #46AB4A;
+  color: #FFFFFF;
+  border: 0;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }

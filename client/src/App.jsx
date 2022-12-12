@@ -10,6 +10,7 @@ import KakPomoch from './components/KakPomoch/KakPomoch';
 import VtoroeDihaniee from './components/VtoroeDihaniee/VtoroeDihaniee';
 import OurProjects from './components/ourProgects/OurProjects';
 import Order from './wiews/Order/Order';
+import Requisites from './components/ requisites/ Requisites';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/reports" element={<Order />} />
           <Route path="/projects" element={<OurProjects />} />
           <Route path="/donate" element={<KakPomoch />} />
+          <Route path="/requisites" element={<Requisites />} />
+
         </Routes>
       </header>
 
