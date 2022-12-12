@@ -1,0 +1,83 @@
+.OurFriends {
+    display: flex;
+    width: 345px;
+    height: 55px;
+    left: 628px;
+    top: 248px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.BlockFriends {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.BlockFriend {
+    width: 180px;
+    height: 180px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BlockFriend1 {
+    border-right: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend2{
+    border-right: 2px solid #949494;
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend3{
+    border-bottom: 2px solid #949494;
+}
+
+.BlockFriend4 {
+    border-right: 2px solid #949494
+}
+
+.ImgFriendPage {
+    width: 180px;
+    height: 180px;
+}
+
+.ImgFriendPage2 {
+    width: 125px;
+    height: 125px;
+}
+
+.ImgFriendPage4 {
+    width: 125px;
+    height: 80px;
+}
+
+.ImgFriendPage3 {
+    width: 180px;
+    height: 180px;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+.ImgFriendPage3:hover {
+    filter: grayscale(0);
+    transition: 1s;
+}

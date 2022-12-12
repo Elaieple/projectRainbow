@@ -1,0 +1,24 @@
+.container{
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+.title{
+    text-align: start;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+margin-bottom: 40px;
+}
+.text{
+    text-align: start;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #474747;
+}

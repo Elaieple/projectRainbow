@@ -1,0 +1,63 @@
+.title{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+margin-bottom: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    margin-bottom: 170px;
+    align-items: center;
+    
+}
+.contents {
+    display: flex;
+    padding-top: 20px;
+    border-top: 1px solid #949494;
+}
+.date{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #949494;
+}
+.ostex{
+    display: flex;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.title1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #474747;
+    text-align: start;
+    margin-bottom: 30px;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.png {
+    margin-right: 20px;
+    max-width: 285px;
+    max-height: 240px;
+}
+.bu{
+    margin: 50px;
+    border: 1px solid 46AB4A;
+    border-radius: 287px;
+    width: 50px;
+    font-size: 26px;
+    padding: 9px;
+}

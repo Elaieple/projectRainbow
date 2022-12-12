@@ -1,0 +1,159 @@
+
+ .main-container {
+  font-family: 'Arial';
+  font-style: normal;
+  }
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  padding: 7px;
+}
+
+.header p {
+  margin: 0;
+  padding: 7px;
+  max-width: 520px;
+  text-align: justify;
+  color: #474747;;
+  }
+
+ 
+
+
+  .header {
+    background: url(../../../public/our-projects.jpg) no-repeat;
+    min-height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    flex-wrap: wrap;
+  }
+
+.helpButton {
+  visibility: hidden ;
+}
+
+.project-container {
+  padding: 200px;
+}
+.project-container-title {
+text-transform: uppercase;
+font-weight: 400;
+}
+
+.current-project {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+
+.project-image1 {
+  background: center / contain no-repeat url(../../../public/our-projects1.jpg);
+  width: 460px;
+  height: 290px;
+}
+.project-image2 {
+  background: center / contain no-repeat url(../../../public/our-projects2.jpg);
+  width: 460px;
+  height: 290px;
+}
+
+.project-image3 {
+  background: center / contain no-repeat url(../../../public/our-projects3.jpg);
+  width: 460px;
+  height: 290px;
+}
+
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+
+}
+
+.project-description h1 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.project-description p {
+  color: #474747;
+  width: 286px;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+}
+
+
+
+ .disactive {
+  color: #949494;
+  text-decoration: none;
+}
+
+ .active {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.project a {
+  color: #474747;
+  text-decoration: none;
+ }
+ 
+.project {
+  color: #474747;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  opacity: 0.7;
+  border: 1px solid #949494;
+  border-radius: 20px;
+}
+
+.project p {
+  width: 225px;
+}
+
+
+.project h3 {
+ text-transform: uppercase;
+}
+
+
+ 
+
+.completed-projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.completed-project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow:hover path {
+fill: black;
+}
+
+@media (max-width: 640px) {
+.main-container h1 {
+  text-align: start;
+}
+  .helpButton {
+  visibility: visible;
+  }
+}
