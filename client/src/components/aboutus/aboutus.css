@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+}
+
+
+
+.header  {
+  background: url(../../../public/rainbow.jpg) no-repeat ;
+  width: 1600px;
+  height: 700px;
+}
+
+.header-text {
+  color: white;
+
+  width: 462px;
+  padding-left: 197px;
+  padding-top: 466px;
+}
+
+.text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-left: 197px;
+  margin-right: 197px;
+}
+.text-container p {
+  color: #474747;
+}
+ .text-container h1 {
+  min-width: 402px;
+ }
+
+ .car {
+  background: url(../../../public/car.jpg) no-repeat;
+  width: 100%;
+  height: 600px;
+}
+
+.wrapped {
+  display: flex;
+}
+
+button {
+  background-color: green;
+}
