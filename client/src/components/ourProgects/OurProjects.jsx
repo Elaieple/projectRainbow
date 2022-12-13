@@ -11,10 +11,14 @@ function OurProjects() {
   const getRandomColor = () => arrayColors[Math.round(Math.random() * 2)];
 
   return (
-    <div className="main-container">
-      <div className="header">
-        <h1>Наши проекты</h1>
-        <p>Каждое занятие расширяет сознание и является мощнейшим стимулом для изменения ребёнка на всех уровнях: эмоциональном, волевом и мыслительном</p>
+    <div>
+      <div className="project-header">
+        <img className="project-background" src="our-projects.jpg" alt="project-img" />
+        <div className="project-header-text">
+          <h1>Наши проекты</h1>
+          <p>Каждое занятие расширяет сознание и является мощнейшим стимулом для изменения ребёнка на всех уровнях: эмоциональном, волевом и мыслительном</p>
+
+        </div>
         <button className="helpButton" type="button">Помочь сейчас</button>
       </div>
       <div className="project-container">
@@ -88,6 +92,7 @@ function OurProjects() {
           </div>
         </div>
         <hr />
+        {/* !Карточки с завершенными проектами */}
         <div className="completed-projects-container">
           <div className="completed-project-header">
             <h1 className="project-container-title">Завершенные проекты</h1>
@@ -104,6 +109,7 @@ function OurProjects() {
             </div>
           </div>
           <div className="completed-projects">
+            {/* Карточка */}
             <div
               className="project"
               style={
@@ -112,9 +118,9 @@ function OurProjects() {
               onMouseEnter={() => { setRandomColor({ id: 1, color: getRandomColor() }); }}
               onMouseLeave={() => { setRandomColor({ id: null, color: '' }); }}
             >
-              <p>2019</p>
+              <p className="project-year">2019</p>
               <h3>мир для всех</h3>
-              <p>конкурс рисунков с целью формирования доброго, внимательного и отзывчивого отношения к своим сверстникам с инвалидность</p>
+              <p className="project-card-description">конкурс рисунков с целью формирования доброго, внимательного и отзывчивого отношения к своим сверстникам с инвалидность</p>
               <a href="#" style={randomColor.id === 1 ? { color: 'white' } : {}}>
                 Подробнее
                 {' '}
@@ -132,9 +138,9 @@ function OurProjects() {
               onMouseEnter={() => { setRandomColor({ id: 2, color: getRandomColor() }); }}
               onMouseLeave={() => { setRandomColor({ id: null, color: '' }); }}
             >
-              <p>2021</p>
+              <p className="project-year">2021</p>
               <h3>перезагрузка</h3>
-              <p>прикладные занятия для мам детей с инвалидностью по направлениям: красота, здоровье, творчество</p>
+              <p className="project-card-description">прикладные занятия для мам детей с инвалидностью по направлениям: красота, здоровье, творчество</p>
               <a href="#" style={randomColor.id === 2 ? { color: 'white' } : {}}>
                 Подробнее
                 {' '}
@@ -152,9 +158,9 @@ function OurProjects() {
               onMouseEnter={() => { setRandomColor({ id: 3, color: getRandomColor() }); }}
               onMouseLeave={() => { setRandomColor({ id: null, color: '' }); }}
             >
-              <p>2021</p>
+              <p className="project-year">2021</p>
               <h3>живая вода</h3>
-              <p>курсы аквареабилитации для детей, преподавание данной методики восстановления родителям</p>
+              <p className="project-card-description">курсы аквареабилитации для детей, преподавание данной методики восстановления родителям</p>
               <a href="#" style={randomColor.id === 3 ? { color: 'white' } : {}}>
                 Подробнее
                 {' '}
@@ -172,9 +178,9 @@ function OurProjects() {
               onMouseEnter={() => { setRandomColor({ id: 4, color: getRandomColor() }); }}
               onMouseLeave={() => { setRandomColor({ id: null, color: '' }); }}
             >
-              <p>2022</p>
+              <p className="project-year">2022</p>
               <h3>второе дыхание</h3>
-              <p>вовлечение подростков в жизнь арт-мастерской, где они могут создавать вещи своими руками</p>
+              <p className="project-card-description">вовлечение подростков в жизнь арт-мастерской, где они могут создавать вещи своими руками</p>
               <a href="#" style={randomColor.id === 4 ? { color: 'white' } : {}}>
                 Подробнее
                 {' '}

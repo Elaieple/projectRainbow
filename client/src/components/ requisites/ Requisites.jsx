@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Onas from '../../wiews/onas/Onas';
 import './requsites.css';
 
@@ -33,15 +33,19 @@ function reducer(state, action) {
 function Requsites() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <>
-      <div className="main-container">
+      <div className="container-requisites ">
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Реквизиты
           </p>
-          <table className={state.requsites ? 'table_dark show' : 'table_dark close'}>
+          <table className={state.requsites ? 'table_dark' : 'table_dark close'}>
             <tr>
               <th className="firstColumn">Полное наименование организации</th>
               <th className="secondColumn">Автономная некоммерческая общеобразовательная организация "Комплексный общеобразовательный центр для детей с ДЦП "Выше Радуги"</th>
@@ -91,7 +95,7 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Банковкие реквизиты
           </p>
           <button type="button" className="buttonPlus">+</button>
@@ -99,7 +103,7 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Учредительные документы
           </p>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'BASEDOCUMENTS' })}>{state.baseDocuments ? '-' : '+'}</button>
@@ -175,13 +179,13 @@ function Requsites() {
         </div>
         <hr />
         <div className="info-container">
-          <p className="title">
+          <p className="titleTable">
             Документы
           </p>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'DOCUMENTS' })}>{state.documents ? '-' : '+'}</button>
 
         </div>
-        <hr />
+
       </div>
       <Onas />
     </>
