@@ -5,15 +5,14 @@ export default function VtoroeDihaniee() {
   return (
     <>
       <div className="null" />
-      <div className="photo">
+      {/* <div className="photo">
         <img className="photo" src="kartinka.png" alt="photo1" />
-      </div>
-      <div className="photoConatiner">
+      </div> */}
+      <div className="photoContainer">
         <div className="photoText">
           <p>ПРОЕКТ ВТОРОЕ ДЫХАНИЕ</p>
         </div>
         <button type="button" className="button1">УЧАСТВОВАТЬ</button>
-
       </div>
       <div className="container1">
         <div className="bottomContainer">
