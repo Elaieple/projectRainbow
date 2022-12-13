@@ -1,7 +1,26 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
+  const [accept, setAccept] = useState(false);
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
+
+  const sendEntry = (e) => {
+    e.preventDefault();
+    // console.log(e.target);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  };
+
   return (
     <>
       <div className="null" />
@@ -110,6 +129,34 @@ export default function VtoroeDihaniee() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="form-container-main">
+        <div className="form-container">
+          <h1>Записаться на мероприятие:</h1>
+          <form className="form-entry" onSubmit={sendEntry}>
+            <input className="form-input" type="text" name="name" placeholder="Имя:" />
+            <input className="form-input" type="text" name="phone" placeholder="Телефон:" />
+            <input style={{ display: 'none' }} type="text" name="message" value="Желающий участвовать в мероприятии" />
+            <div className="check-container">
+              <input type="checkbox" className="checkbox-input" value={accept} onChange={() => setAccept(!accept)} />
+              <p>
+                Нажимая на кнопку «Отправить заявку», я даю согласие на обработку
+                {' '}
+                <span className="personal-data-text">персональных данных</span>
+                {' '}
+                и соглашаюсь c
+                {' '}
+                <span className="personal-data-text">политикой конфиденциальности</span>
+                {' '}
+              </p>
+            </div>
+            <button type="submit" className={!accept ? 'sendFormButton disabled' : 'sendFormButton'} disabled={!accept}>Отправить</button>
+          </form>
+        </div>
+        <div className="form-picture-container">
+          <img className="form-picture" src="hands.jpg" alt="hands" />
+        </div>
+
       </div>
 
     </>
