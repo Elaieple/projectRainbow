@@ -4,34 +4,34 @@
   font-style: normal;
   }
 
-.header h1 {
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-  color: black;
-  padding: 7px;
-}
 
-.header p {
-  margin: 0;
-  padding: 7px;
-  max-width: 520px;
-  text-align: justify;
-  color: #474747;;
+  .project-background {
+    width: 100%;
+    height: 100%;
   }
-
  
-
-
-  .header {
-  background: url(../../../public/our-projects.jpg) no-repeat;
-  min-height: 850px;
+  .project-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: Arial;
   flex-wrap: wrap;
+  }
+
+  .project-header-text {
+    position: absolute;
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  .project-header-text h1 {
+    text-transform: uppercase;
+  }
+
+  .project-header-text p {
+  width: 520px;
+  text-align: justify;
   }
 
 .helpButton {
