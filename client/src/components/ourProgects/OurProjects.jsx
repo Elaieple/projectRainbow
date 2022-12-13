@@ -12,9 +12,13 @@ function OurProjects() {
 
   return (
     <div>
-      <div className="header">
-        <h1>Наши проекты</h1>
-        <p>Каждое занятие расширяет сознание и является мощнейшим стимулом для изменения ребёнка на всех уровнях: эмоциональном, волевом и мыслительном</p>
+      <div className="project-header">
+        <img className="project-background" src="our-projects.jpg" alt="project-img" />
+        <div className="project-header-text">
+          <h1>Наши проекты</h1>
+          <p>Каждое занятие расширяет сознание и является мощнейшим стимулом для изменения ребёнка на всех уровнях: эмоциональном, волевом и мыслительном</p>
+
+        </div>
         <button className="helpButton" type="button">Помочь сейчас</button>
       </div>
       <div className="project-container">
