@@ -12,6 +12,7 @@ function AboutUs() {
     <>
       <div>
         <div className="headerAboutus">
+          <img className="rainbow-image" src="rainbow.jpg" alt="rainbow" />
           <div className="header-text">
             <h1>КТО МЫ ТАКИЕ?</h1>
             <p>Мы Екатерина Акинцева и Вера Виноградова, мамы с детей с этим непростым диагнозом ДЦП, создатели центра “Выше Радуги”</p>
@@ -22,7 +23,7 @@ function AboutUs() {
           <p>Мы верим, что создаваемый Центр сможет изменить судьбу многих детей с инвалидностью. И чтобы реализовать этот проект, нам нужна ваша помощь. Давайте дадим возможность детям жить и радоваться жизни!</p>
         </div>
         <div className="text-container">
-          <div />
+          <div className="plug" />
           <div>
             <iframe
               width="600"
@@ -38,7 +39,8 @@ function AboutUs() {
           <p>Не так часто мы видим детей с ДЦП на улицах, еще реже в группах детского сада или в школьных классах. Это правда, большинстве своем такие дети проводят жизнь в четырех стенах. И не потому, что им так нравится; и не потому, что они не обучаемы; и не потому, что нет перспективы. А просто потому, что перед ними закрывают двери!</p>
         </div>
         <div className="text-container" style={{ marginTop: '30px' }}>
-          <div className="car" />
+          <img className="car" src="car.jpg" alt="car" />
+          {/* <div className="car" /> */}
         </div>
         <div className="text-container" style={{ marginTop: '30px' }}>
           <h1>НАШЕ МНЕНИЕ</h1>
