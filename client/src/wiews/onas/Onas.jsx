@@ -55,7 +55,7 @@ export default function Onas() {
                     <img style={{ width: '31px', marginBottom: '-6px' }} src="./ico/tw.svg" alt="foto" />
                     <img className="ots" src="./ico/ig.svg" alt="foto" />
                     <img className="ots" src="./ico/fb.svg" alt="foto" />
-                    <a href="https://vk.com/above_rainbow_samara"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
+                    <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
                   </div>
                   <div className="eee">
                     <h3 className="ttt">Адрес</h3>
