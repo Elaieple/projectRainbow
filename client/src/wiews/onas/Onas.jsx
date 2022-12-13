@@ -1,7 +1,23 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './onas.css';
 
 export default function Onas() {
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const USER_ID = process.env.REACT_APP_USER_ID;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
+  };
+
   return (
     <div className="body">
       <div className="content">
@@ -11,12 +27,12 @@ export default function Onas() {
           <div className="form">
 
             <div id="cvy">СВЯЖИТЕСЬ С НАМИ</div>
-            <form className="in">
+            <form className="in" onSubmit={sendEmail}>
               <input className="inp" name="name" placeholder="Имя" />
 
               <input className="inp" name="phone" placeholder="Телефон" />
 
-              <input className="inp" name="text" placeholder="Напишите нам" />
+              <input className="inp" name="message" placeholder="Напишите нам" />
 
               <p id="check">
                 <input type="checkbox" id="politics" autoComplete="off" />

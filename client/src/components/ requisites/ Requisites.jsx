@@ -3,7 +3,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import Onas from '../../wiews/onas/Onas';
 import './requsites.css';
 
@@ -32,6 +32,10 @@ function reducer(state, action) {
 
 function Requsites() {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <>
