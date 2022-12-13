@@ -15,22 +15,33 @@ export default function Navbar() {
     }
   }, [url]);
 
-  //! Для нижнего навбара но возможно редачить нужно
-  // <Link to="/aboutUs"><div className='link-circle'>
-  // О нас <div className='circle1'/>
-  //   </div>
-  //   </Link>
   function myFunction() {
     const x = document.getElementById('myTopnav');
     const link = document.getElementById('linkFirst');
+    const btn = document.getElementById('showBlockBtn');
+    const block = document.getElementById('showBlockBtn');
+    const div = block.nextElementSibling;
     console.log(x);
     if (x.className === 'topnav') {
       x.className += ' responsive';
       link.id += 'First';
+      btn.className += 'Show';
     } else {
       const linkFirst = document.getElementById('linkFirstFirst');
       x.className = 'topnav';
       linkFirst.id = 'linkFirst';
+      btn.className = 'link showBlockBtn';
+      div.style.display = 'none';
+    }
+  }
+
+  function showBlockMain() {
+    const block = document.getElementById('showBlockBtn');
+    const div = block.nextElementSibling;
+    if (div.style.display === 'flex') {
+      div.style.display = 'none';
+    } else {
+      div.style.display = 'flex';
     }
   }
 
@@ -48,13 +59,19 @@ export default function Navbar() {
             {' '}
           </Link>
           <Link id="MainPage" className="link" to="/">Главная</Link>
-          <Link className="link" to="/aboutUs">О нас</Link>
+          <Link id="showBlockLink" className="link" to="/aboutUs">О нас</Link>
+          <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
+          <div className="navBlocksManyLink">
+            <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
+            <Link className="link linksBlocks" to="/howToHelp">Команда</Link>
+            <Link className="link linksBlocks" to="/ourFriends">Документы</Link>
+          </div>
           <Link className="link" to="/projects">Проекты</Link>
           <Link className="link" to="/howToHelp">Как помочь</Link>
           <Link className="link" to="/ourFriends">Наши друзья</Link>
           <Link className="link" to="/reports">Отчёты</Link>
           <Link id="LastLink" className="link" to="/media">СМИ</Link>
-          <Link className="link" to="/donate">
+          <Link id="linkFirstSecond" className="link" to="/donate">
             <button className="authBtn" type="button">ПОМОЧЬ</button>
           </Link>
           <a href="#a" className="icon" onClick={myFunction}>
