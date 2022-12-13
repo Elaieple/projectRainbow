@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './onas.css';
 
 export default function Onas() {
+  const [accept, setAccept] = useState(false);
+
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
@@ -35,11 +37,11 @@ export default function Onas() {
               <input className="inp" name="message" placeholder="Напишите нам" />
 
               <p id="check">
-                <input type="checkbox" id="politics" autoComplete="off" />
+                <input type="checkbox" id="politics" autoComplete="off" onChange={() => setAccept(!accept)} />
                 Нажимая на кнопку Отправить заявку, я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности.
 
               </p>
-              <p id="ppp"><button id="butsub" type="submit">Отправить</button></p>
+              <p id="ppp"><button id={accept ? 'butsub' : 'disactivebtn'} type="submit" disabled={!accept}>Отправить</button></p>
             </form>
           </div>
           <div className="or">

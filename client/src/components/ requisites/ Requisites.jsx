@@ -45,7 +45,7 @@ function Requsites() {
           <p className="titleTable">
             Реквизиты
           </p>
-          <table className={state.requsites ? 'table_dark show' : 'table_dark close'}>
+          <table className={state.requsites ? 'table_dark' : 'table_dark close'}>
             <tr>
               <th className="firstColumn">Полное наименование организации</th>
               <th className="secondColumn">Автономная некоммерческая общеобразовательная организация "Комплексный общеобразовательный центр для детей с ДЦП "Выше Радуги"</th>
