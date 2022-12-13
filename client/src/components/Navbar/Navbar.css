@@ -47,7 +47,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-start;
 }
 
@@ -62,6 +61,7 @@
   
   @media screen and (max-width: 999px) {
     .topnav a:not(:first-child) {display: none;}
+    .topnav button:not(:first-child) {display: none;}
     .topnav a.icon {
       /* float: right; */
       display: block;
@@ -81,15 +81,33 @@
         float: none;
         display: flex;
         justify-content: center;
+        padding: 12px;
+    }
+
+    .topnav.responsive button {
+        background-color: #46AB4A;
+        float: none;
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+        border: 0;
+        color: #FFFFFF;
     }
   }
 
 @media (min-width: 1600px) {
+    .navBlocksManyLink {
+        display: none;
+    }
 
     .navbar {
         padding: 0%;
         align-items: center;
         justify-content: center;
+    }
+
+    #showBlockBtn {
+        display: none;
     }
 
     .link {
@@ -181,11 +199,20 @@
 
 @media (min-width: 1000px) and (max-width: 1599px) {
 
+    .navBlocksManyLink {
+        display: none;
+    }
+
     .navbar {
         padding: 1%;
         align-items: center;
         justify-content: center;
     }
+
+    #showBlockBtn {
+        display: none;
+    }
+
     .link {
         text-decoration: none;
         font-family: 'Arial';
@@ -194,7 +221,7 @@
         font-size: 20px;
         line-height: 23px;
         /* color: #FFFFFF; */
-        margin-right: 30px;
+        margin-right: 20px;
         padding: 10px;
         padding-left: 3px;
         padding-right: 3px;
@@ -275,18 +302,44 @@
 
 @media (min-width: 640px ) and (max-width: 999px) {
 
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navBlocksManyLink {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
     .link {
         text-decoration: none;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 35px;
+        line-height: 40px;
         /* color: #FFFFFF; */
         /* margin-right: 30px; */
         padding: 10px;
         margin: -1px;
         width: 100%;
+    }
+    
+        .linksBlocks {
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 30px;
+        }
+    
+    #linkFirstSecond {
+        display: none;
+    }
+
+    #showBlockLink {
+        display: none;
     }
 
     #linkFirst {
@@ -369,16 +422,42 @@
 
 @media (min-width: 320px ) and (max-width: 639px) {
 
+    .navbar {
+        flex-wrap: wrap;
+    }
+
     .link {
         text-decoration: none;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 26px;
+        line-height: 30px;
         width: 100%;
         padding: 10px;
         margin: -1px;
+    }
+
+    .linksBlocks {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .navBlocksManyLink {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #linkFirstSecond {
+        display: none;
+    }
+
+    #showBlockLink {
+        display: none;
     }
 
     #linkFirst {
