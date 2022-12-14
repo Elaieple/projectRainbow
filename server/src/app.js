@@ -26,6 +26,7 @@ const { SESSION_SECRET } = process.env;
 const main = require('./routes/MemberTeams');
 const edit = require('./routes/EditMember');
 const Report = require('./router/ReportRender');
+const file = require('./routes/FileRouter')
 
 
 app.use(morgan('dev'));
@@ -53,6 +54,7 @@ app.use('/autorisation', Autorisation);
 app.use('/', main);
 app.use('/edit', edit)
 app.use('/report', Report);
+app.use('/file', file)
 
 
 app.listen(PORT, () => {
