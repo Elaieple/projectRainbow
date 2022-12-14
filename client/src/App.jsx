@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/aboutUs" element={<Teams />} />
           <Route path="/ourFriends" element={<OurFriends />} />
           <Route path="/media" element={<Cmi />} />
           <Route path="/howToHelp" element={<KakPomoch />} />

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const renderTemplate = require('../lib/RenderTemplate');
+const renderTemplate = require('../lib/RenderTempale');
 const bcrypt = require('bcrypt');
 const { Admin } = require('../../db/models/admin');
 const Aut = require('./../views/Aut');

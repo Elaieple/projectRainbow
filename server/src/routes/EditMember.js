@@ -16,8 +16,12 @@ router.post('/:id', async (req, res) => {
   const { image, name, jobtitle, description, vk, email, phone } = req.body;
   const { id } = req.params;
   try {
-    await Team.update({ image, name, jobtitle, description, vk, email, phone }, { where: { id } });
-    res.redirect('/');
+    const update = { name, jobtitle, description, vk, email, phone }
+    if (image) {
+      update.image = image
+    }
+    await Team.update( update , { where: { id } });
+    res.redirect('/AddMember');
   } catch (error) {
     console.log('Error ==>', error);
   }

@@ -23,15 +23,19 @@ const PORT = process.env.PORT ?? 6622;
 
 const { SESSION_SECRET } = process.env;
 
-const main = require('./routes/MemberTeams');
+const AddMember = require('./routes/MemberTeams');
 const edit = require('./routes/EditMember');
-const Report = require('./router/ReportRender');
+const Report = require('./routes/ReportRender');
+const Main = require('./routes/Main');
+const sendMembers = require('./routes/SendMemberTeam');
+const cors = require('./middlewares/cors');
 
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors);
 
 const sessionConfig = {
   name: 'Cook', // * Название куки
@@ -50,9 +54,11 @@ app.use(session(sessionConfig));// подключение мидлвара дл�
 const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
 
-app.use('/', main);
-app.use('/edit', edit)
+app.use('/', Main);
+app.use('/AddMember', AddMember);
+app.use('/edit', edit);
 app.use('/report', Report);
+app.use('/sendMembers', sendMembers);
 
 
 app.listen(PORT, () => {

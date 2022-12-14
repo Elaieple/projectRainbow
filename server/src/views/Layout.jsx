@@ -27,7 +27,7 @@ module.exports = function Layout({ children }) {
                   <a className="nav-link active" aria-current="page" href="/">Main</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/add">Добавить пост</a>
+                  <a className="nav-link" href="/AddMember">Добавить Сотрудника</a>
                 </li>
               </ul>
             </div>
