@@ -25,11 +25,10 @@ export default function Onas() {
   return (
     <div className="body">
       <div className="content">
-        <div id="ov" style={show ? { visibility: 'hidden' } : { visibility: 'visible' }}>Остались вопросы? </div>
 
         <div className="odert">
           <div className={show ? 'feedBack' : 'closedOnas'}>
-            <h1>
+            <h1 id="cvy">
               СПАСИБО!
             </h1>
             <p>Мы получили ваше сообщение и ответим на него в ближайшее время!</p>
@@ -38,6 +37,7 @@ export default function Onas() {
           </div>
           <div className={show ? 'closedOnas' : 'form'}>
 
+            <div id="ov">Остались вопросы? </div>
             <div id="cvy">СВЯЖИТЕСЬ С НАМИ</div>
 
             <form className="in" onSubmit={sendEmail}>
