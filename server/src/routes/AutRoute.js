@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const renderTemplate = require('../lib/RenderTemplate');
 const bcrypt = require('bcrypt');
-const { Admin } = require('../../db/models/admin');
+const { Admin } = require('../../db/models');
 const Aut = require('./../views/Aut');
 
 router.get('/', async (req, res) => {
@@ -19,8 +19,7 @@ router.post('/', async (req, res) => {
       console.log(req.body);
       const user = await Admin.findOne({ where: { email }, raw: true });
       if (user) {
-        const passChek = await bcrypt.compare(password, user.password);
-        if (passChek) {
+        if (password === user.password) {
           req.session.bee = user.name;
           req.session.user_id = user.id;
           req.session.save(() => {
