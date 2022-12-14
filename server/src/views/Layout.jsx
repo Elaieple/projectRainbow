@@ -38,6 +38,9 @@ module.exports = function Layout({ children }) {
                 <li className="nav-item">
                   <a className="nav-link" href="/newproj">Мероприятия</a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/autorisation">Авторизация</a>
+                </li>
               </ul>
             </div>
           </div>

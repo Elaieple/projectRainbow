@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
 import Teams from './components/Teams/Teams';
@@ -11,6 +12,7 @@ import VtoroeDihaniee from './components/VtoroeDihaniee/VtoroeDihaniee';
 import OurProjects from './components/ourProgects/OurProjects';
 import Order from './wiews/Order/Order';
 import Requisites from './components/ requisites/ Requisites';
+import Spasibo from './components/Spasibo/Spasibo';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/aboutUs" element={<Teams />} />
           <Route path="/ourFriends" element={<OurFriends />} />
-          <Route path="/media" element={<Cmi />} />
+          <Route path="/media" element={<Spasibo />} />
           <Route path="/howToHelp" element={<KakPomoch />} />
           <Route path="/reports" element={<Order />} />
           <Route path="/projects" element={<OurProjects />} />

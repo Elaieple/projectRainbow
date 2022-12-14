@@ -19,8 +19,7 @@ router.post('/', async (req, res) => {
       console.log(req.body);
       const user = await Admin.findOne({ where: { email }, raw: true });
       if (user) {
-        const passChek = await bcrypt.compare(password, user.password);
-        if (passChek) {
+        if (password === user.password) {
           req.session.bee = user.name;
           req.session.user_id = user.id;
           req.session.save(() => {

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from 'emailjs-com';
 import './VtoroeDihaniee.css';
 
@@ -28,10 +29,10 @@ export default function VtoroeDihaniee() {
 
   return (
     <>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossOrigin="anonymous" />
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossOrigin="anonymous" />
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
       <div className="null" />
-      {/* <div className="photo">
-        <img className="photo" src="kartinka.png" alt="photo1" />
-      </div> */}
       <div className="photoContainer">
         <div className="photoText">
           <p>ПРОЕКТ ВТОРОЕ ДЫХАНИЕ</p>
@@ -134,6 +135,37 @@ export default function VtoroeDihaniee() {
             </div>
           </div>
         </div>
+        <div className="container4">
+          <div className="firstText">НОВОСТИ ПРОЕКТА:</div>
+          <div className="firstText2">
+            72 ребенка с двигательной и ментальной инвалидностью
+            {' '}
+            <br />
+            {' '}
+            стали постоянными участниками наших проектов
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img style={{ maxWidth: '300px' }} src="kartinka3.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img style={{ maxWidth: '300px' }} src="kartinka2.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img style={{ maxWidth: '300px' }} src="kartinka1.png" className="d-block w-100" alt="gachi" />
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
       <div className="form-container-main">
         <div className={visible ? 'thankyou' : 'closedBlock'}>
