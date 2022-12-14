@@ -1,9 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   const [accept, setAccept] = useState(false);
   const [visible, setVisible] = useState(false);
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;

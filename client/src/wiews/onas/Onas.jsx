@@ -12,13 +12,13 @@ export default function Onas() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
-    // e.target.reset();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
     setShow(!show);
   };
 

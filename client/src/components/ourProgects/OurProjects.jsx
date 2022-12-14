@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ourProjects.css';
 import Onas from '../../wiews/onas/Onas';
@@ -8,6 +8,10 @@ const arrayColors = ['#46AB4A', '#7CAAC1', '#CF7B94'];
 function OurProjects() {
   const [active, setActive] = useState({ id: null });
   const [randomColor, setRandomColor] = useState({ id: null, color: '' });
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   const getRandomColor = () => arrayColors[Math.round(Math.random() * 2)];
 
