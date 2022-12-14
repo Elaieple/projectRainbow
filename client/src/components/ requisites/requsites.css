@@ -104,6 +104,7 @@ line-height: 18px;
 }
 
 .document p {
+  max-width: 204px;
   font-size: 16px;
   margin: 5px;
 }
@@ -120,6 +121,9 @@ line-height: 18px;
 .show-flex {
   padding: 60px 0 60px 0;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .close {

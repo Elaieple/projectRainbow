@@ -406,3 +406,29 @@ font-size: 20px;
 .form-picture {
     width: 100%;
 }
+
+.thankyou {
+    min-width: 800px;
+    padding-top: 68px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.thankyou h1 {
+    color: #474747;
+
+} 
+
+.thankyou p {
+    font-family: 'Arial';
+    padding-top: 30px;
+    width: 450px;
+    font-size: 20px;
+    color: #949494;;
+}
+
+.closedBlock {
+display: none;
+}

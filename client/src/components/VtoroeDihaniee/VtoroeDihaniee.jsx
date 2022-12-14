@@ -5,20 +5,22 @@ import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
   const [accept, setAccept] = useState(false);
+  const [visible, setVisible] = useState(false);
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
 
   const sendEntry = (e) => {
     e.preventDefault();
-    // console.log(e.target);
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+    //   .then((result) => {
+    //     console.log(result.text);
+    //   }, (error) => {
+    //     console.log(error.text);
+    //   });
     e.target.reset();
+    setVisible(!visible);
+    setAccept(!accept);
   };
 
   return (
@@ -131,14 +133,22 @@ export default function VtoroeDihaniee() {
         </div>
       </div>
       <div className="form-container-main">
-        <div className="form-container">
+        <div className={visible ? 'thankyou' : 'closedBlock'}>
+          <h1>
+            СПАСИБО!
+          </h1>
+          <p>Мы получили ваше сообщение и ответим на него в ближайшее время!</p>
+          <p>Сделали ошибку?</p>
+          <button type="button" className="sendFormButton" onClick={() => { setVisible(!visible); setAccept(!accept); }}>Отправить снова</button>
+        </div>
+        <div className={visible ? 'closedBlock' : 'form-container'}>
           <h1>Записаться на мероприятие:</h1>
           <form className="form-entry" onSubmit={sendEntry}>
             <input className="form-input" type="text" name="name" placeholder="Имя:" />
             <input className="form-input" type="text" name="phone" placeholder="Телефон:" />
-            <input style={{ display: 'none' }} type="text" name="message" value="Желающий участвовать в мероприятии" />
+            <input style={{ display: 'none' }} type="text" name="message" defaultValue="Желающий участвовать в мероприятии" />
             <div className="check-container">
-              <input type="checkbox" className="checkbox-input" value={accept} onChange={() => setAccept(!accept)} />
+              <input type="checkbox" className="checkbox-input" checked={accept} value={accept} onChange={() => setAccept(!accept)} />
               <p>
                 Нажимая на кнопку «Отправить заявку», я даю согласие на обработку
                 {' '}
