@@ -22,4 +22,4 @@ form.addEventListener('submit', async (e) => {
     error.style.color = 'red';
     error.innerText = json.err;
   }
-});
+}); 

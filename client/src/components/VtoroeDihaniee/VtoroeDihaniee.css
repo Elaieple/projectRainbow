@@ -337,3 +337,123 @@ line-height: 23px;
 color: #000000;
 }
 
+/* Стили формы записи на мероприятие */
+.form-container-main {
+    width: 100%;
+    margin: auto;
+    padding-left: 198px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194,237,201);
+    
+}
+
+.form-container {
+    min-width: 800px;
+}
+
+.form-container h1 {
+    width: 550px;
+    text-transform: uppercase;
+    padding-top: 68px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.form-entry {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 550px;
+    padding: 20px 0 20px 0;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 2px solid #474747;
+}
+
+.form-input:focus {
+    font-size: large;
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+.check-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #474747;
+}
+.checkbox-input {
+    background-color: rgba(12, 127, 227, 0.848);
+}
+
+
+
+.personal-data-text {
+    color: #000000;
+}
+.sendFormButton{
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;;
+}
+
+.form-picture-container {
+    min-width: 800px;
+}
+
+.form-picture {
+    width: 100%;
+}
+
+.thankyou {
+    min-width: 800px;
+    padding-top: 68px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.thankyou h1 {
+    color: #474747;
+
+} 
+
+.thankyou p {
+    font-family: 'Arial';
+    padding-top: 30px;
+    width: 450px;
+    font-size: 20px;
+    color: #949494;;
+}
+
+.closedBlock {
+display: none;
+}

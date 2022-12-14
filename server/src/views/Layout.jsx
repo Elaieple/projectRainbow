@@ -27,7 +27,16 @@ module.exports = function Layout({ children }) {
                   <a className="nav-link active" aria-current="page" href="/">Main</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/add">Добавить пост</a>
+                  <a className="nav-link" href="/AddMember">Добавить Сотрудника</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/report">Отчеты</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/media">Новости</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/newproj">Мероприятия</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/autorisation">Авторизация</a>
