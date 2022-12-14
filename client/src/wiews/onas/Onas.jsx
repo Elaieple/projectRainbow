@@ -4,6 +4,7 @@ import './onas.css';
 
 export default function Onas() {
   const [accept, setAccept] = useState(false);
+  const [show, setShow] = useState(false);
 
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -11,24 +12,34 @@ export default function Onas() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset();
+    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+    //   .then((result) => {
+    //     console.log(result.text);
+    //   }, (error) => {
+    //     console.log(error.text);
+    //   });
+    // e.target.reset();
+    setShow(!show);
   };
 
   return (
     <div className="body">
       <div className="content">
-        <div id="ov">Остались вопросы? </div>
+        <div id="ov" style={show ? { visibility: 'hidden' } : { visibility: 'visible' }}>Остались вопросы? </div>
 
         <div className="odert">
-          <div className="form">
+          <div className={show ? 'feedBack' : 'closedOnas'}>
+            <h1>
+              СПАСИБО!
+            </h1>
+            <p>Мы получили ваше сообщение и ответим на него в ближайшее время!</p>
+            <p>Сделали ошибку?</p>
+            <button type="button" id="butsub" onClick={() => { setShow(!show); }}>Отправить снова</button>
+          </div>
+          <div className={show ? 'closedOnas' : 'form'}>
 
             <div id="cvy">СВЯЖИТЕСЬ С НАМИ</div>
+
             <form className="in" onSubmit={sendEmail}>
               <input className="inp" name="name" placeholder="Имя" />
 

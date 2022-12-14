@@ -134,3 +134,35 @@ padding: 2px;
 .eee {
     margin-left: 20%;
 }
+
+
+.feedBack {
+    min-width: 800px;
+    padding-top: 68px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.feedBack h1 {
+    color:white;
+
+} 
+
+.feedBack p {
+    font-family: 'Arial';
+    padding-top: 30px;
+    width: 450px;
+    font-size: 20px;
+    color: white;
+}
+
+.feedBack button {
+    width: 200px;
+}
+
+.closedOnas {
+    display: none;
+}
+

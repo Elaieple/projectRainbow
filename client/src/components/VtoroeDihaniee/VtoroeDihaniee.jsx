@@ -12,12 +12,12 @@ export default function VtoroeDihaniee() {
 
   const sendEntry = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
     e.target.reset();
     setVisible(!visible);
     setAccept(!accept);
