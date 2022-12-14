@@ -27,6 +27,7 @@ const edit = require('./routes/EditMember');
 const Report = require('./routes/ReportRender');
 const Media = require('./routes/MediaRout');
 const Event = require('./routes/NewProject');
+const file = require('./routes/FileRouter')
 
 
 app.use(morgan('dev'));
@@ -56,6 +57,7 @@ app.use('/edit', edit)
 app.use('/report', Report);
 app.use('/media', Media);
 app.use('/newproj', Event)
+app.use('/file', file)
 
 
 app.listen(PORT, () => {
