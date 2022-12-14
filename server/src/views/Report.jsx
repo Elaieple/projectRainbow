@@ -7,8 +7,8 @@ module.exports = function Report () {
 
     <Layout>
         <form method='POST' action='/report'>
-        <div className="container">
-        <h2> Добавление</h2>
+          <div className="container">
+          <h2> Добавление</h2>
 
           <div className="mb-3">
             <label className="did-floating-label">Месяц</label>
@@ -46,7 +46,8 @@ module.exports = function Report () {
           </div>
 
           <button type="button" className="btn floating-button add" id="add">Добавить</button>
-      </div></form>
+        </div>
+      </form>
     </Layout>
   )
   

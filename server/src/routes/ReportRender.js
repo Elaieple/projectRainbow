@@ -1,5 +1,4 @@
 const router = require('express').Router();
-
 const renderTemplate = require('../lib/renderTemplate');
 const Report = require('../views/Report');
 

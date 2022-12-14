@@ -4,7 +4,7 @@ deleteBtn.addEventListener('click', async (e) => {
   if (e.target.id === 'btn-like') {
     console.log(e.target.parentNode.parentNode);
     const { id } = e.target.parentNode.parentNode;
-    const response = await fetch('/delete', {
+    const response = await fetch('/AddMember/delete', {
       method: 'DELETE',
       headers: {
         'Content-type': 'application/json',
