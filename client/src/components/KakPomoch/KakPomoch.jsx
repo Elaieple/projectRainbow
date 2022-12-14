@@ -36,10 +36,6 @@ export default function KakPomoch() {
             </div>
           </div>
           <div className="blokk1">
-          <div className="blokk1txt">
-              <div className="bloktxt1">СОЗДАТЬ</div>
-              <div className="bloktxt11">для каждого ребенка свой образовательный маршрут, чтобы раскрыть его способности и дать те навыки и умения, которые помогут ему во взрослой жизни стать самостоятельной личностью.</div>
-            </div>
             <div className="blokk2txt">
               <div className="bloktxt2">СОЗДАТЬ</div>
               <div className="bloktxt22">для каждого ребенка свой образовательный маршрут, чтобы раскрыть его способности и дать те навыки и умения, которые помогут ему во взрослой жизни стать самостоятельной личностью.</div>

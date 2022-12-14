@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const renderTemplate = require('../lib/RenderTemplate');
+const renderTemplate = require('../lib/renderTemplate');
 const bcrypt = require('bcrypt');
-const { Admin } = require('../../db/models/admin');
+const { Admin } = require('../../db/models');
 const Aut = require('./../views/Aut');
 
 router.get('/', async (req, res) => {
@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
         console.log("error", error);
     }
 });
-
+ 
 router.post('/', async (req, res) => {
     try {
       const { email, password } = req.body;
@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
             res.json({err: 'ok'});
           });
         }else{
-          res.json({err: 'Не верный пароль/логин!'});
+          res.json({err: 'Не верный пароль/логин'});
         }
       } else {
         res.json({err:"Пользователь не найден!"});

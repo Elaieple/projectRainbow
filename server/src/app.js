@@ -10,22 +10,23 @@ const morgan = require('morgan');
 const session = require('express-session');
 const FileStore = require('session-file-store')(session);
 
-const supabaseUrl = 'https://krxtfepwfehsyzgxmeou.supabase.co';
-const supabaseKey = process.env.SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
+// const supabaseUrl = 'db.ddipbguvuyqqtzeomshc.supabase.co';
+// const supabaseKey = process.env.SUPABASE_KEY;
+// const supabase = createClient(supabaseUrl, supabaseKey);
+
 const { sequelize } = require('../db/models');
 
 const app = express();
 
 const PORT = process.env.PORT ?? 6622;
 
-
-
 const { SESSION_SECRET } = process.env;
 
 const main = require('./routes/MemberTeams');
 const edit = require('./routes/EditMember');
-const Report = require('./router/ReportRender');
+const Report = require('./routes/ReportRender');
+const Media = require('./routes/MediaRout');
+const Event = require('./routes/NewProject');
 
 
 app.use(morgan('dev'));
@@ -46,13 +47,15 @@ const sessionConfig = {
 };
 
 app.use(session(sessionConfig));// подключение мидлвара для куки
-
+ 
 const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
 
 app.use('/', main);
 app.use('/edit', edit)
 app.use('/report', Report);
+app.use('/media', Media);
+app.use('/newproj', Event)
 
 
 app.listen(PORT, () => {
