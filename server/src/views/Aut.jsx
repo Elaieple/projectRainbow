@@ -16,12 +16,8 @@ module.exports = function Aut( ) {
 <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
 <input type="password" name='password' className="form-control" id="exampleInputPassword1"/>
 </div>
-<div className="mb-3 form-check">
-<input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-<label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-</div>
 <h1 className="loginError"></h1>
-<button type="submit" className="btn btn-primary">Submit</button>
+<button type="submit" className="btn btn-primary">Войти</button>
 </form>
 
 </Layout>

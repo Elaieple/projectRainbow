@@ -1,9 +1,10 @@
 const router = require('express').Router();
+
 const renderTemplate = require('../lib/renderTemplate');
-const Report = require('../views/Report');
+const Media = require('../views/Media');
 
 router.get('/', (req, res) => {
-  renderTemplate(Report, {}, res);
+  renderTemplate(Media, {}, res);
 });
 
 module.exports = router;
