@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.Report,{ foreignKey: 'monthId'})
     }
   }
   Income.init({
