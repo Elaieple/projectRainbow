@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './new.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import Pagination from 'react-bootstrap/Pagination';
 import Onas from '../onas/Onas';
 
 export default function New() {
@@ -50,17 +51,21 @@ export default function New() {
           <div className="new">
             <div className="title">{news.title}</div>
             <div className="midtex">
-              <div className="title1">{news.description}</div>
+              <div>
+                <p className="title1">
+                  {news.description}
+                </p>
+              </div>
 
               <figure>
-                <img src={`http://localhost:3001/${news.image}`} alt="fito" />
-                <figcaption>{news.descriptionImage}</figcaption>
+                <img className="Paiges" src={`http://localhost:3001/${news.image}`} alt="fito" />
+                <figcaption className="figcaption">{news.descriptionImage}</figcaption>
               </figure>
               <div className="text">
-                {news.text}
+                <p className="text">{news.text}</p>
               </div>
               <a href={news.source}>
-                <button type="button">Читать источник</button>
+                <button className="MediaBtnPage" type="button">Читать источник</button>
               </a>
             </div>
           </div>
@@ -71,11 +76,14 @@ export default function New() {
             {media.length && media.map((el, ind) => (
               ind < NUMBER_OF_NEWS && (
               <div className="postat">
-                <img src={`http://localhost:3001/${el.image}`} alt="foto" />
-                <div className="date1">15.12.2021</div>
-                <div className="opis">Не чужие: кто и как помогает особенным детям</div>
-                <button type="button">Подробнее</button>
-                <div>ПОДУМАТЬ КААК БУДЕТ РЕАЛИЗОВАН ПОИСК ПО ПОХОЖИМ СТАТЬЯМ</div>
+                <img className="ImagesMediaPage" src={`http://localhost:3001/${el.image}`} alt="foto" />
+                <div className="date1">{new Date(Date.parse(el.date)).toLocaleDateString()}</div>
+                <div className="opis">
+                  <p className="TextMediaPageAll">
+                    {el.title}
+                  </p>
+                </div>
+                <Link className="LinkMediaPageAll" to={`/media/${news.id}`}> Подробнее ➞ </Link>
               </div>
               )
             ))}

@@ -34,6 +34,7 @@ function App() {
           <Route path="/vtordih" element={<VtoroeDihaniee />} />
           <Route path="/media/:id" element={<New />} />
           <Route path="/current/:id" element={<CurrentProject />} />
+          <Route path="/teams" element={<Teams />} />
         </Routes>
       </header>
 

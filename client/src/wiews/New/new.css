@@ -1,4 +1,4 @@
-.contant{
+.contant {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -6,9 +6,11 @@
     align-items: flex-start;
     margin-top: 100px;
 }
+
 .stat {
     display: flex;
 }
+
 .new {
     display: flex;
     flex-direction: column;
@@ -16,53 +18,152 @@
     width: 900px;
     margin-left: 150px;
 }
+
 .title {
     font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 55px;
-margin-bottom: 50px;
-text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 50px;
+    text-align: start;
 }
+
 .date {
     font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 }
+
 .title1 {
     font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 30px;
-text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: start;
+    word-break: unset;
 }
+
 .text {
     font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-text-align: start;
-margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: start;
+    margin-bottom: 35px;
 }
-.poho{
+
+.poho {
     font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
 }
-.midtex{
+
+.midtex {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 632px;
     margin-bottom: 170px;
 }
-.postat{
+
+.postat {
     margin-bottom: 100px;
+}
+
+.Paiges {
+    width: 629px;
+}
+
+.figcaption {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.MediaBtnPage {
+    border-radius: 30px;
+    padding: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+
+/*! Тут начинается блок похожих статей =====================================  */
+
+.pohospi {
+    display: flex;
+    flex-direction: column;
+}
+
+.poho {
+    margin-bottom: 20px;
+}
+
+.pohocont {
+    display: flex;
+    flex-direction: row;
+}
+
+.postat {
+    margin: 10px 35px 100px 0px;
+}
+
+.date1 {
+    margin-top: 10px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #949494;
+}
+
+.ImagesMediaPage {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 15px;
+}
+
+.opis {
+    width: 260px;
+}
+
+.TextMediaPageAll {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #474747;
+}
+
+.LinkMediaPageAll {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    color: #949494;
 }
