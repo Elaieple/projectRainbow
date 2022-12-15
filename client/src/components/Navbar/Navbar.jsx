@@ -63,7 +63,7 @@ export default function Navbar() {
           <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
           <div className="navBlocksManyLink">
             <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
-            <Link className="link linksBlocks" to="/howToHelp">Команда</Link>
+            <Link className="link linksBlocks" to="/Teams">Команда</Link>
             <Link className="link linksBlocks" to="/ourFriends">Документы</Link>
           </div>
           <Link className="link" to="/projects">Проекты</Link>
