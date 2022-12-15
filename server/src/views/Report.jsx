@@ -93,6 +93,7 @@ module.exports = function Report({rep,incomAll}) {
       <p>{el.month}</p>
       <p>{el.year}</p>
       <button className='del1' id={el.id} data-post='deleterep'>Удалить отчет</button>
+      <button type="button" id={el.id} name="report-edit">Редактировать</button>
     </div></>
   ))}
 </div>
