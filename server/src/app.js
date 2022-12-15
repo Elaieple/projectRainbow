@@ -58,7 +58,6 @@ app.use(session(sessionConfig));// подключение мидлвара дл�
  
 app.use('/autorisation', Autorisation);
 app.use('/', Report);
-app.use('/',isAuth, main);
 app.use('/', Main);
 app.use('/AddMember', AddMember);
 app.use('/edit', edit);
