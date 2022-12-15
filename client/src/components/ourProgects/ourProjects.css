@@ -133,6 +133,7 @@ line-height: 18px;
   opacity: 0.7;
   border: 1px solid #949494;
   border-radius: 20px;
+  margin-right: 5px;
 }
 
 .project a {
@@ -157,12 +158,13 @@ line-height: 18px;
  
 .completed-projects-container {
   padding-top: 170px;
+  
 }
 
 .completed-projects {
   padding-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .completed-project-header {
