@@ -1,13 +1,12 @@
 const React = require('react');
 const Layout = require('./Layout');
-const path = require('path');
 
 module.exports = function Main({ userName, allMember }) {
 
   return (
     <Layout userName={userName}>
       <script defer src='/js/AddMemberTeam.js' /> 
-       <script defer src="/js/DeleteMemberTeam.js" />
+      <script defer src="/js/DeleteMemberTeam.js" />
       <div className="container">
         <h2> Добавление</h2>
 
@@ -69,7 +68,7 @@ module.exports = function Main({ userName, allMember }) {
               <p>Телефон: {member.phone}</p>
               <p>Дата создания данной записи: {member.createdAt.toLocaleDateString()}</p>
 
-              <a href={`/edit/${member.id}`}>
+              <a href={`/editMember/${member.id}`}>
                 <button type="button"> Редактировать пост</button>
               </a>
 

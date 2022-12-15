@@ -1,13 +1,13 @@
 const mainDiv = document.querySelector('#add');
 const allPosts = document.querySelector('.container2');
-const { AddFoto } = document.forms;
+const { AddMediaFoto } = document.forms;
 
-AddFoto.addEventListener('submit', async (e) => {
+AddMediaFoto.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const data = new FormData(AddFoto);
+  const data = new FormData(AddMediaFoto);
   console.log(Object.fromEntries(data));
 
-  const response = await fetch('/AddMember/add', {
+  const response = await fetch('/AddMedia/add', {
     method: 'POST',
     // body: JSON.stringify({ image, name, jobtitle, description, vk, email, phone, data }),
     body: data,
@@ -26,7 +26,7 @@ AddFoto.addEventListener('submit', async (e) => {
       <p>Емейл: ${result.email}</p>
       <p>Телефон: ${result.phone}</p>
       <p>Дата создания: ${result.time}</p>
-      <a href='/editMember/${result.id}'>
+      <a href='/edit/${result.id}'>
       <button type="button"> Редактировать пост</button>
       </a>
       <form action="/delete" method="DELETE">
