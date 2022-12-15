@@ -7,7 +7,7 @@ export default function OurFriends() {
     <>
       <div className="null" />
 
-      <div className="container">
+      <div className="containerz">
         <div className="OurFriends">
           НАШИ ДРУЗЬЯ
         </div>

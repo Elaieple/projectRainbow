@@ -3,12 +3,12 @@ import './Spasibo.css';
 
 export default function Spasibo() {
     return (
-        <div className="all" >
+        <><div className="allaaa">
             <div className="containerFirstt">
                 <div className="child">
                     <img src="kartinka3.png" alt="photo3" />
-                    <img src="kartinka4.png" alt="photo4" />
                 </div>
+                <div className='rose' ><img src="kartinka4.png" alt="photo4" /></div>
             </div>
             <div className="containerSecondd">
                 <div className='Texd1'>СПАСИБО
@@ -22,8 +22,9 @@ export default function Spasibo() {
                     {' '}
                     детей с ДЦП к лучшему!
                 </div>
+                <button className="FourButton">ВЕРНУТЬСЯ НА САЙТ</button>
             </div>
-            <button className="FourButton">ВЕРНУТЬСЯ НА САЙТ</button>
         </div>
+        </>
     );
 }
