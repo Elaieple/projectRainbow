@@ -57,22 +57,12 @@ font-weight: 400;
 
 
 
-.project-image1 {
-  background: center / contain no-repeat url(../../../public/our-projects1.jpg);
+.current-project-image {
   width: 460px;
   height: 290px;
-}
-.project-image2 {
-  background: center / contain no-repeat url(../../../public/our-projects2.jpg);
-  width: 460px;
-  height: 290px;
+  border-radius: 20px;
 }
 
-.project-image3 {
-  background: center / contain no-repeat url(../../../public/our-projects3.jpg);
-  width: 460px;
-  height: 290px;
-}
 
 
 .project-description {
@@ -83,6 +73,7 @@ font-weight: 400;
 }
 
 .project-description h1 {
+  text-transform: uppercase;
   max-width: 498px;
   font-weight: 400;
   font-size: 26px;
@@ -93,16 +84,16 @@ font-weight: 400;
   color: #474747;
   padding-top: 10px;
   width: 286px;
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: justify;
 }
 .project-description a {
-  padding-top: 143px;
+
 }
 .project-description a:hover {
   color: black;
-  padding-top: 143px;
 }
 
 
