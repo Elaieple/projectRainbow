@@ -35,3 +35,15 @@
     width: 26px;
     height: 26px;
 }
+.month{
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+color: #474747;
+}
+tr{
+  display: flex;
+    justify-content: space-between;
+}

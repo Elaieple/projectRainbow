@@ -31,7 +31,21 @@ export default function Order() {
         <br />
         <div className="year" id="1">
           2021
-          <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'MONTH' })}><p className="plus">{state.month ? '--' : '+'}</p></button>
+          <table className={state.month ? 'table_dark' : 'table_dark close'}>
+            <tr>
+              <th className="month">ЯНВАРЬ</th>
+              <th className="month">+</th>
+            </tr>
+            <tr>
+              <th className="month">МАРТ</th>
+              <th className="month">+</th>
+            </tr>
+            <tr>
+              <th className="month">АПРЕЛЬ</th>
+              <th className="month"><button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'REPORT' })}><p className="plus">{state.report ? '--' : '+'}</p></button></th>
+            </tr>
+          </table>
+          <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'MONTH' })}><p className="yyy">{state.month ? '--' : '+'}</p></button>
         </div>
       </div>
       <Onas />
