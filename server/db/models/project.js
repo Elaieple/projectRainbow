@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+      // define association here
       this.hasMany(models.Photo, {foreignKey: 'projectId'})
       this.hasMany(models.NewsProject, {foreignKey: 'projectId'})
     }
@@ -23,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     mission: DataTypes.TEXT,
     intent: DataTypes.TEXT
   }, {
-    sequelize,
+    sequelize, 
     modelName: 'Project',
   });
   return Project;

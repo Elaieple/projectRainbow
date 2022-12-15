@@ -10,9 +10,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       monthId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model:'Reports',
+          key: 'id'
+        }
       },
-      text: {
+      texthlp: {
         type: Sequelize.TEXT
       },
       createdAt: {

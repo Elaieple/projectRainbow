@@ -25,6 +25,7 @@ const { SESSION_SECRET } = process.env;
 
 const cors = require('./middlewares/cors');
 
+const Autorisation = require('./routes/AutRoute');
 const AddMember = require('./routes/MemberTeams');
 const edit = require('./routes/EditMember');
 const Report = require('./routes/ReportRender');
@@ -55,14 +56,12 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));// подключение мидлвара для куки
  
-const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
-
+app.use('/', Report);
 app.use('/',isAuth, main);
 app.use('/', Main);
 app.use('/AddMember', AddMember);
 app.use('/edit', edit);
-app.use('/report', Report);
 app.use('/sendMembers', sendMembers);
 app.use('/media', Media);
 app.use('/newproj', Event)

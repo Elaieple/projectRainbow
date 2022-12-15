@@ -15,6 +15,13 @@ module.exports = {
       forwhat: {
         type: Sequelize.TEXT
       },
+      monthId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model:'Reports',
+          key: 'id'
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

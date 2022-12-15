@@ -11,11 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.Report,{ foreignKey: 'monthId'})
     }
   }
   Spending.init({
     howmany: DataTypes.INTEGER,
-    forwhat: DataTypes.TEXT
+    forwhat: DataTypes.TEXT,
+    monthId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Spending',

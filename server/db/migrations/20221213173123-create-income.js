@@ -19,7 +19,11 @@ module.exports = {
         type: Sequelize.STRING
       },
       monthId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model:'Reports',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,
