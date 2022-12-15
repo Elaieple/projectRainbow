@@ -25,13 +25,15 @@ const { SESSION_SECRET } = process.env;
 const cors = require('./middlewares/cors');
 
 const AddMember = require('./routes/MemberTeams');
-const edit = require('./routes/EditMember');
+const editMember = require('./routes/EditMember');
+const editMedia = require('./routes/editMedia');
 const Report = require('./routes/ReportRender');
 const Main = require('./routes/Main');
-const sendMembers = require('./routes/SendMemberTeam');
 const Media = require('./routes/MediaRout');
 const Event = require('./routes/NewProject');
 const file = require('./routes/FileRouter')
+const sendMembers = require('./routes/SendMemberTeam');
+const sendMedia = require('./routes/SendMedia');
 
 
 app.use(morgan('dev'));
@@ -59,10 +61,12 @@ app.use('/autorisation', Autorisation);
 
 app.use('/', Main);
 app.use('/AddMember', AddMember);
-app.use('/edit', edit);
+app.use('/editMember', editMember);
+app.use('/editMedia', editMedia);
 app.use('/report', Report);
 app.use('/sendMembers', sendMembers);
-app.use('/media', Media);
+app.use('/sendMedia', sendMedia);
+app.use('/AddMedia', Media);
 app.use('/newproj', Event)
 app.use('/file', file)
 

@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Main({ newUser, Member }) {
   return (
     <Layout newUser={newUser}>
-      <form action={`/edit/${Member.id}`} method="POST">
+      <form action={`/editMember/${Member.id}`} method="POST" className='m-3' enctype="multipart/form-data">
 
       <div className="mb-3">
             <label className="did-floating-label">Фотография работника</label>
