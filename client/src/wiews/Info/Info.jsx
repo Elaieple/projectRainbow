@@ -5,7 +5,7 @@ import Onas from '../onas/Onas';
 export default function Info() {
   return (
     <>
-      <div className="container">
+      <div className="containerban">
         <div className="title"> Согласие на обработку персональных данных</div>
         <div className="text">
           {' '}

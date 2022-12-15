@@ -15,6 +15,7 @@ const FileStore = require('session-file-store')(session);
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
 const { sequelize } = require('../db/models');
+const isAuth = require('./middlewares/isAuth');
 
 const app = express();
 
@@ -57,6 +58,7 @@ app.use(session(sessionConfig));// подключение мидлвара дл�
 const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
 
+app.use('/',isAuth, main);
 app.use('/', Main);
 app.use('/AddMember', AddMember);
 app.use('/edit', edit);
