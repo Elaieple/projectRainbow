@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from 'emailjs-com';
-import './VtoroeDihaniee.css';
+// import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
   useEffect(() => {
@@ -143,7 +142,7 @@ export default function VtoroeDihaniee() {
           </div>
         </div>
       </div>
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      {/* <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
@@ -163,7 +162,7 @@ export default function VtoroeDihaniee() {
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
       <div className="form-container-main">
         <div className={visible ? 'thankyou' : 'closedBlock'}>
           <h1>

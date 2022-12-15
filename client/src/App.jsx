@@ -12,6 +12,7 @@ import OurProjects from './components/ourProgects/OurProjects';
 import Order from './wiews/Order/Order';
 import Requisites from './components/ requisites/ Requisites';
 import Spasibo from './components/Spasibo/Spasibo';
+import CurrentProject from './components/currentProject/currentProject';
 import Donait from './wiews/Donait/Donait';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/aboutUs" element={<Teams />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/ourFriends" element={<OurFriends />} />
           <Route path="/media" element={<VtoroeDihaniee />} />
           <Route path="/howToHelp" element={<KakPomoch />} />
@@ -30,6 +31,7 @@ function App() {
           <Route path="/donate" element={<KakPomoch />} />
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/vtordih" element={<VtoroeDihaniee />} />
+          <Route path="/current/:id" element={<CurrentProject />} />
         </Routes>
       </header>
 
