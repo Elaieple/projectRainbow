@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from 'emailjs-com';
-import './VtoroeDihaniee.css';
+// import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
   useEffect(() => {
@@ -29,9 +28,6 @@ export default function VtoroeDihaniee() {
 
   return (
     <>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossOrigin="anonymous" />
-      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossOrigin="anonymous" />
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
       <div className="null" />
       <div className="photoContainer">
         <div className="photoText">
@@ -146,16 +142,16 @@ export default function VtoroeDihaniee() {
           </div>
         </div>
       </div>
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+      {/* <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img style={{ maxWidth: '300px' }} src="kartinka3.png" className="d-block w-100" alt="gachi" />
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
           </div>
           <div className="carousel-item">
-            <img style={{ maxWidth: '300px' }} src="kartinka2.png" className="d-block w-100" alt="gachi" />
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
           </div>
           <div className="carousel-item">
-            <img style={{ maxWidth: '300px' }} src="kartinka1.png" className="d-block w-100" alt="gachi" />
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -166,7 +162,7 @@ export default function VtoroeDihaniee() {
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
       <div className="form-container-main">
         <div className={visible ? 'thankyou' : 'closedBlock'}>
           <h1>

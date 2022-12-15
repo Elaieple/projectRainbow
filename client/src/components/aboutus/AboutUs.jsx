@@ -28,7 +28,7 @@ function AboutUs() {
             <iframe
               width="600"
               height="400"
-              src="http://www.youtube.com/embed/DkaUsBwe0fo"
+              src="https://www.youtube.com/embed/IIecgx7Dtws"
               frameBorder="0"
               allowfullscreen
             />

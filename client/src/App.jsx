@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './components/Main/Main';
 import Navbar from './components/Navbar/Navbar';
 import Teams from './components/Teams/Teams';
@@ -14,6 +13,8 @@ import Order from './wiews/Order/Order';
 import Requisites from './components/ requisites/ Requisites';
 import Spasibo from './components/Spasibo/Spasibo';
 import New from './wiews/New/New';
+import CurrentProject from './components/currentProject/currentProject';
+import Donait from './wiews/Donait/Donait';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/aboutUs" element={<Teams />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/ourFriends" element={<OurFriends />} />
           <Route path="/media" element={<Cmi />} />
           <Route path="/howToHelp" element={<KakPomoch />} />
@@ -32,6 +33,7 @@ function App() {
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/vtordih" element={<VtoroeDihaniee />} />
           <Route path="/media/:id" element={<New />} />
+          <Route path="/current/:id" element={<CurrentProject />} />
         </Routes>
       </header>
 

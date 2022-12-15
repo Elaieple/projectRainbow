@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.hasMany(models.Photo, {foreignKey: 'projectId'})
+      this.hasMany(models.NewsProject, {foreignKey: 'projectId'})
     }
   }
   Project.init({
@@ -22,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     mission: DataTypes.TEXT,
     intent: DataTypes.TEXT
   }, {
-    sequelize,
+    sequelize, 
     modelName: 'Project',
   });
   return Project;

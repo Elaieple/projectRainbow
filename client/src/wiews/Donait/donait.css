@@ -1,0 +1,48 @@
+.contain {
+display: flex;
+flex-direction: column;
+margin: 0 0 50px 200px;
+}
+
+.conttitle {
+    display: flex;
+
+}
+
+.dvatut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.titl {
+    margin-bottom: 50px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    
+    /* Черный */
+    
+    color: #000000;
+}
+
+.contlit {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    
+    /* Темно-серый */
+    
+    color: #474747;
+}
+
+.doninfo {
+    text-align: end;
+    margin-top: 50px;
+    margin-right: 199px;
+}

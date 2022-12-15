@@ -1,0 +1,309 @@
+.null {
+    height: 160px;
+}
+
+
+.photoProject {
+    width: 100%;
+
+}
+
+ 
+
+  .photoText1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+.photoText-wrapper {
+    padding-left: 201px;
+}
+
+.photoText1 p {
+    margin-top: -273px;
+    text-transform: uppercase;
+}
+
+.container1 {
+    padding-top: 93px;
+    padding-left: 200px;
+    width: 1200px;
+}
+
+.buttonParticipate {
+    border-radius: 30px;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+/* .bottomText2 {
+    border-bottom: 2px solid rgb(94, 94, 94);
+     font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+} */
+
+.bottomContainer {
+display: flex;
+align-items:flex-end;
+justify-content: space-between;
+flex-direction: row;
+border-bottom: 2px solid rgb(94, 94, 94);
+}
+
+.bottomText1 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+
+    
+}
+
+.dataes {
+    margin-bottom: 1%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    
+}
+
+.celiContainer {
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(94, 94, 94);
+}
+
+.celi {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 50px;
+}
+.celi p {
+    width: 200px;
+}
+
+.celiText {
+    margin: 10px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #474747;
+    
+}
+
+
+.container2 { 
+    padding-left: 200px;
+    padding-bottom: 50px;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kak {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.container-instruction {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block-instruction {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    border: 2px solid #949494;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+
+.container4 {
+    width: 1200px;
+    padding-left: 200px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.firstText {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.firstText2 {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+/* Стили формы записи на мероприятие */
+.form-container-main {
+    width: 100%;
+    margin: auto;
+    padding-left: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194,237,201);
+    
+}
+
+.form-container {
+    min-width: 800px;
+}
+
+.form-container h1 {
+    width: 550px;
+    text-transform: uppercase;
+    padding-top: 68px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.form-entry {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 550px;
+    padding: 20px 0 20px 0;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 2px solid #474747;
+}
+
+.form-input:focus {
+    font-size: large;
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+.check-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #474747;
+}
+.checkbox-input {
+    background-color: rgba(12, 127, 227, 0.848);
+}
+
+
+
+.personal-data-text {
+    color: #000000;
+}
+.sendFormButton{
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;;
+}
+
+.form-picture-container {
+    min-width: 800px;
+}
+
+.form-picture {
+    width: 100%;
+}
+
+.thankyou {
+    min-width: 800px;
+    padding-top: 68px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+}
+
+.thankyou h1 {
+    color: #474747;
+
+} 
+
+.thankyou p {
+    font-family: 'Arial';
+    padding-top: 30px;
+    width: 450px;
+    font-size: 20px;
+    color: #949494;;
+}
+
+.closedBlock {
+display: none;
+}

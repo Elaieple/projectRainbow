@@ -31,7 +31,7 @@ color: #FFFFFF;
 .button1 {
     display: flex;
     margin: 10px;
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: 226px;
     padding-left: 100px;
     border-radius: 30px;
@@ -176,7 +176,7 @@ color: #474747;
     display: flex;
     margin-top: 10%;
     margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
@@ -202,7 +202,7 @@ color: #000000;
     align-items: flex-start;
     border-radius: 20px;
     width: 310px;
-    height: 150px;
+    height: 175px;
     display: flex;
     padding: 10px;
     
@@ -220,10 +220,10 @@ color: #000000;
 
 .blok1Text {
     font-family: 'Arial';
-    font-style: normal;
-    color: #474747;
-    font-size: 20px;
-    margin-bottom: 25px;
+font-style: normal;
+color: #474747;
+font-size: 20px;
+margin-bottom: 5px;
     
 }
 
@@ -254,7 +254,7 @@ font-size: 20px;
 font-style: normal;
 color: #474747;
 font-size: 20px;
-margin-bottom: 25px;
+margin-bottom: 5px;
 
 }
 .blok2num {
@@ -316,7 +316,10 @@ font-size: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
 }
 
 .firstText {
@@ -337,6 +340,19 @@ line-height: 23px;
 color: #000000;
 }
 
+.carousel-control-prev {
+    color: #000000;
+
+}
+
+.carousel{
+    display: flex;
+    margin-left: 320px;
+    margin-bottom: 5%;
+    height: 580px;
+    width: 1250px;
+   }
+    
 /* Стили формы записи на мероприятие */
 .form-container-main {
     width: 100%;

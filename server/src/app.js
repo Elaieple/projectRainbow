@@ -15,6 +15,7 @@ const FileStore = require('session-file-store')(session);
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
 const { sequelize } = require('../db/models');
+const isAuth = require('./middlewares/isAuth');
 
 const app = express();
 
@@ -24,6 +25,7 @@ const { SESSION_SECRET } = process.env;
 
 const cors = require('./middlewares/cors');
 
+const Autorisation = require('./routes/AutRoute');
 const AddMember = require('./routes/MemberTeams');
 const editMember = require('./routes/EditMember');
 const editMedia = require('./routes/editMedia');
@@ -56,9 +58,9 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));// подключение мидлвара для куки
  
-const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
-
+app.use('/', Report);
+app.use('/',isAuth, main);
 app.use('/', Main);
 app.use('/AddMember', AddMember);
 app.use('/editMember', editMember);

@@ -52,14 +52,16 @@ export default function Main() {
               которая прошла официальную регистрацию и имеет расчетный счет.
             </p>
             <button type="button" className="btn">
-              <Link to="/" className="allMedia" />
+              <Link to="/" className="allMedia1" />
               ПОДРОБНЕЕ
             </button>
           </div>
         </div>
         <div className="video">
           {/* Решить как будем оставлять видео пока прикручен плеер от ютуба или ниже закоменчена вёрстка для плеера если видео хранится на файлах сервера */}
-          <iframe className="video" src="https://www.youtube.com/embed/vnDCpHjEt2g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+          {/* <iframe className="video" src="https://www.youtube.com/embed/vnDCpHjEt2g" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen /> */}
+          <iframe className="video" src="https://www.youtube.com/embed/lQomX2J-PTU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+
           {/* <video width="400" height="300" controls="controls" poster="video/duel.jpg">
             <source src="https://www.youtube.com/watch?v=vnDCpHjEt2g" type='video/ogg; codecs="theora, vorbis"' />
             <source src="https://www.youtube.com/watch?v=vnDCpHjEt2g" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />

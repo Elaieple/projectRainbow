@@ -1,13 +1,19 @@
-.all {
+.allaaa {
     background-color: #46AB4A ;
+    height: 962px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 .child {
     display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 300px;
-    
+    flex-direction: row;
+    height: 650px;
+    margin-left: 300px;
+    z-index: 1;
+    background: transparent;
 }
 
 .Texd1 {
@@ -32,13 +38,15 @@ color: #FFFFFF;
 .containerSecondd {
     display: flex;
     flex-direction: column;
-    margin-left: 900px;
+    margin-bottom: 13%;
+    margin-right: 5%;
+
 }
 
 .FourButton {
     display: flex;
-    margin-left: 900px;
     margin-top: 70px;
+    width: 305px;
     font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
@@ -63,3 +71,13 @@ gap: 10px;
 border-radius: 1000px
 }
 
+
+.rose {
+    margin-top: -105px;
+    margin-right: 100px;
+    margin-left: -380px;
+}
+
+.containerFirstt {
+display: flex;
+}
