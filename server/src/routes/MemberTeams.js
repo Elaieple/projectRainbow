@@ -30,7 +30,6 @@ router.post('/add',fileMiddleware.single('image'), async (req, res) => {
     res.json({
       id, image, name, jobtitle, description, vk, email, phone, time, post: 'OK',
     });
-    // res.redirect('/')
   } catch (error) {
     console.log('Error ====>', error);
   }

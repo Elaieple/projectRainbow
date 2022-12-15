@@ -33,7 +33,7 @@ module.exports = function Layout({ children }) {
                   <a className="nav-link" href="/report">Отчеты</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/media">Новости</a>
+                  <a className="nav-link" href="/AddMedia">Новости</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/newproj">Мероприятия</a>
