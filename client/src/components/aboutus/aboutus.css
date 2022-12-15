@@ -55,6 +55,14 @@
   justify-content: space-between;
  }
 
+.buttonGroup a {
+  color: #474747;;
+}
+
+.buttonGroup a:hover {
+  color: #000000;;
+} 
+
 .greenButton {
   border-radius: 30px;
   padding: 13px;
