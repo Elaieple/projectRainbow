@@ -4,9 +4,6 @@ const {Project} = require('../../db/models')
 const Event = require('../views/Event');
 const fileMiddleware = require('../middlewares/file');
 
-
-
-
 router.get('/', async (req, res) => {
   try {
      const allProjects = await Project.findAll({incude: {all: true}})
@@ -41,6 +38,17 @@ router.delete('/:id', async (req, res) => {
 router.get('/current', async (req, res) => {
   try {
     const allProjects = await Project.findAll({incude: {all: true}})
+    res.json(allProjects)
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+router.get('/completed', async (req, res) => {
+  try {
+    const allProjects = await Project.findAll({incude: {all: true}})
+    console.log();
+    // const sortedProjects = allProjects.filter(el => )
     res.json(allProjects)
   } catch (error) {
     console.log(error);
