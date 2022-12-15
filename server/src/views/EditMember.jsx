@@ -5,9 +5,10 @@ module.exports = function Main({ newUser, Member }) {
   return (
     <Layout newUser={newUser}>
       <form action={`/edit/${Member.id}`} method="POST">
-      <div className="m-3">
+
+      <div className="mb-3">
             <label className="did-floating-label">Фотография работника</label>
-            <input type="url"  className="form-control" id="exampleInputUsername" name="image" value={Member.image} placeholder="" />
+            <input type="file" className="form-control" id="exampleInputUsername" name="image"/>
           </div>
 
           <div className="m-3">

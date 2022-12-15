@@ -4,6 +4,7 @@ const router = express.Router();
 const renderTemplate = require('../lib/renderTemplate');
 const Main = require('../views/MainBack');
 const { Team } = require('../../db/models');
+const fileMiddleware = require('../middlewares/file');
 
 // const router = require('express').Router();
 
@@ -17,12 +18,14 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.post('/add', async (req, res) => {
+router.post('/add',fileMiddleware.single('image'), async (req, res) => {
   try {
-    const { image, name, jobtitle, description, vk, email, phone } = req.body
-    const NewMember = await Team.create({image, name, jobtitle, description, vk, email, phone}); 
+    const { name, jobtitle, description, vk, email, phone } = req.body
+    const file = req.file.path;
+    const path = file.slice(7)
+    const NewMember = await Team.create({image: path, name, jobtitle, description, vk, email, phone}); 
     const { id } = NewMember;
-    // const { nameUser } = NewMember.name;
+    const { image } = NewMember;
     const time = NewMember.createdAt.toLocaleDateString();
     res.json({
       id, image, name, jobtitle, description, vk, email, phone, time, post: 'OK',

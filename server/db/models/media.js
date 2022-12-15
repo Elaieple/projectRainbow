@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     image: DataTypes.TEXT,
     descriptionImage: DataTypes.TEXT,
-    text: DataTypes.TEXT
+    text: DataTypes.TEXT,
+    source:DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Media',
