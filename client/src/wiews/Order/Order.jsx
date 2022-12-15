@@ -5,7 +5,7 @@ import Onas from '../onas/Onas';
 export default function Order() {
   return (
     <>
-      <div className="container">
+      <div className="containervam">
         <div className="title"> ОТЧЕТЫ</div>
         <br />
         <div className="year" id="1">

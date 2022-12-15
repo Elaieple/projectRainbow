@@ -5,7 +5,7 @@ import Onas from '../onas/Onas';
 export default function Cmi() {
   return (
     <>
-      <div className="container">
+      <div className="containerv">
         <div className="title"> СМИ о нас</div>
         <div className="contents">
           <div className="date">09.04.2022</div>
