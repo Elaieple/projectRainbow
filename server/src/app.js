@@ -53,7 +53,7 @@ app.use('/autorisation', Autorisation);
 
 app.use('/', main);
 app.use('/edit', edit)
-app.use('/report', Report);
+app.use('/', Report);
 app.use('/media', Media);
 app.use('/newproj', Event)
 
