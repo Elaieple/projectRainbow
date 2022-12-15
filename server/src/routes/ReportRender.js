@@ -1,5 +1,4 @@
 const router = require('express').Router();
-
 const renderTemplate = require('../lib/renderTemplate');
 const Rep = require('../views/Report');
 const { Report, Income, Spending, HelpInfo, HelpVol } = require('../../db/models');

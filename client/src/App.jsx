@@ -11,6 +11,9 @@ import VtoroeDihaniee from './components/VtoroeDihaniee/VtoroeDihaniee';
 import OurProjects from './components/ourProgects/OurProjects';
 import Order from './wiews/Order/Order';
 import Requisites from './components/ requisites/ Requisites';
+import Spasibo from './components/Spasibo/Spasibo';
+import CurrentProject from './components/currentProject/currentProject';
+import Donait from './wiews/Donait/Donait';
 
 function App() {
   return (
@@ -21,13 +24,14 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/ourFriends" element={<OurFriends />} />
-          <Route path="/media" element={<Cmi />} />
+          <Route path="/media" element={<VtoroeDihaniee />} />
           <Route path="/howToHelp" element={<KakPomoch />} />
           <Route path="/reports" element={<Order />} />
           <Route path="/projects" element={<OurProjects />} />
           <Route path="/donate" element={<KakPomoch />} />
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/vtordih" element={<VtoroeDihaniee />} />
+          <Route path="/current/:id" element={<CurrentProject />} />
         </Routes>
       </header>
 

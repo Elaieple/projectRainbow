@@ -8,7 +8,6 @@ module.exports = function Report({rep,incomAll}) {
     <Layout>
       <script defer src='/js/FetchReport.js' />
       <script defer src='/js/DeleteReport.js' />
-      
       <form method='POST' action='/report'>
         <div className="container">
           <h2> Добавление</h2>
@@ -97,8 +96,6 @@ module.exports = function Report({rep,incomAll}) {
     </div></>
   ))}
 </div>
-
-
     </Layout>
   )
 

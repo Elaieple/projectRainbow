@@ -5,40 +5,42 @@ import Onas from '../../wiews/onas/Onas';
 export default function KakPomoch() {
   return (
     <>
-      <div className="photoPlustext">
-        <div className="photoText2">
-          <div className="KakPomochText1">КАК ПОМОЧЬ</div>
-          <div className="KakPomochText2">
-            Финансовая помощь – не единственной
-            {' '}
-            <br />
-            {' '}
-            способ поддержки нашего проекта
-          </div>
-        </div>
-        <div className="photo2">
-          <img src="kartinka2.png" alt="photo1" />
-        </div>
-      </div>
-      <div className="TextPlusBlok">
-        <div className="TextplusStrelki">
-          <div className="Blagodarya">БЛАГОДАРЯ ВАШЕЙ ПОМОЩИ МЫ СМОЖЕМ</div>
-          <div className="Strelki">
-            <div className="StrelkaLeft">←</div>
-            <div className="StrelkaRight">→</div>
-          </div>
-        </div>
-        <div className="blokks">
-          <div className="blokk1">
-            <div className="blokk1txt">
-              <div className="bloktxt1">ВЫЯВИТЬ</div>
-              <div className="bloktxt12">способности и склонности детей. В школе большое внимание будет уделяться различным видам деятельности, благодаря которым у детей появится возможность попробовать себя в новых ролях и найти интересные для себя занятия.</div>
+      <>
+        <div className="photoPlustext">
+          <div className="photoText2">
+            <div className="KakPomochText1">КАК ПОМОЧЬ</div>
+            <div className="KakPomochText2">
+              Финансовая помощь – не единственной
+              {' '}
+              <br />
+              {' '}
+              способ поддержки нашего проекта
             </div>
           </div>
-          <div className="blokk1">
-            <div className="blokk2txt">
-              <div className="bloktxt2">СОЗДАТЬ</div>
-              <div className="bloktxt22">для каждого ребенка свой образовательный маршрут, чтобы раскрыть его способности и дать те навыки и умения, которые помогут ему во взрослой жизни стать самостоятельной личностью.</div>
+          <div className="photo2">
+            <img src="kartinka2.png" alt="photo1" />
+          </div>
+        </div>
+        <div className="TextPlusBlok">
+          <div className="TextplusStrelki">
+            <div className="Blagodarya">БЛАГОДАРЯ ВАШЕЙ ПОМОЩИ МЫ СМОЖЕМ</div>
+            <div className="Strelki">
+              <div className="StrelkaLeft">←</div>
+              <div className="StrelkaRight">→</div>
+            </div>
+          </div>
+          <div className="blokks">
+            <div className="blokk1">
+              <div className="blokk1txt">
+                <div className="bloktxt1">ВЫЯВИТЬ</div>
+                <div className="bloktxt12">способности и склонности детей. В школе большое внимание будет уделяться различным видам деятельности, благодаря которым у детей появится возможность попробовать себя в новых ролях и найти интересные для себя занятия.</div>
+              </div>
+            </div>
+            <div className="blokk1">
+              <div className="blokk2txt">
+                <div className="bloktxt2">СОЗДАТЬ</div>
+                <div className="bloktxt22">для каждого ребенка свой образовательный маршрут, чтобы раскрыть его способности и дать те навыки и умения, которые помогут ему во взрослой жизни стать самостоятельной личностью.</div>
+              </div>
             </div>
           </div>
           <div className="blokk3">
@@ -98,8 +100,9 @@ export default function KakPomoch() {
             </div>
           </div>
         </div>
-      </div>
+      </>
       <Onas />
+
     </>
   );
 }

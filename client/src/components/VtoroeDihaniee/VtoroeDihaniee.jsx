@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import './VtoroeDihaniee.css';
+// import './VtoroeDihaniee.css';
 
 export default function VtoroeDihaniee() {
   useEffect(() => {
@@ -29,9 +29,6 @@ export default function VtoroeDihaniee() {
   return (
     <>
       <div className="null" />
-      {/* <div className="photo">
-        <img className="photo" src="kartinka.png" alt="photo1" />
-      </div> */}
       <div className="photoContainer">
         <div className="photoText">
           <p>ПРОЕКТ ВТОРОЕ ДЫХАНИЕ</p>
@@ -134,7 +131,38 @@ export default function VtoroeDihaniee() {
             </div>
           </div>
         </div>
+        <div className="container4">
+          <div className="firstText">НОВОСТИ ПРОЕКТА:</div>
+          <div className="firstText2">
+            72 ребенка с двигательной и ментальной инвалидностью
+            {' '}
+            <br />
+            {' '}
+            стали постоянными участниками наших проектов
+          </div>
+        </div>
       </div>
+      {/* <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img src="kartinka5.png" className="d-block w-100" alt="gachi" />
+          </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div> */}
       <div className="form-container-main">
         <div className={visible ? 'thankyou' : 'closedBlock'}>
           <h1>

@@ -15,6 +15,7 @@ const FileStore = require('session-file-store')(session);
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
 const { sequelize } = require('../db/models');
+const isAuth = require('./middlewares/isAuth');
 
 const app = express();
 
@@ -22,9 +23,14 @@ const PORT = process.env.PORT ?? 6622;
 
 const { SESSION_SECRET } = process.env;
 
-const main = require('./routes/MemberTeams');
+const cors = require('./middlewares/cors');
+
+const Autorisation = require('./routes/AutRoute');
+const AddMember = require('./routes/MemberTeams');
 const edit = require('./routes/EditMember');
 const Report = require('./routes/ReportRender');
+const Main = require('./routes/Main');
+const sendMembers = require('./routes/SendMemberTeam');
 const Media = require('./routes/MediaRout');
 const Event = require('./routes/NewProject');
 const file = require('./routes/FileRouter')
@@ -34,6 +40,7 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors);
 
 const sessionConfig = {
   name: 'Cook', // * Название куки
@@ -49,12 +56,13 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));// подключение мидлвара для куки
  
-const Autorisation = require('./routes/AutRoute');
 app.use('/autorisation', Autorisation);
-
-app.use('/', main);
-app.use('/edit', edit)
 app.use('/', Report);
+app.use('/',isAuth, main);
+app.use('/', Main);
+app.use('/AddMember', AddMember);
+app.use('/edit', edit);
+app.use('/sendMembers', sendMembers);
 app.use('/media', Media);
 app.use('/newproj', Event)
 app.use('/file', file)

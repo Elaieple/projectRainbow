@@ -1,0 +1,83 @@
+.allaaa {
+    background-color: #46AB4A ;
+    height: 962px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.child {
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    margin-left: 300px;
+    z-index: 1;
+    background: transparent;
+}
+
+.Texd1 {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+color: #FFFFFF;
+}
+
+.Texd2 {
+    margin-top: 50px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 40px;
+color: #FFFFFF;
+}
+
+.containerSecondd {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 13%;
+    margin-right: 5%;
+
+}
+
+.FourButton {
+    display: flex;
+    margin-top: 70px;
+    width: 305px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+letter-spacing: 0.04em;
+
+/* Темно-серый */
+
+color: #474747;
+
+background: #FFFFFF;
+/* Белый */
+
+display: flex;
+border: 1px solid #FFFFFF;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 16px 51px;
+gap: 10px;
+border-radius: 1000px
+}
+
+
+.rose {
+    margin-top: -105px;
+    margin-right: 100px;
+    margin-left: -380px;
+}
+
+.containerFirstt {
+display: flex;
+}

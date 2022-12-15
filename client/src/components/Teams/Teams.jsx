@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Teams.css';
 
 export default function Teams() {
+  const [member, setMember] = useState([]);
+
+  useEffect(() => {
+    const abortController = new AbortController();
+    fetch('http://localhost:3001/sendMembers', {
+      credentials: 'include',
+      signal: abortController.signal,
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        setMember(res);
+      })
+      .catch(console.log);
+  }, []);
+
+  console.log(member);
   return (
     <>
       <div className="null" />
@@ -43,8 +59,27 @@ export default function Teams() {
             </p>
           </div>
         </div> */}
+        {member.map((employee) => (
+          <div id={employee.id} className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={`http://localhost:3001/${employee.image}`} alt="Avatar" />
+                <div className="card-post">
+                  <div className="Name">{employee.name}</div>
+                  <div className="Post">{employee.jobtitle}</div>
+                </div>
+              </div>
+              <div className="flip-card-back">
+                <p>{employee.description}</p>
+                <a href={employee.vk} target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
+                <a href={employee.phone} target="_blank" rel="noreferrer"><img className="ots" src="./ico/Mail.svg" alt="foto" /></a>
+                <a href={employee.email} target="_blank" rel="noreferrer"><img className="ots" src="./ico/Phone.svg" alt="foto" /></a>
+              </div>
+            </div>
+          </div>
+        ))}
 
-        <div className="flip-card">
+        {/* <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
@@ -76,24 +111,7 @@ export default function Teams() {
               <p>We love that guy</p>
             </div>
           </div>
-        </div>
-
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img src="fotoTeams/unsplash_IF9TK5Uy-KI.png" alt="Avatar" />
-              <div className="card-post">
-                <div className="Name">ЕКАТЕРИНА АКИНЦЕВА</div>
-                <div className="Post">руководитель центра</div>
-              </div>
-            </div>
-            <div className="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
-            </div>
-          </div>
-        </div>
+        </div> */}
 
       </div>
     </>
