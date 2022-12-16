@@ -13,13 +13,22 @@
   width: 100%;
 }
 
-.header-text {
+.header-text-aboutus {
   color: rgb(255, 255, 255);
   width: 462px;
   margin-top: -195px;
   padding-left: 197px;
   padding-bottom: 95px;
 }
+
+.header-text-aboutus h1 {
+  width: 462px;
+}
+
+.header-text-aboutus p {
+  width: 462px;
+}
+
 
 .text-container {
   display: flex;

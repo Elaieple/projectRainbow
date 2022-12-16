@@ -13,7 +13,7 @@ function AboutUs() {
       <div>
         <div className="headerAboutus">
           <img className="rainbow-image" src="rainbow.jpg" alt="rainbow" />
-          <div className="header-text">
+          <div className="header-text-aboutus">
             <h1>КТО МЫ ТАКИЕ?</h1>
             <p>Мы Екатерина Акинцева и Вера Виноградова, мамы с детей с этим непростым диагнозом ДЦП, создатели центра “Выше Радуги”</p>
           </div>

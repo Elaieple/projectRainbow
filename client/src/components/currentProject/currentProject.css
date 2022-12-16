@@ -246,8 +246,6 @@ border-bottom: 2px solid rgb(94, 94, 94);
     background-color: rgba(12, 127, 227, 0.848);
 }
 
-
-
 .personal-data-text {
     color: #000000;
 }
@@ -307,3 +305,13 @@ border-bottom: 2px solid rgb(94, 94, 94);
 .closedBlock {
 display: none;
 }
+
+.carousel { 
+    display: flex; 
+    padding-left: 200px;
+    /* margin-left: 320px;  */
+    margin-bottom: 5%; 
+    height: 580px; 
+    width: 1250px; 
+} 
+

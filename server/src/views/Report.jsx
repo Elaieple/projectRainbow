@@ -10,7 +10,7 @@ module.exports = function Report({rep,incomAll}) {
       <script defer src='/js/DeleteReport.js' />
       <form method='POST' action='/report'>
         <div className="container">
-          <h2> Добавление</h2>
+          <h2> Добавление отчета</h2>
 
           <div className="mb-3">
             <label className="did-floating-label">Год</label>

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import emailjs from 'emailjs-com';
 import './currentProject.css';
 import Onas from '../../wiews/onas/Onas';
@@ -194,6 +194,33 @@ export default function CurrentProject() {
             <div className="carousel-item">
               <img style={{ maxWidth: '300px' }} src="kartinka1.png" className="d-block w-100" alt="gachi" />
             </div>
+            <button type="submit" className={!accept ? 'sendFormButton disabled' : 'sendFormButton'} disabled={!accept}>Отправить</button>
+          </form>
+        </div>
+        <div className="form-picture-container">
+          <img className="form-picture" src="/hands.jpg" alt="hands" />
+        </div>
+      </div>
+      <div className="container4">
+        <div className="firstText">НОВОСТИ ПРОЕКТА:</div>
+        <div className="firstText2">
+          72 ребенка с двигательной и ментальной инвалидностью
+          {' '}
+          <br />
+          {' '}
+          стали постоянными участниками наших проектов
+        </div>
+      </div>
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
+          </div>
+          <div className="carousel-item">
+            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true" />
