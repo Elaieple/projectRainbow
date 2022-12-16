@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 // import Pagination from 'react-bootstrap/Pagination';
 import './cmi.css';
 import { Link } from 'react-router-dom';
@@ -7,9 +8,12 @@ import Onas from '../onas/Onas';
 
 export default function Cmi() {
   const [media, setMedia] = useState([]);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [mediaPerPage] = useState(6);
+
+  const dispatch = useDispatch();
+  const { loading } = useSelector((store) => store.globalStore);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -19,6 +23,7 @@ export default function Cmi() {
     })
       .then((res) => res.json())
       .then((res) => {
+        dispatch({ type: 'SET_LOADING', payload: false });
         setMedia(res);
       })
       .catch(console.log);
@@ -45,42 +50,47 @@ export default function Cmi() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
-    <>
-      <div className="null" />
-      <div className="containerv">
-        <div className="title"> СМИ о нас</div>
+    loading ? (
+      <div className="spinner-container">
+        <img className="spinner" src="https://i.pinimg.com/originals/e2/eb/9e/e2eb9e845ff87fb8fac15f72359efb10.gif" alt="spinner" />
+      </div>
+    ) : (
+      <>
+        <div className="null" />
+        <div className="containerv">
+          <div className="title"> СМИ о нас</div>
 
-        <div className="contents">
-          {currentMedia.map((news) => (
-            <div className="MediaBlocks">
-              <div className="date">{new Date(Date.parse(news.date)).toLocaleDateString()}</div>
-              <div className="ostex">
-                <img className="png" src={`http://localhost:3001/${news.image}`} alt="foto" />
-                <div className="cont">
-                  <div className="title1">
-                    <p className="title1">
-                      {news.title}
-                    </p>
+          <div className="contents">
+            {currentMedia.map((news) => (
+              <div className="MediaBlocks">
+                <div className="date">{new Date(Date.parse(news.date)).toLocaleDateString()}</div>
+                <div className="ostex">
+                  <img className="png" src={`http://localhost:3001/${news.image}`} alt="foto" />
+                  <div className="cont">
+                    <div className="title1">
+                      <p className="title1">
+                        {news.title}
+                      </p>
+                    </div>
+                    <Link className="LinkMediaCmi" to={`/media/${news.id}`}> Подробнее ➞ </Link>
                   </div>
-                  <Link className="LinkMediaCmi" to={`/media/${news.id}`}> Подробнее ➞ </Link>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="PaginationBlock">
+            {/* <button className="VectorBtnMediaLeft" type="button" onClick={prevPage}><img src="Vector/VectorLeft.svg" alt="Vector" /></button> */}
+            <Pagination
+              mediaPerPage={mediaPerPage}
+              totalMedia={media.length}
+              paginate={paginate}
+            />
+            <button className="VectorBtnMediaRight" type="button" onClick={nextPage}><img src="Vector/VectorRigth.svg" alt="Vector" /></button>
+          </div>
+          {/* <button className="bu" type="button">1</button> */}
         </div>
-        <div className="PaginationBlock">
-          {/* <button className="VectorBtnMediaLeft" type="button" onClick={prevPage}><img src="Vector/VectorLeft.svg" alt="Vector" /></button> */}
-          <Pagination
-            mediaPerPage={mediaPerPage}
-            totalMedia={media.length}
-            paginate={paginate}
-          />
-          <button className="VectorBtnMediaRight" type="button" onClick={nextPage}><img src="Vector/VectorRigth.svg" alt="Vector" /></button>
-        </div>
-        {/* <button className="bu" type="button">1</button> */}
-      </div>
-      <Onas />
-
-    </>
+        <Onas />
+      </>
+    )
   );
 }
