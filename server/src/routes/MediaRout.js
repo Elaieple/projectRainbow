@@ -7,8 +7,9 @@ const { Media } = require('../../db/models');
 
 router.get('/', async (req, res) => {
   try {
+    const { bee } = req.session;
     const allMedia = await Media.findAll({ order: [['createdAt', 'DESC']] });
-    renderTemplate(MediaVie, { allMedia }, res);
+    renderTemplate(MediaVie, { allMedia, bee }, res);
   } catch (error) {
     console.log('Error ==>', error)
   }

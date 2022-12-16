@@ -5,8 +5,9 @@ const Main = require('../views/Layout');
 
 router.get('/', async (req, res) => {
   try {
-    const userName = req.session?.username;
-    renderTemplate(Main, null, res);
+    const { bee } = req.session;
+    
+    renderTemplate(Main, {bee}, res);
   } catch (error) {
     console.log('Error ==>', error);
   }

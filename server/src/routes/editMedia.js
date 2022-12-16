@@ -6,8 +6,9 @@ const { Media } = require('../../db/models');
 
 router.get('/:id', async (req, res) => {
   try {
+    const { bee } = req.session;
     const news = await Media.findOne({ where: { id: req.params.id } });
-    renderTemplate(editMedia, { news }, res);
+    renderTemplate(editMedia, { news, bee }, res);
   } catch (error) {
     console.log('Error ==>', error);
   }

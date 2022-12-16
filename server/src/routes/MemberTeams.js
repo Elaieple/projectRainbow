@@ -10,9 +10,9 @@ const fileMiddleware = require('../middlewares/file');
 
 router.get('/', async (req, res) => {
   try {
-    const userName = req.session?.username;
+    const { bee } = req.session;
     const allMember = await Team.findAll({ order: [['createdAt', 'DESC']]  });
-    renderTemplate(Main, { allMember }, res);
+    renderTemplate(Main, { allMember, bee }, res);
   } catch (error) {
     console.log('Error ==>', error);
   }

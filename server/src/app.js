@@ -36,6 +36,7 @@ const Event = require('./routes/NewProject');
 const file = require('./routes/FileRouter')
 const sendMembers = require('./routes/SendMemberTeam');
 const sendMedia = require('./routes/SendMedia');
+const NewProject = require('./routes/NewProjectRouter');
 
 
 app.use(morgan('dev'));
@@ -58,18 +59,33 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));// подключение мидлвара для куки
  
-app.use('/autorisation', Autorisation);
-app.use('/', Report);
-app.use('/', Main);
-app.use('/AddMember', AddMember);
-app.use('/editMember', editMember);
-app.use('/editMedia', editMedia);
-app.use('/report', Report);
-app.use('/sendMembers', sendMembers);
-app.use('/sendMedia', sendMedia);
-app.use('/AddMedia', Media);
-app.use('/newproj', Event)
-app.use('/file', file)
+app.use('/', Autorisation);
+app.use('/',isAuth, Report);
+app.use('/',isAuth, Main);
+app.use('/AddMember',isAuth, AddMember);
+app.use('/editMember',isAuth, editMember);
+app.use('/editMedia',isAuth, editMedia);
+app.use('/report',isAuth, Report);
+app.use('/sendMembers',isAuth, sendMembers);
+app.use('/sendMedia',isAuth, sendMedia);
+app.use('/AddMedia',isAuth, Media);
+app.use('/newproj',isAuth, Event)
+app.use('/file',isAuth, file)
+app.use('/newsproject',isAuth, NewProject);
+
+app.get('/logout', (req, res) => { // делаем логаут
+  try {
+    console.log(req.session.bee);
+    if (req.session.bee) {
+      req.session.destroy(() => { // убиваем сессию
+        res.clearCookie('Cook');// убиваем куки при выходе
+        res.redirect('/');
+      });
+    }
+  } catch (error) {
+    res.send(`Error ---123---> ${error}`);
+  }
+});
 
 
 app.listen(PORT, () => {

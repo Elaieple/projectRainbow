@@ -3,17 +3,19 @@ const router = express.Router();
 const renderTemplate = require('../lib/renderTemplate');
 const bcrypt = require('bcrypt');
 const { Admin } = require('../../db/models');
-const Aut = require('./../views/Aut');
+const Aut = require('../views/Main');
 
 router.get('/', async (req, res) => {
     try {
-        renderTemplate(Aut, {}, res);
+      const { bee } = req.session;
+      console.log(bee);
+        renderTemplate(Aut, { bee }, res);
     } catch (error) {
         console.log("error", error);
     }
 });
  
-router.post('/', async (req, res) => {
+router.post('/autorisation', async (req, res) => {
     try {
       const { email, password } = req.body;
       console.log(req.body);
