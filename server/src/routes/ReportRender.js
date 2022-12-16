@@ -5,9 +5,10 @@ const { Report, Income, Spending, HelpInfo, HelpVol } = require('../../db/models
 
 router.get('/report', async (req, res) => {
   try {
+    const { bee } = req.session;
     const rep = await Report.findAll();
     const incomAll = await Income.findAll();
-    renderTemplate(Rep, {rep, incomAll}, res);
+    renderTemplate(Rep, {rep, incomAll, bee}, res);
   } catch (error) {
     console.log(error)
   }

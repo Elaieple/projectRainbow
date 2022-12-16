@@ -6,8 +6,9 @@ const fileMiddleware = require('../middlewares/file');
 
 router.get('/', async (req, res) => {
   try {
+    const { bee } = req.session;
      const allProjects = await Project.findAll({incude: {all: true}})
-  renderTemplate(Event, {allProjects}, res);
+  renderTemplate(Event, {allProjects, bee}, res);
   } catch {
     console.log(error)
   }
@@ -37,6 +38,7 @@ router.delete('/:id', async (req, res) => {
 
 router.get('/current', async (req, res) => {
   try {
+
     const allProjects = await Project.findAll({incude: {all: true}})
     const sortedProjects = allProjects.filter(el => Date.parse(el.dateend) > Date.parse(new Date()))
     res.json(sortedProjects)

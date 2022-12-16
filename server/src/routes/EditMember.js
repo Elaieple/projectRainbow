@@ -6,8 +6,9 @@ const { Team } = require('../../db/models');
 
 router.get('/:id', async (req, res) => {
   try {
+    const { bee } = req.session;
     const Member = await Team.findOne({ where: { id: req.params.id } });
-    renderTemplate(editPost, { Member }, res);
+    renderTemplate(editPost, { Member, bee }, res);
   } catch (error) {
     console.log('Error ==>', error);
   }
