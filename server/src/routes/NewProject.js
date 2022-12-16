@@ -38,7 +38,8 @@ router.delete('/:id', async (req, res) => {
 router.get('/current', async (req, res) => {
   try {
     const allProjects = await Project.findAll({incude: {all: true}})
-    res.json(allProjects)
+    const sortedProjects = allProjects.filter(el => Date.parse(el.dateend) > Date.parse(new Date()))
+    res.json(sortedProjects)
   } catch (error) {
     console.log(error);
   }
@@ -47,9 +48,8 @@ router.get('/current', async (req, res) => {
 router.get('/completed', async (req, res) => {
   try {
     const allProjects = await Project.findAll({incude: {all: true}})
-    console.log();
-    // const sortedProjects = allProjects.filter(el => )
-    res.json(allProjects)
+    const sortedProjects = allProjects.filter(el => Date.parse(el.dateend) < Date.parse(new Date()))
+    res.json(sortedProjects)
   } catch (error) {
     console.log(error);
   }

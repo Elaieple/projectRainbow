@@ -42,7 +42,9 @@ export default function Order() {
             </tr>
             <tr>
               <th className="month">АПРЕЛЬ</th>
-              <th className="month"><button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'REPORT' })}><p className="plus">{state.report ? '--' : '+'}</p></button></th>
+              <th className="month">
+                <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'REPORT' })}><p className="plus">{state.report ? '--' : '+'}</p></button>
+              </th>
             </tr>
           </table>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'MONTH' })}><p className="yyy">{state.month ? '--' : '+'}</p></button>
