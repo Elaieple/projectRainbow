@@ -1,6 +1,11 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: unset;
+}
+
+*, ::after, ::before {
+    box-sizing: unset;
 }
 
 #linkFirstFirst {
@@ -41,11 +46,11 @@
     padding: 15px;
   }
   
-  .navbar {
+  .navbar1 {
     width: 100%;
     z-index: 100;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     align-items: flex-start;
 }
@@ -100,15 +105,15 @@
         display: none;
     }
 
-    .navbar {
+    .navbar1 {
         padding: 0%;
         align-items: center;
         justify-content: center;
     }
 
-    #showBlockBtn {
+    /* #showBlockBtn {
         display: none;
-    }
+    } */
 
     .link {
         text-decoration: none;
@@ -118,9 +123,10 @@
         font-size: 20px;
         line-height: 23px;
         /* color: #FFFFFF; */
-        margin-right: 70px;
+        width: 185px;
         padding: 10px;
     }
+
     
     .link:hover {
         font-weight: bolder;
@@ -146,8 +152,17 @@
     .black a{
         color: #000000;
     }
+
+    .black:hover a{
+        color: #000000;
+    }
+
     
     .white a{
+        color: #FFFFFF;
+    }
+
+    .white:hover a {
         color: #FFFFFF;
     }
     
@@ -203,15 +218,15 @@
         display: none;
     }
 
-    .navbar {
+    .navbar1 {
         padding: 1%;
         align-items: center;
         justify-content: center;
     }
 
-    #showBlockBtn {
+    /* #showBlockBtn {
         display: none;
-    }
+    } */
 
     .link {
         text-decoration: none;
@@ -302,7 +317,7 @@
 
 @media (min-width: 640px ) and (max-width: 999px) {
 
-    .navbar {
+    .navbar1 {
         flex-wrap: wrap;
     }
 
@@ -422,7 +437,7 @@
 
 @media (min-width: 320px ) and (max-width: 639px) {
 
-    .navbar {
+    .navbar1 {
         flex-wrap: wrap;
     }
 
