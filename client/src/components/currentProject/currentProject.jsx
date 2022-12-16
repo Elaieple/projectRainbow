@@ -45,12 +45,12 @@ export default function CurrentProject() {
   console.log('123');
   const sendEntry = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+    //   .then((result) => {
+    //     console.log(result.text);
+    //   }, (error) => {
+    //     console.log(error.text);
+    //   });
     e.target.reset();
     setVisible(!visible);
     setAccept(!accept);
@@ -69,7 +69,7 @@ export default function CurrentProject() {
         <div className="photoText1">
           <img className="photoProject" src={`http://localhost:3001/${project.fonimage}`} alt="photoProject" />
           <div className="photoText-wrapper">
-            <p>{`project.title ? Проект “${project.title}” : 'Loading...'`}</p>
+            <p>{project.title ? `Проект “${project.title}”` : 'Loading...'}</p>
             <button type="button" className="buttonParticipate" style={Date.parse(new Date()) > new Date(Date.parse(project.dateend)) ? { display: 'none' } : {}}>УЧАСТВОВАТЬ</button>
           </div>
         </div>
