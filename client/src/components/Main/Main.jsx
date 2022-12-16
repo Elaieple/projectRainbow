@@ -183,37 +183,37 @@ export default function Main() {
 
           <Link to="ourFriends">
             <div className="circle">
-              <div className="firstFriend" />
+              <img src="fotoFriends/1600/foto12.jpg" alt="foto" className="firstFriend" />
             </div>
           </Link>
 
           <Link to="ourFriends">
             <div className="circle">
-              <div className="secondFriend" />
+              <img src="fotoFriends/1600/foto5.jpg" alt="foto" className="secondFriend" />
             </div>
           </Link>
 
           <Link to="ourFriends">
             <div className="circle">
-              <div className="thirdFriend" />
+              <img src="fotoFriends/1600/foto2.png" alt="foto" className="thirdFriend" />
             </div>
           </Link>
 
           <Link to="ourFriends">
             <div className="circle">
-              <div className="fourthFriend" />
+              <img src="fotoFriends/1600/foto19.jpg" alt="foto" className="fourthFriend" />
             </div>
           </Link>
 
           <Link to="ourFriends">
             <div className="circle size640px">
-              <div className="fifthFriend 640px" />
+              <img src="fotoFriends/1600/foto4.png" alt="foto" className="fifthFriend 640px" />
             </div>
           </Link>
 
           <Link to="ourFriends">
             <div className="circle size640px">
-              <div className="sixthFriend size640px" />
+              <img src="fotoFriends/1600/foto14.png" alt="foto" className="sixthFriend size640px" />
             </div>
           </Link>
 
@@ -292,7 +292,7 @@ export default function Main() {
           <p className="mediaNames">
             СМИ О НАС
           </p>
-          <Link to="ourFriends">
+          <Link className="LinkMediaTextMainPage" to="ourFriends">
             <p className="allMedia">
               Читать все статьи ➞
             </p>

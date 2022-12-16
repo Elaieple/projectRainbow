@@ -50,7 +50,7 @@ export default function Navbar() {
     <>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       <div className="topnav" id="myTopnav">
-        <div className="navbar">
+        <div className="navbar1">
           <Link id="linkFirst" className="link linkFirst" to="/">
             <img src="/adaptiv/mainPage640/logo_m 3.png" alt="logo" />
             {' '}
@@ -60,7 +60,7 @@ export default function Navbar() {
             {' '}
           </Link>
           <Link id="MainPage" className="link" to="/">Главная</Link>
-          <Link id="showBlockLink" className="link" to="/aboutUs">О нас</Link>
+          {/* <Link id="showBlockLink" className="link" to="/aboutUs">О нас</Link> */}
           <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
           <div className="navBlocksManyLink">
             <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
   );
 
   return (
-    <div className={classNames('nav', navColor)} style={{ textAlign: 'center' }}>
+    <div className={classNames('nav1', navColor)} style={{ textAlign: 'center' }}>
       {authNav()}
     </div>
   );
