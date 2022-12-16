@@ -24,19 +24,19 @@ module.exports = function Layout({ children }) {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">Main</a>
+                  <a className="nav-link active" aria-current="page" href="/">Отчеты</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/AddMember">Добавить Сотрудника</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/report">Отчеты</a>
+                  <a className="nav-link" href="/report">Добавить отчет</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/AddMedia">Новости</a>
+                  <a className="nav-link" href="/AddMedia"> Добавить новость</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/newproj">Мероприятия</a>
+                  <a className="nav-link" href="/newproj">Добавть проект</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/autorisation">Авторизация</a>

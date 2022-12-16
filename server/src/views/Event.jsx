@@ -7,20 +7,20 @@ module.exports = function Event ({allProjects}) {
     <Layout>
         <form method='POST' action='/newproj' name='formProject' enctype="multipart/form-data">
         <div className="container">
-        <h2> Добавление мероприятия</h2>
+        <h2> Добавление проекта</h2>
 
           <div className="mb-3">
-            <label className="did-floating-label">Название мероприятия</label>
+            <label className="did-floating-label">Название проекта</label>
             <input type="name" required className="form-control" id="exampleInputUsername" name="title" placeholder="" />
           </div>
 
           <div className="mb-3">
-            <label className="did-floating-label">Дата старта мероприятия</label>
+            <label className="did-floating-label">Дата старта проекта</label>
             <input type="date" required className="form-control" id="exampleInputUsername" name="datestart" placeholder="" />
           </div>
 
           <div className="mb-3">
-            <label className="did-floating-label">Дата окончания мероприятия</label>
+            <label className="did-floating-label">Дата окончания проекта</label>
             <input type="date" required className="form-control" id="exampleInputUsername" name="dateend" placeholder="" />
           </div>
 
@@ -44,12 +44,15 @@ module.exports = function Event ({allProjects}) {
             <input type="text" required className="form-control" id="exampleInputUsername" name="intent" placeholder="" />
           </div>
 
-          <button type="button" className="btn floating-button add" id="add">Добавить мероприятие</button>
+          <button type="button" className="btn floating-button add" id="add">Добавить проект</button>
       </div>
       </form>
       <div style={{textAlign: 'center'}}>
         <h3>Список проектов:</h3>
-      {allProjects.map(el => <div style={{border: '2px solid black', width: '50%'}}><p>Название: {el.title}</p><button className="deleteProject" type="button" id={el.id}>Удалить проект</button></div>)}
+      {allProjects.map(el => <div style={{border: '2px solid black', width: '50%'}}><p>Название: {el.title}</p>
+      <button className="deleteProject" type="button" id={el.id}>Удалить проект</button>
+      <button className="newsProject" type="button" id={el.id}>Добавить новости проекта</button>
+      </div>)}
       </div>
       <script  defer src='/js/DeleteProgect.js'/>
     </Layout>

@@ -58,7 +58,7 @@ export default function Onas() {
           <div className="or">
             <div className="nav1">
               <div className="sooo">
-                <div>
+                <div className="infff">
                   <h3 className="ttt">Контакты</h3>
                   <p className="ooo">+79277876389</p>
                   <p className="ooo">above_rainbow@mail.ru</p>
@@ -68,10 +68,10 @@ export default function Onas() {
                     <img className="ots" src="./ico/fb.svg" alt="foto" />
                     <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
                   </div>
-                  <div className="eee">
-                    <h3 className="ttt">Адрес</h3>
-                    <div className="ooo">443081, г. Самара, ул. Стара Загора, д. 56, кв. 11</div>
-                  </div>
+                </div>
+                <div className="eee">
+                  <h3 className="ttt">Адрес</h3>
+                  <div className="ooo">443081, г. Самара, ул. Стара Загора, д. 56, кв. 11</div>
                 </div>
               </div>
               <div className="n">
