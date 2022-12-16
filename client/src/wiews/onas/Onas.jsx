@@ -59,20 +59,24 @@ export default function Onas() {
             <div className="nav1">
               <div className="sooo">
                 <div className="infff">
-                  <h3 className="ttt">Контакты</h3>
-                  <p className="ooo">+79277876389</p>
-                  <p className="ooo">above_rainbow@mail.ru</p>
-                  <div className="links-media">
-                    <img className="ots" src="./ico/twitter.svg" alt="foto" />
-                    <img className="ots" src="./ico/ig.svg" alt="foto" />
-                    <img className="ots" src="./ico/fb.svg" alt="foto" />
-                    <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
+                  <div className="rightblock-contacts">
+                    <h3 className="ttt">Контакты</h3>
+                    <p className="ooo" style={{ margin: 0 }}>+79277876389</p>
+                    <p className="ooo">above_rainbow@mail.ru</p>
+                    <div className="links-media">
+                      <img className="ots" src="./ico/twitter.svg" alt="foto" />
+                      <img className="ots" src="./ico/ig.svg" alt="foto" />
+                      <img className="ots" src="./ico/fb.svg" alt="foto" />
+                      <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
+                    </div>
                   </div>
+                  <div className="eee">
+                    <h3 className="ttt">Адрес</h3>
+                    <div className="ooo">443081, г. Самара, ул. Стара Загора, д. 56, кв. 11</div>
+                  </div>
+
                 </div>
-                <div className="eee">
-                  <h3 className="ttt">Адрес</h3>
-                  <div className="ooo">443081, г. Самара, ул. Стара Загора, д. 56, кв. 11</div>
-                </div>
+
               </div>
               <div className="n">
                 Условия использования персональных данных
