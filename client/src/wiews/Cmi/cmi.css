@@ -23,6 +23,12 @@
     padding-top: 20px;
     border-top: 1px solid #949494;
     width: 100%;
+    flex-direction: column;
+}
+
+.MediaBlocks {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #949494;
 }
 
 .date {
@@ -36,7 +42,7 @@
 
 .ostex {
     display: flex;
-    margin-left: 200px;
+    margin-left: 300px;
     margin-bottom: 20px;
 }
 
@@ -48,19 +54,30 @@
     line-height: 30px;
     color: #474747;
     text-align: start;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    width: 590px;
+    word-break: break-all;
+}
+
+.LinkMediaCmi {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .cont {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .png {
-    margin-right: 20px;
-    max-width: 285px;
-    max-height: 240px;
+    width: 285px;
+    height: 240px;
 }
 
 .bu {
@@ -70,4 +87,30 @@
     width: 50px;
     font-size: 26px;
     padding: 9px;
+}
+
+.PaginationBlock {
+    display: flex;
+}
+
+.VectorBtnMediaLeft {
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    background-color: #46AB4A;
+    outline: none;
+    border: 0;
+    margin: 5px;
+    color: #FFFFFF;
+}
+
+.VectorBtnMediaRight {
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    background-color: #46AB4A;
+    outline: none;
+    border: 0;
+    margin: 5px;
+    color: #FFFFFF;
 }
