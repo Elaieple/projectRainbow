@@ -42,15 +42,15 @@ export default function CurrentProject() {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
-  console.log('123');
+
   const sendEntry = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
     e.target.reset();
     setVisible(!visible);
     setAccept(!accept);

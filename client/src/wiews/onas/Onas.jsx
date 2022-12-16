@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import twitter from '../../assets/ico/twitter.svg';
+import vk from '../../assets/ico/vk.svg';
+import telegram from '../../assets/ico/ig.svg';
+import facebook from '../../assets/ico/fb.svg';
 import './onas.css';
 
 export default function Onas() {
@@ -12,13 +16,13 @@ export default function Onas() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
-    // e.target.reset();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+    e.target.reset();
     setShow(!show);
   };
 
@@ -64,10 +68,10 @@ export default function Onas() {
                     <p className="ooo" style={{ margin: 0 }}>+79277876389</p>
                     <p className="ooo">above_rainbow@mail.ru</p>
                     <div className="links-media">
-                      <img className="ots" src="./ico/twitter.svg" alt="foto" />
-                      <img className="ots" src="./ico/ig.svg" alt="foto" />
-                      <img className="ots" src="./ico/fb.svg" alt="foto" />
-                      <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src="./ico/vk.svg" alt="foto" /></a>
+                      <img className="ots" src={twitter} alt="foto" />
+                      <img className="ots" src={facebook} alt="foto" />
+                      <img className="ots" src={telegram} alt="foto" />
+                      <a href="https://vk.com/above_rainbow_samara" target="_blank" rel="noreferrer"><img className="ots" src={vk} alt="foto" /></a>
                     </div>
                   </div>
                   <div className="eee">
