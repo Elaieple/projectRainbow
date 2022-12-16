@@ -42,7 +42,7 @@ export default function CurrentProject() {
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const USER_ID = process.env.REACT_APP_USER_ID;
-  console.log('123');
+
   const sendEntry = (e) => {
     e.preventDefault();
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -69,7 +69,7 @@ export default function CurrentProject() {
         <div className="photoText1">
           <img className="photoProject" src={`http://localhost:3001/${project.fonimage}`} alt="photoProject" />
           <div className="photoText-wrapper">
-            <p>{`project.title ? Проект “${project.title}” : 'Loading...'`}</p>
+            <p>{project.title ? `Проект “${project.title}”` : 'Loading...'}</p>
             <button type="button" className="buttonParticipate" style={Date.parse(new Date()) > new Date(Date.parse(project.dateend)) ? { display: 'none' } : {}}>УЧАСТВОВАТЬ</button>
           </div>
         </div>

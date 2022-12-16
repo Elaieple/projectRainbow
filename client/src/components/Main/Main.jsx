@@ -22,7 +22,7 @@ export default function Main() {
       </div>
       <div className="firstBlock BlockAboutUs">
         <div className="blockProcent">
-          <div className="size block1 mainPageBlock320">
+          <div className="size block1 mainPageBlock320" style={{ boxSizing: 'unset' }}>
             <p className="firstH2"> 15% </p>
             <p className="secondP">
               детей с ДЦП в Самарской области могут посещать общеобразовательные учреждения.
@@ -30,7 +30,7 @@ export default function Main() {
             </p>
           </div>
           <p className="poloska" />
-          <div className="size block2 size320">
+          <div className="size block2 size320" style={{ boxSizing: 'unset' }}>
             <p className="firstH2"> 85% </p>
             <p className="secondP">
               этой категории в силу тяжести своего состояния требуют особого подхода: большего времени усвоения учебного материала,

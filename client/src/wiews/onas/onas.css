@@ -91,12 +91,11 @@ opacity: 0.7;
 #ov{
     margin-bottom: 20px;
     font-size: 23px;
-     min-height: -webkit-fill-available;
      font-weight: 300;
  }
  #cvy{ 
     margin-bottom: 10px;
-  padding: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 50px;
@@ -117,6 +116,14 @@ opacity: 0.7;
     font-variant: all-petite-caps;
 }
 
+.rightblock-contacts {
+    margin-right: 100px;
+}
+
+.infff {
+    display: flex;
+    justify-content: space-between;
+}
 
 .ooo{
     max-width: 260px;
@@ -156,11 +163,10 @@ padding: 2px;
 
 
 .feedBack {
-    min-width: 800px;
+    min-width: 600px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    
 }
 
 .feedBack h1 {
