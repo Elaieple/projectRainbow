@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import classNames from 'classnames';
+import Logo from '../../assets/image/logo_m_1.png';
 
 export default function Navbar() {
   const [navColor, setNavColor] = useState('black');
@@ -55,7 +56,7 @@ export default function Navbar() {
             {' '}
           </Link>
           <Link id="linkFirstSecond" className="link linkFirst" to="/">
-            <img src="logotypes/logo_m 1.png" alt="logo" />
+            <img src={Logo} alt="logo" />
             {' '}
           </Link>
           <Link id="MainPage" className="link" to="/">Главная</Link>

@@ -69,10 +69,9 @@ export default function CurrentProject() {
         <div className="photoText1">
           <img className="photoProject" src={`http://localhost:3001/${project.fonimage}`} alt="photoProject" />
           <div className="photoText-wrapper">
-            <p>{project.title ? `Проект “${project.title}”` : 'Loading...'}</p>
+            <p>{`project.title ? Проект “${project.title}” : 'Loading...'`}</p>
             <button type="button" className="buttonParticipate" style={Date.parse(new Date()) > new Date(Date.parse(project.dateend)) ? { display: 'none' } : {}}>УЧАСТВОВАТЬ</button>
           </div>
-
         </div>
         <div className="main-project-container" />
         <div className="container1">
@@ -132,7 +131,6 @@ export default function CurrentProject() {
               <p>4</p>
               <p>
                 В назначенный день быть на месте, готовым к участию и одетым по
-
                 погоде
               </p>
             </div>
@@ -186,41 +184,14 @@ export default function CurrentProject() {
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img style={{ maxWidth: '300px' }} src="kartinka3.png" className="d-block w-100" alt="gachi" />
+              <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
             </div>
             <div className="carousel-item">
-              <img style={{ maxWidth: '300px' }} src="kartinka2.png" className="d-block w-100" alt="gachi" />
+              <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
             </div>
             <div className="carousel-item">
-              <img style={{ maxWidth: '300px' }} src="kartinka1.png" className="d-block w-100" alt="gachi" />
+              <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
             </div>
-            <button type="submit" className={!accept ? 'sendFormButton disabled' : 'sendFormButton'} disabled={!accept}>Отправить</button>
-          </form>
-        </div>
-        <div className="form-picture-container">
-          <img className="form-picture" src="/hands.jpg" alt="hands" />
-        </div>
-      </div>
-      <div className="container4">
-        <div className="firstText">НОВОСТИ ПРОЕКТА:</div>
-        <div className="firstText2">
-          72 ребенка с двигательной и ментальной инвалидностью
-          {' '}
-          <br />
-          {' '}
-          стали постоянными участниками наших проектов
-        </div>
-      </div>
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
-          </div>
-          <div className="carousel-item">
-            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
-          </div>
-          <div className="carousel-item">
-            <img src="/kartinka5.png" className="d-block w-100" alt="gachi" />
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true" />
