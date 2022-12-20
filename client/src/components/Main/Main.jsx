@@ -51,7 +51,7 @@ export default function Main() {
               Мы создали Автономную некоммерческую образовательную организацию для детей с ДЦП «Выше радуги»,
               которая прошла официальную регистрацию и имеет расчетный счет.
             </p>
-            <button type="button" className="btn">
+            <button type="button" className="btn1">
               <Link to="/" className="allMedia1" />
               ПОДРОБНЕЕ
             </button>
@@ -84,7 +84,7 @@ export default function Main() {
           </Link>
         </div>
         <div className="secondMainDiv">
-          <div className="sideBlock">
+          <div className="sideBlock" style={{ boxSizing: 'unset' }}>
             <p className="TitleProject">
               Делай с нами,
               {' '}
@@ -94,7 +94,7 @@ export default function Main() {
               <br />
               делай лучше нас
             </p>
-            <p className="date">
+            <p className="dateZ">
               2022
             </p>
             <Link to="projects" className="more">
@@ -102,33 +102,34 @@ export default function Main() {
             </Link>
           </div>
 
-          <div className="secondBlockProject">
+          <div className="secondBlockProject" style={{ boxSizing: 'unset' }}>
             <p className="TitleProject">
               Второе дыхание
             </p>
-            <p className="date">
+            <p className="dateZ">
               2022
             </p>
             <Link to="projects" className="more">
               Подробнее ➞
             </Link>
           </div>
-          <div className="thirdBlockProject">
+
+          <div className="thirdBlockProject" style={{ boxSizing: 'unset' }}>
             <p className="TitleProject">
               Живая вода
             </p>
-            <p className="date">
+            <p className="dateZ">
               2022
             </p>
             <Link to="projects" className="more">
               Подробнее ➞
             </Link>
           </div>
-          <div className="secondSideBlock">
+          <div className="secondSideBlock" style={{ boxSizing: 'unset' }}>
             <p className="TitleProject">
               Перезагрузка
             </p>
-            <p className="date">
+            <p className="dateZ">
               2022
             </p>
             <Link to="projects" className="more">
@@ -181,41 +182,41 @@ export default function Main() {
         </div>
         <div className="fotoFriends">
 
-          <Link to="ourFriends">
+          <a href="https://www.roscomsys.ru/" target="_blank" rel="noreferrer">
             <div className="circle">
               <img src="fotoFriends/1600/foto12.jpg" alt="foto" className="firstFriend" />
             </div>
-          </Link>
+          </a>
 
-          <Link to="ourFriends">
+          <a href="https://www.samaracable.ru/" target="_blank" rel="noreferrer">
             <div className="circle">
               <img src="fotoFriends/1600/foto5.jpg" alt="foto" className="secondFriend" />
             </div>
-          </Link>
+          </a>
 
-          <Link to="ourFriends">
+          <a href="https://xn--80afcdbalict6afooklqi5o.xn--p1ai/" target="_blank" rel="noreferrer">
             <div className="circle">
               <img src="fotoFriends/1600/foto2.png" alt="foto" className="thirdFriend" />
             </div>
-          </Link>
+          </a>
 
-          <Link to="ourFriends">
+          <a href="https://fondpolina.ru/" target="_blank" rel="noreferrer">
             <div className="circle">
               <img src="fotoFriends/1600/foto19.jpg" alt="foto" className="fourthFriend" />
             </div>
-          </Link>
+          </a>
 
-          <Link to="ourFriends">
+          <a href="https://fondpolina.ru/" target="_blank" rel="noreferrer">
             <div className="circle size640px">
               <img src="fotoFriends/1600/foto4.png" alt="foto" className="fifthFriend 640px" />
             </div>
-          </Link>
+          </a>
 
-          <Link to="ourFriends">
+          <a href="https://keramir-shop.ru/" target="_blank" rel="noreferrer">
             <div className="circle size640px">
               <img src="fotoFriends/1600/foto14.png" alt="foto" className="sixthFriend size640px" />
             </div>
-          </Link>
+          </a>
 
         </div>
         <Link to="ourFriends">

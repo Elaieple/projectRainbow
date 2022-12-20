@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useReducer, useEffect, useState } from 'react';
 import './order.css';
 import Onas from '../onas/Onas';
 
@@ -17,8 +17,24 @@ function reducer(state, action) {
       throw new Error();
   }
 }
+
 export default function Order() {
   const [state, dispatch] = useReducer(reducer, startState);
+  const [order, setOrder] = useState([]);
+
+  useEffect(() => {
+    const abortController = new AbortController();
+    fetch('http://localhost:3001/reportSend', {
+      credentials: 'include',
+      signal: abortController.signal,
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        setOrder(res);
+      })
+      .catch(console.log);
+  }, []);
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -26,6 +42,7 @@ export default function Order() {
 
   return (
     <>
+      <div className="null" />
       <div className="container000">
         <div className="title"> ОТЧЕТЫ</div>
         <br />

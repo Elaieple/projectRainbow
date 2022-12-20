@@ -8,6 +8,10 @@
     box-sizing: unset;
 }
 
+a:hover{
+    color: none;
+}
+
 #linkFirstFirst {
     display: none;
 }
@@ -15,21 +19,17 @@
 .topnav {
     display: flex;
     width: 100%;
-    overflow: hidden;
     position: absolute;
     justify-content: space-between;
     align-content: space-between;
-    top: 1%;
     align-items: center;
     }
   
   .topnav a {
-    /* float: left; */
     display: block;
     color: #FFFFFF;
     text-align: center;
     text-decoration: none;
-    /* font-size: 17px; */
   }
   
   .topnav a:hover {
@@ -38,19 +38,28 @@
   
   .topnav a.active {
     color: #FFFFFF;
-    /* background-color: #46AB4A; */
   }
   
   .topnav .icon {
     display: none;
-    padding: 15px;
+    margin: 15px;
+  }
+
+  #dropdown-menu{
+    background-color: unset;
+    margin-right: 15px;
+    border: 0;
+  }
+
+  #dropdown-item {
+    color: #FFFFFF;
   }
   
   .navbar1 {
     width: 100%;
     z-index: 100;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-start;
 }
@@ -68,8 +77,10 @@
     .topnav a:not(:first-child) {display: none;}
     .topnav button:not(:first-child) {display: none;}
     .topnav a.icon {
-      /* float: right; */
-      display: block;
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
   
@@ -86,23 +97,48 @@
         float: none;
         display: flex;
         justify-content: center;
-        padding: 12px;
+        /* padding: 12px; */
     }
 
     .topnav.responsive button {
         background-color: #46AB4A;
         float: none;
         display: flex;
+        width: 100%;
         justify-content: center;
-        padding: 12px;
+        /* padding: 12px; */
         border: 0;
         color: #FFFFFF;
     }
   }
 
 @media (min-width: 1600px) {
+
+    .blockToggle {
+        position: relative;
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+
     .navBlocksManyLink {
         display: none;
+        flex-direction: column;
+    }
+
+    .showBlockBtn {
+        color: #FFFFFF;
+        border: 0;
+        background-color: transparent;
     }
 
     .navbar1 {
@@ -111,9 +147,6 @@
         justify-content: center;
     }
 
-    /* #showBlockBtn {
-        display: none;
-    } */
 
     .link {
         text-decoration: none;
@@ -122,7 +155,6 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
-        /* color: #FFFFFF; */
         width: 185px;
         padding: 10px;
     }
@@ -153,10 +185,9 @@
         color: #000000;
     }
 
-    .black:hover a{
+    .black button {
         color: #000000;
     }
-
     
     .white a{
         color: #FFFFFF;
@@ -185,6 +216,14 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         cursor: pointer;
+        border: 2.5px solid #46AB4A;
+        transition: 1s;
+    }
+
+    .authBtn:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
+        transition: 1s;
     }
     
     .circle1 {
@@ -214,8 +253,31 @@
 
 @media (min-width: 1000px) and (max-width: 1599px) {
 
+    .blockToggle {
+        position: relative;
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+
     .navBlocksManyLink {
         display: none;
+        flex-direction: column;
+    }
+
+    .showBlockBtn {
+        color: #FFFFFF;
+        border: 0;
+        background-color: transparent;
     }
 
     .navbar1 {
@@ -224,10 +286,6 @@
         justify-content: center;
     }
 
-    /* #showBlockBtn {
-        display: none;
-    } */
-
     .link {
         text-decoration: none;
         font-family: 'Arial';
@@ -235,7 +293,6 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;
-        /* color: #FFFFFF; */
         margin-right: 20px;
         padding: 10px;
         padding-left: 3px;
@@ -265,6 +322,10 @@
     .black a{
         color: #000000;
     }
+
+    .black button {
+        color: #000000;
+    }
     
     .white a{
         color: #FFFFFF;
@@ -289,6 +350,14 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         cursor: pointer;
+        border: 2.5px solid #46AB4A;
+        transition: 1s;
+    }
+
+    .authBtn:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
+        transition: 1s;
     }
     
     .circle1 {
@@ -328,16 +397,19 @@
         flex-direction: column;
         width: 100%;
     }
+
+    .blockToggle {
+        width: 100%;
+    }
     
     .link {
+        display: none;
         text-decoration: none;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
         font-size: 35px;
         line-height: 40px;
-        /* color: #FFFFFF; */
-        /* margin-right: 30px; */
         padding: 10px;
         margin: -1px;
         width: 100%;
@@ -384,6 +456,9 @@
     .black a{
         color: #000000;
     }
+    .black button {
+        color: #000000;
+    }
     
     .white a{
         color: #FFFFFF;
@@ -409,6 +484,14 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         cursor: pointer;
+        border: 2.5px solid #46AB4A;
+        transition: 1s;
+    }
+
+    .authBtn:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
+        transition: 1s;
     }
     
     .circle1 {
@@ -437,12 +520,21 @@
 
 @media (min-width: 320px ) and (max-width: 639px) {
 
-    .navbar1 {
-        flex-wrap: wrap;
+    .navbar1{
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
     }
-
+    
+    .blockToggle {
+        width: 100%;
+    }
+    
     .link {
-        text-decoration: none;
+        display: none;
         font-family: 'Arial';
         font-style: normal;
         font-weight: 400;
@@ -502,6 +594,10 @@
     .black a{
         color: #000000;
     }
+
+    .black button {
+        color: #000000;
+    }
     
     .white a{
         color: #FFFFFF;
@@ -527,6 +623,14 @@
         line-height: 18px;
         letter-spacing: 0.04em;
         cursor: pointer;
+        border: 2.5px solid #46AB4A;
+        transition: 1s;
+    }
+
+    .authBtn:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
+        transition: 1s;
     }
     
     .circle1 {

@@ -61,11 +61,13 @@ export default function Navbar() {
           </Link>
           <Link id="MainPage" className="link" to="/">Главная</Link>
           {/* <Link id="showBlockLink" className="link" to="/aboutUs">О нас</Link> */}
-          <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
-          <div className="navBlocksManyLink">
-            <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
-            <Link className="link linksBlocks" to="/Teams">Команда</Link>
-            <Link className="link linksBlocks" to="/ourFriends">Документы</Link>
+          <div className="blockToggle">
+            <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
+            <div className="navBlocksManyLink dropdown-content">
+              <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
+              <Link className="link linksBlocks" to="/Teams">Команда</Link>
+              <Link className="link linksBlocks" to="/ourFriends">Документы</Link>
+            </div>
           </div>
           <Link className="link" to="/projects">Проекты</Link>
           <Link className="link" to="/howToHelp">Как помочь</Link>
@@ -75,7 +77,7 @@ export default function Navbar() {
           <Link id="linkFirstSecond" className="link" to="/donate">
             <button className="authBtn" type="button">ПОМОЧЬ</button>
           </Link>
-          <a href="#a" className="icon" onClick={myFunction}>
+          <a href="#" className="icon" onClick={myFunction}>
             <i className="fa fa-bars" />
           </a>
         </div>
