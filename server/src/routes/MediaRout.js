@@ -23,7 +23,11 @@ router.post('/add', fileMiddleware.single('image'), async (req, res) => {
     const NewMedia = await Media.create({image: path, date, title, description, descriptionImage, text, source});
     const { id } = NewMedia;
     const { image } = NewMedia;
-    const time = NewMember.createdAt.toLocaleDateString();
+    const time = NewMedia.createdAt.toLocaleDateString();
+    console.log('hellowwww')
+    res.json({
+      id, image, title, description, descriptionImage, text, source, time, post: 'OK',
+    });
   } catch (error) {
     console.log('Error ===>', error);
   }

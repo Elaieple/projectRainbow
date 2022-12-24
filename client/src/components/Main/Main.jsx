@@ -1,10 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Main.css';
 import Onas from '../../wiews/onas/Onas';
 
 export default function Main() {
+  const NUMBER_OF_PROJECT = 4;
+  const NUMBER_OF_NEWS = 4;
+  const [projects, setProjects] = useState([]);
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+    fetch('http://localhost:3001/newproj/send')
+      .then((data) => data.json())
+      .then((data) => setProjects(data))
+      .catch(console.error);
+  }, []);
+
+  useEffect(() => {
+    const abortController = new AbortController();
+    fetch('http://localhost:3001/sendMedia', {
+      credentials: 'include',
+      signal: abortController.signal,
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        setNews(res);
+      })
+      .catch(console.log);
+  }, []);
+
+  console.log(news);
+  console.log(projects);
   return (
     <>
       <>
@@ -84,7 +112,24 @@ export default function Main() {
           </Link>
         </div>
         <div className="secondMainDiv">
-          <div className="sideBlock" style={{ boxSizing: 'unset' }}>
+
+          {projects.length && projects.map((el, ind) => (
+            ind < NUMBER_OF_PROJECT && (
+              <div className="sideBlock" style={{ boxSizing: 'unset' }}>
+                <p className="TitleProject">
+                  {el.title}
+                </p>
+                <p className="dateZ">
+                  {new Date(Date.parse(el.updatedAt)).toLocaleDateString().slice(6)}
+                </p>
+                <Link to={`current/${el.id}`} className="more">
+                  Подробнее ➞
+                </Link>
+              </div>
+            )
+          ))}
+
+          {/* <div className="sideBlock" style={{ boxSizing: 'unset' }}>
             <p className="TitleProject">
               Делай с нами,
               {' '}
@@ -135,7 +180,8 @@ export default function Main() {
             <Link to="projects" className="more">
               Подробнее ➞
             </Link>
-          </div>
+          </div> */}
+
         </div>
       </div>
       <div className="BlockHelping">
@@ -304,7 +350,24 @@ export default function Main() {
         </div>
         <div className="tableMedia">
 
-          <div className="mediaBlocks">
+          {news.length && news.map((el, ind) => (
+            ind < NUMBER_OF_NEWS && (
+              <div className="mediaBlocks">
+                <img className="firstMedia" src={`http://localhost:3001/${el.image}`} alt="foto" />
+                <span className="mediaSpan">
+                  {new Date(Date.parse(el.updatedAt)).toLocaleDateString()}
+                </span>
+                <p className="textP">
+                  {el.title}
+                </p>
+                <Link to={`/media/${el.id}`} className="allMedia">
+                  Подробнее ➞
+                </Link>
+              </div>
+            )
+          ))}
+
+          {/* <div className="mediaBlocks">
             <div className="FirstPageCardMedia">
               <div className="firstMedia" />
               <span className="mediaSpan">
@@ -349,7 +412,7 @@ export default function Main() {
                 Подробнее ➞
               </Link>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

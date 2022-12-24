@@ -330,6 +330,10 @@ a:hover{
     .white a{
         color: #FFFFFF;
     }
+
+    .white:hover a {
+        color: #FFFFFF;
+    }
     
     .white a:active{
         color: #46AB4A;
@@ -411,7 +415,6 @@ a:hover{
         font-size: 35px;
         line-height: 40px;
         padding: 10px;
-        margin: -1px;
         width: 100%;
     }
     
@@ -461,6 +464,10 @@ a:hover{
     }
     
     .white a{
+        color: #FFFFFF;
+    }
+
+    .white:hover a {
         color: #FFFFFF;
     }
     
@@ -600,6 +607,10 @@ a:hover{
     }
     
     .white a{
+        color: #FFFFFF;
+    }
+
+    .white:hover a {
         color: #FFFFFF;
     }
     

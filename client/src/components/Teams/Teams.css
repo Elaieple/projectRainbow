@@ -1,158 +1,765 @@
+@media (min-width: 1600px ) {
+    .null {
+        height: 160px;
+    }
 
-.null {
-    height: 160px;
-}
+    .linkTeamsPage {
+      display: none;
+    }
+  
+    .btnTeamsPage {
+      display: none;
+    }
 
-.MyTeamsP {
-  display: flex;
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 55px;
-  color: #000000;
-  justify-content: center;
-}
+    .null2 {
+      display: none;
+    }
+    .MyTeamsP2 {
+      display: none;
+    }
+    
+    .MyTeamsP {
+      display: flex;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 55px;
+      color: #000000;
+      justify-content: center;
+    }
+    
+    .MainFotoTemasPage {
+        width: 100%;
+        height: 100%;
+        margin-top: 80px;
+    }
+    
+    .BlockTeams {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10%;
+        margin-top: 5%;
+        height: 100%;
+        justify-items: center;
+    }
+    
+    .card-post {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    
+    .ImgTeams {
+        border-radius: 20px;
+        z-index: -3;
+    }
+    
+    .Name {
+        width: 285px;
+        height: 23px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+    .Post {
+        width: 285px;
+        height: 18px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #474747;
+    }
+    
+    .mediaBlocks + .SecondPageCard {
+        display: none;
+    }
+    
+    .mediaBlocks:hover + .SecondPageCard {
+        display: block;
+    }
+    
+    .SecondPageCard {
+        width: 285px;
+        height: 350px;
+        background-color: blue;
+    }
+    
+    .flip-card {
+        background-color: transparent;
+        width: 590px;
+        height: 350px;
+        border-radius: 20px;
+        margin: 18px;
+        /* border: 1px solid #f1f1f1; */
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        margin-bottom: 100px;
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        display: grid;
+        color: black;
+        border-radius: 20px;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        border-radius: 20px;
+        background-color: #46AB4A;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        transform: rotateY(180deg);
+      }
+    
+      .MemberTextPage {
+        margin: 20px;
+        text-align: start;
+      }
+    
+      .MemberTeam {
+        margin: 5px;
+      }
+    
+      .ots {
+        padding: 4px;
+        transition: 0.5s;
+        opacity: 0.5;
+      }
+    
+      .ots:hover {
+        opacity: 1;
+      }
+  }
 
-.MainFotoTemasPage {
-    width: 100%;
-    height: 100%;
-    margin-top: 80px;
-}
+  @media (min-width: 1000px ) and (max-width: 1599px) {
 
-.BlockTeams {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 10%;
-    margin-top: 5%;
-    height: 100%;
-    justify-items: center;
-}
+    .linkTeamsPage {
+      display: none;
+    }
+  
+    .btnTeamsPage {
+      display: none;
+    }
+    .null {
+      height: 160px;
+  }
 
-/* .card {
-    position: relative;
-    width: 286px;
-    height: 411px;
-    margin-bottom: 100px;
-} */
-.card-post {
+  .null2 {
+    display: none;
+  }
+  .MyTeamsP2 {
+    display: none;
+  }
+  
+  .MyTeamsP {
     display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.ImgTeams {
-    border-radius: 20px;
-    z-index: -3;
-}
-
-.Name {
-    width: 285px;
-    height: 23px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 35px;
+    line-height: 40px;
     color: #000000;
-}
-.Post {
-    width: 285px;
-    height: 18px;
+    justify-content: center;
+  }
+  
+  .MainFotoTemasPage {
+      width: 100%;
+      height: 100%;
+      margin-top: 80px;
+  }
+  
+  .BlockTeams {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5%;
+      height: 100%;
+      justify-items: center;
+  }
+
+  .teamsCards {
+    height: 250px;
+  }
+  
+  .card-post {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+  }
+  
+  .ImgTeams {
+      border-radius: 20px;
+      z-index: -3;
+  }
+  
+  .Name {
+      width: 285px;
+      height: 23px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+  }
+  .Post {
+      width: 285px;
+      height: 18px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #474747;
+  }
+  
+  .mediaBlocks + .SecondPageCard {
+      display: none;
+  }
+  
+  .mediaBlocks:hover + .SecondPageCard {
+      display: block;
+  }
+  
+  .SecondPageCard {
+      width: 285px;
+      height: 350px;
+      background-color: blue;
+  }
+  
+  .flip-card {
+      background-color: transparent;
+      width: 390px;
+      height: 290px;
+      border-radius: 20px;
+      margin: 18px;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-bottom: 100px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      margin: 10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      display: grid;
+      color: black;
+      border-radius: 20px;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      border-radius: 20px;
+      background-color: #46AB4A;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      transform: rotateY(180deg);
+    }
+  
+    .MemberTextPage {
+      margin: 20px;
+      text-align: start;
+    }
+  
+    .MemberTeam {
+      margin: 5px;
+      margin-top: 0px;
+    }
+  
+    .ots {
+      padding: 4px;
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+  
+    .ots:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 640px ) and (max-width: 999px) {
+  .null {
+      display: none;
+  }
+  .null2 {
+    height: 600px;
+  }
+
+  .linkTeamsPage {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .btnTeamsPage {
+    display: flex;
+    border-radius: 30px;
+    padding: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    color: #474747;
-}
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: 2.5px solid #46AB4A;
+    transition: 1s;
+  }
 
-.mediaBlocks + .SecondPageCard {
-    display: none;
-}
-
-.mediaBlocks:hover + .SecondPageCard {
-    display: block;
-}
-
-.SecondPageCard {
-    width: 285px;
-    height: 350px;
-    background-color: blue;
-}
-
-.flip-card {
-    background-color: transparent;
-    width: 590px;
-    height: 350px;
-    border-radius: 20px;
-    margin: 10px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin-bottom: 100px;
+  .btnTeamsPage:hover {
+    background-color: #FFFFFF;
+    color: #46AB4A;
+    transition: 1s;
   }
   
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+  .MyTeamsP {
     position: absolute;
-    margin: 10px;
+    display: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    justify-content: center;
+  }
+
+  .MyTeamsP2 {
+    display: flex;
+    margin-top: -650px;
+    color: #FFFFFF;
+    justify-content: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+  }
+  
+  .MainFotoTemasPage {
+    display: none;
+      width: 100%;
+      height: 100%;
+      margin-top: 80px;
+  }
+
+  .MainFotoTemasPageAdaptiv {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+  .BlockTeams {
     display: grid;
-    color: black;
-    border-radius: 20px;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+    height: 100%;
+    justify-items: start;
+  }
+
+  .teamsCards {
+    height: 310px;
   }
   
-  /* Style the back side */
-  .flip-card-back {
-    border-radius: 20px;
-    background-color: #46AB4A;
-    color: white;
+  .card-post {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+  }
+  
+  .ImgTeams {
+      border-radius: 20px;
+      z-index: -3;
+  }
+  
+  .Name {
+      width: 285px;
+      height: 23px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+  }
+  .Post {
+      width: 285px;
+      height: 18px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #474747;
+  }
+  
+  .mediaBlocks + .SecondPageCard {
+      display: none;
+  }
+  
+  .mediaBlocks:hover + .SecondPageCard {
+      display: block;
+  }
+  
+  .SecondPageCard {
+      width: 285px;
+      height: 350px;
+      background-color: blue;
+  }
+  
+  .flip-card {
+      background-color: transparent;
+      width: 525px;
+      height: 300px;
+      border-radius: 20px;
+      margin: 18px;
+      /* border: 1px solid #f1f1f1; */
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-bottom: 100px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      margin: 10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      display: grid;
+      color: black;
+      border-radius: 20px;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      margin-left: -10px;
+      border-radius: 20px;
+      background-color: #46AB4A;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      transform: rotateY(180deg);
+      }
+  
+    .MemberTextPage {
+      margin: 20px;
+      text-align: start;
+    }
+  
+    .MemberTeam {
+      margin: 5px;
+    }
+  
+    .ots {
+      padding: 4px;
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+  
+    .ots:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 320px ) and (max-width: 639px) {
+    .null {
+      display: none;
+  }
+  .null2 {
+    height: 125px;
+  }
+
+  .linkTeamsPage {
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    transform: rotateY(180deg);
+    justify-content: center;
+    text-decoration: none;
   }
 
-  .MemberTextPage {
-    margin: 20px;
-    text-align: start;
+  .btnTeamsPage {
+    display: flex;
+    border-radius: 30px;
+    padding: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #46AB4A;
+    color: #FFFFFF;
+    border: 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: 2.5px solid #46AB4A;
+    transition: 1s;
   }
 
-  .MemberTeam {
-    margin: 5px;
+  .btnTeamsPage:hover {
+    background-color: #FFFFFF;
+    color: #46AB4A;
+    transition: 1s;
+  }
+  
+  .MyTeamsP {
+    position: absolute;
+    display: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+    justify-content: center;
   }
 
-  .ots {
-    padding: 4px;
-    transition: 0.5s;
-    opacity: 0.5;
+  .MyTeamsP2 {
+    display: flex;
+    margin-top: -250px;
+    color: #FFFFFF;
+    justify-content: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .MainFotoTemasPage {
+    display: none;
+      width: 100%;
+      height: 100%;
+      margin-top: 80px;
   }
 
-  .ots:hover {
-    opacity: 1;
+  .MainFotoTemasPageAdaptiv {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .BlockTeams {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+    height: 100%;
+    justify-items: start;
+  }
+
+  .teamsCards {
+    height: 150px;
+  }
+  
+  .card-post {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+  }
+  
+  .ImgTeams {
+      border-radius: 20px;
+      z-index: -3;
+  }
+  
+  .Name {
+      width: 285px;
+      height: 20px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #000000;
+  }
+  .Post {
+      width: 285px;
+      height: 18px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #474747;
+  }
+  
+  .mediaBlocks + .SecondPageCard {
+      display: none;
+  }
+  
+  .mediaBlocks:hover + .SecondPageCard {
+      display: block;
+  }
+  
+  .SecondPageCard {
+      width: 285px;
+      height: 350px;
+      background-color: blue;
+  }
+  
+  .flip-card {
+      background-color: transparent;
+      width: 262.5px;
+      height: 180px;
+      border-radius: 20px;
+      margin: 18px;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      margin-bottom: 75px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      margin: 10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      display: grid;
+      color: black;
+      border-radius: 20px;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+      margin-left: -10px;
+      border-radius: 20px;
+      background-color: #46AB4A;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      transform: rotateY(180deg);
+      }
+  
+    .MemberTextPage {
+      margin: 20px;
+      text-align: start;
+    }
+  
+    .MemberTeam {
+      margin: 5px;
+    }
+  
+    .ots {
+      padding: 4px;
+      transition: 0.5s;
+      opacity: 0.5;
+    }
+  
+    .ots:hover {
+      opacity: 1;
+    }
   }
