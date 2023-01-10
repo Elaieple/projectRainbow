@@ -17,6 +17,14 @@ p {
     margin: unset;
 }
 
+#html {
+    --bs-link-hover-color: unset;
+}
+
+:root {
+    --bs-link-hover-color: unset;
+}
+
 @media (min-width: 1600px) {
     a {
         text-decoration: none;
@@ -187,7 +195,7 @@ p {
         font-weight: 300;
     }
 
-    .btn {
+    .btn1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -213,9 +221,17 @@ p {
         border: 0;
         cursor: pointer;
         color: #FFFFFF;
+        border: 2.5px solid #63bd66;
+        transition: 1s;
     }
 
-    .btn a {
+    .btn1:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
+        transition: 1s;
+    }
+
+    .btn1 a {
         color: #FFFFFF;
     }
 
@@ -260,6 +276,10 @@ p {
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .viewAllProjectVseProject:hover {
+        color: #000000;
     }
 
     .viewAllProjectVse {
@@ -379,7 +399,18 @@ p {
         text-decoration: none;
     }
 
-    .date {
+    .more:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .dateZ {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
         color: #FFFFFF;
     }
 
@@ -467,6 +498,13 @@ p {
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
+        border: 2.5px solid #46AB4A;
+        transition: 0.7s;
+    }
+
+    .btnHelp:hover {
+        background-color: #FFFFFF;
+        color: #46AB4A;
     }
 
     .btnHelp a {
@@ -626,7 +664,7 @@ p {
         transition: 1s;
     }
     
-    .fifthFriend:hover {
+    .sixthFriend:hover {
         filter: grayscale(0);
         transition: 1s;
     }
@@ -711,7 +749,6 @@ p {
     }
 
     .rub {
-        width: 67px;
         height: 18px;
         font-family: 'Arial';
         font-style: normal;
@@ -738,7 +775,7 @@ p {
     .blockP {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .Text {
@@ -783,6 +820,10 @@ p {
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .allMedia:hover {
+        color: #000000;
     }
 
     .AllMediaText {
@@ -1069,7 +1110,7 @@ p {
         line-height: 30px;
     }
 
-    .btn {
+    .btn1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1079,7 +1120,7 @@ p {
         position: absolute;
         width: 200px;
         height: 50px;
-        margin-top: 160px;
+        margin-top: 200px;
         background: #46AB4A;
         border-radius: 1000px;
         flex: none;
@@ -1097,7 +1138,7 @@ p {
         color: #FFFFFF;
     }
 
-    .btn a {
+    .btn1 a {
         color: #FFFFFF;
     }
 
@@ -1143,6 +1184,10 @@ p {
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .viewAllProjectVseProject:hover {
+        color: #000000;
     }
 
     .viewAllProjectVse {
@@ -1264,7 +1309,18 @@ p {
         text-decoration: none;
     }
 
-    .date {
+    .more:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .dateZ {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
         color: #FFFFFF;
     }
 
@@ -1279,7 +1335,6 @@ p {
         font-size: 20px;
         line-height: 23px;
         color: #474747;
-        margin-right: 115px;
     }
 
     .BodyTitle {
@@ -1301,14 +1356,13 @@ p {
     .helpingSecondBlock {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .foto {
         margin-top: 30px;
-        width: 600px;
-        height: 375px;
+        width: 480px;
+        height: 300px;
         margin-bottom: 30px;
         border-radius: 20px;
         background: url(../../../public/momAndChildren.png) 100% no-repeat;
@@ -1415,60 +1469,93 @@ p {
     }
 
     .firstFriend {
-        margin: 5px;
+        margin: 26px;
         z-index: 1;
-        margin-left: -15px;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .firstFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .secondFriend {
-        margin: -1px;
-        margin-left: -25.2px;
+        margin: 26px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .secondFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .thirdFriend {
-        margin-left: -20px;
+        margin: 26px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .thirdFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fourthFriend {
-        margin-left: -27.5px;
+        margin: 25px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/BF_PDOV_POLINA_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fourthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fifthFriend {
-        margin-left: -25.5px;
+        margin: 26px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/BF_EVITA_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fifthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .sixthFriend {
-        margin: -1px;
-        margin-left: -25.5px;
+        margin: 24.5px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 110px;
+        height: 105px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/KERAMIR_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+    
+    .sixthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     /*! Стили отчётов */
@@ -1626,6 +1713,10 @@ p {
         font-size: 20px;
         line-height: 23px;
         color: #474747;
+    }
+
+    .allMedia:hover {
+        color: #000000;
     }
 
     .AllMediaText {
@@ -1929,7 +2020,7 @@ p {
         padding-right: 30px;
     }
 
-    .btn {
+    .btn1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1957,7 +2048,7 @@ p {
         color: #FFFFFF;
     }
 
-    .btn a {
+    .btn1 a {
         color: #FFFFFF;
     }
 
@@ -2113,7 +2204,18 @@ p {
         text-decoration: none;
     }
 
-    .date {
+    .more:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .dateZ {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
         color: #FFFFFF;
     }
 
@@ -2285,61 +2387,93 @@ p {
     }
 
     .firstFriend {
-        margin: 3px;
+        margin: 29px;
         z-index: 1;
-        margin-left: -11px;
-        width: 150px;
-        height: 150px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage640/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .firstFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .secondFriend {
-        margin: -2px;
-        margin-left: -22px;
+        margin: 28px;
         z-index: 1;
-        width: 150px;
-        height: 150px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage640/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .secondFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .thirdFriend {
-        margin-left: -20px;
+        margin: 26px;
         z-index: 1;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 95px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage640/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .thirdFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fourthFriend {
-        margin: -2px;
-        margin-left: -24.5px;
+        margin: 27px;
         z-index: 1;
-        width: 150px;
-        height: 150px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage640/BF_PDOV_POLINA_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fourthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fifthFriend {
-        margin-left: -25.5px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/BF_EVITA_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fifthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .sixthFriend {
-        margin: -1px;
-        margin-left: -27.5px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage\ 1000/KERAMIR_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+    
+    .sixthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     /*! Стили отчётов */
@@ -2492,6 +2626,10 @@ p {
         font-size: 16px;
         line-height: 18px;
         color: #474747;
+    }
+
+    .allMedia:hover {
+        color: #000000;
     }
 
     .AllMediaText {
@@ -2794,7 +2932,7 @@ p {
         padding-right: 30px;
     }
 
-    .btn {
+    .btn1 {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -2820,9 +2958,10 @@ p {
         border: 0;
         cursor: pointer;
         color: #FFFFFF;
+        border: 3px solid #46AB4A;
     }
 
-    .btn a {
+    .btn1 a {
         color: #FFFFFF;
     }
 
@@ -2972,10 +3111,18 @@ p {
         text-decoration: none;
     }
 
-    .date {
+    .more:hover {
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .dateZ {
+        font-family: 'Arial';
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 18px;
+        text-align: center;
         color: #FFFFFF;
     }
 
@@ -3157,63 +3304,93 @@ p {
     }
 
     .firstFriend {
-        margin: -5px;
+        margin: 29px;
         z-index: 1;
-        margin-left: -20px;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/ROSSIJSKIE_KOMMUNAL_NYE_SISTEMY_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .firstFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .secondFriend {
-        margin: -6px;
-        margin-left: -32.3px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/SAMARSKAYa_KABEL_NAYa_KOMPANIYa_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .secondFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .thirdFriend {
-        margin-top: -8px;
-        margin-left: -26px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/FOND_PREZIDENTSKIKh_GRANTOV_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .thirdFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fourthFriend {
-        margin-left: -31.5px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/BF_PDOV_POLINA_1.png) 100% no-repeat;
-        margin-top: -9px;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fourthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .fifthFriend {
-        margin-top: -6px;
-        margin-left: -32.5px;
+        margin: 29px;
         z-index: 1;
-        width: 160px;
-        height: 160px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/BF_EVITA_1\ 1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+
+    .fifthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     .sixthFriend {
-        margin-top: 4px;
-        margin-left: -13.5px;
+        margin: 29px;
         z-index: 1;
-        width: 140px;
-        height: 140px;
+        width: 95px;
+        height: 90px;
         opacity: 1;
-        background: url(../../../public/adaptiv/mainPage320/KERAMIR_1.png) 100% no-repeat;
+        filter: grayscale(1);
+        transition: 1s;
+    }
+    
+    .sixthFriend:hover {
+        filter: grayscale(0);
+        transition: 1s;
     }
 
     /*! Стили отчётов */
@@ -3375,6 +3552,10 @@ p {
         font-size: 16px;
         line-height: 18px;
         color: #474747;
+    }
+
+    .allMedia:hover {
+        color: #000000;
     }
 
     .tableMedia {

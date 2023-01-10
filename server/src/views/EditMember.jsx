@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function Main({ newUser, Member }) {
+module.exports = function Main({ bee, Member }) {
   return (
     <Layout bee={bee}>
 

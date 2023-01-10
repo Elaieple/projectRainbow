@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import Onas from '../../wiews/onas/Onas';
 import './Teams.css';
 
@@ -36,6 +37,15 @@ export default function Teams() {
             НАША КОМАНДА
           </p>
           <img src="fotoMedia/unsplash_DNkoNXQti3c.png" alt="foto" className="MainFotoTemasPage" />
+          <img className="MainFotoTemasPageAdaptiv" src="fotoTeams/adaptiv/unsplash_DNkoNXQti3c.svg" alt="foto" />
+
+          <p className="MyTeamsP2">
+            НАША КОМАНДА
+          </p>
+          <Link id="linkTeamsPage" className="linkTeamsPage" to="/donate">
+            <button className="btnTeamsPage" type="button">ПОМОЧЬ СЕЙЧАС</button>
+          </Link>
+          <div className="null2" />
         </div>
         <div className="BlockTeams">
 
@@ -43,7 +53,7 @@ export default function Teams() {
             <div id={employee.id} className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src={`http://localhost:3001/${employee.image}`} alt="Avatar" />
+                  <img className="teamsCards" src={`http://localhost:3001/${employee.image}`} alt="Avatar" />
                   <div className="card-post">
                     <div className="Name">{employee.name}</div>
                     <div className="Post">{employee.jobtitle}</div>
