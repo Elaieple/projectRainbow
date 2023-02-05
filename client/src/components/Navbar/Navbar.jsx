@@ -64,9 +64,9 @@ export default function Navbar() {
           <div className="blockToggle">
             <button onClick={showBlockMain} type="button" id="showBlockBtn" className="link showBlockBtn" to="/aboutUs">О нас</button>
             <div className="navBlocksManyLink dropdown-content">
-              <Link className="link linksBlocks" to="/projects">Кто мы такие</Link>
+              <Link className="link linksBlocks" to="/aboutUs">Кто мы такие</Link>
               <Link className="link linksBlocks" to="/Teams">Команда</Link>
-              <Link className="link linksBlocks" to="/ourFriends">Документы</Link>
+              <Link className="link linksBlocks" to="/requisites">Документы</Link>
             </div>
           </div>
           <Link className="link" to="/projects">Проекты</Link>

@@ -21,6 +21,7 @@ function reducer(state, action) {
 export default function Order() {
   const [state, dispatch] = useReducer(reducer, startState);
   const [order, setOrder] = useState([]);
+  // const [state1, dispatch] = useReducer(reducer, startState);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -40,13 +41,17 @@ export default function Order() {
     window.scroll(0, 0);
   }, []);
 
+  console.log('heeeellooo', order);
   return (
     <>
       <div className="null" />
       <div className="container000">
         <div className="title"> ОТЧЕТЫ</div>
         <br />
-        <div className="year" id="1">
+        <div>
+          {order.map((el) => el.map((elem) => <p>{elem.year}</p>))}
+        </div>
+        {/* <div className="year" id="1">
           2021
           <table className={state.month ? 'table_dark' : 'table_dark close'}>
             <tr>
@@ -65,7 +70,7 @@ export default function Order() {
             </tr>
           </table>
           <button type="button" className="buttonPlus" onClick={() => dispatch({ type: 'MONTH' })}><p className="yyy">{state.month ? '--' : '+'}</p></button>
-        </div>
+        </div> */}
       </div>
       <Onas />
     </>
