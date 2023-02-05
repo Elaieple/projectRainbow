@@ -29,7 +29,7 @@ function App() {
           <Route path="/howToHelp" element={<KakPomoch />} />
           <Route path="/reports" element={<Order />} />
           <Route path="/projects" element={<OurProjects />} />
-          <Route path="/donate" element={<KakPomoch />} />
+          <Route path="/donate" element={<Donait />} />
           <Route path="/requisites" element={<Requisites />} />
           <Route path="/vtordih" element={<VtoroeDihaniee />} />
           <Route path="/media/:id" element={<New />} />
